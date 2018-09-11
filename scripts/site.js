@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	$(function(){
 		var galleryblock = $('.forside .Index-gallery-item-content');
-		galleryblock.appendTo('.forside .Index-gallery-wrapper');
+		galleryblock.appendTo('.forside .Index-gallery');
 	});
 
 	$(window).scroll(function() {
