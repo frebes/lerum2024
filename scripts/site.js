@@ -22,8 +22,8 @@ $(document).ready(function(){
     });
 
 	$(function(){
-		var galleryblock = $('.forside .Index-gallery-item-content');
-		galleryblock.appendTo('.forside .Index-gallery-item');
+		var galleryblock = $('.Index-gallery-item-content');
+		galleryblock.appendTo('.Index-gallery-item');
 	});
 
 	$(function(){
