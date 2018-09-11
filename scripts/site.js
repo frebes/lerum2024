@@ -25,7 +25,7 @@ $(document).ready(function(){
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
 
-	  	if(fName === ''){ // If emptystr set id due to SQS class
+	  	if(fName === ''){ // Set first page lerum
 	    	$('.Site').addClass('forside');
 	  	}
 	 	else{
