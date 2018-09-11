@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	$(function(){
 		var galleryblock = $('.Index-gallery-item-content');
-		galleryblock.appendTo('.Index-gallery-item');
+		galleryblock.appendTo('.Index-gallery-wrapper');
 	});
 
 	$(function(){
