@@ -24,7 +24,7 @@ $(document).ready(function(){
 	$(function(){
 		var galleryblock = $('.forside .Index-gallery-item-content');
 		galleryblock.insertAfter('#bannergalleri');
-
+		alert('try')
 	});
 
 	$(function(){
