@@ -22,6 +22,12 @@ $(document).ready(function(){
     });
 
 	$(function(){
+		var galleryblock = $('.forside .Index-gallery-item-content');
+		gallery.parent().after(galleryblock);
+
+	});
+
+	$(function(){
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
 
