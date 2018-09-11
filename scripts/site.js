@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
 	$(function(){
-		var galleryblock = $('.forside .Index-gallery-item-content');
+		var $galleryblock = $('.forside .Index-gallery-item-content');
 		$galleryblock.parent().after('#bannergalleri');
 
 	});
