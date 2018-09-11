@@ -22,11 +22,6 @@ $(document).ready(function(){
     });
 
 	$(function(){
-		var galleryblock = $('.forside .Index-gallery-item-content');
-		galleryblock.appendTo('.forside .Index-gallery-wrapper');
-	});
-
-	$(function(){
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
 
@@ -36,6 +31,11 @@ $(document).ready(function(){
 	 	else{
 	    	$('.Site').addClass(fName);
 	  	}
+	});
+
+	$(function(){
+		var galleryblock = $('.forside .Index-gallery-item-content');
+		galleryblock.appendTo('.forside .Index-gallery-wrapper');
 	});
 
 	$(window).scroll(function() {
