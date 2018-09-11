@@ -26,7 +26,7 @@ $(document).ready(function(){
 	  	    fName = pName.slice(1,-1);
 
 	  	if(fName === ''){ // If emptystr set id due to SQS class
-	    	$('.Site').addClass('startside');
+	    	$('.Site').addClass('forside');
 	  	}
 	 	else{
 	    	$('.Site').addClass(fName);
