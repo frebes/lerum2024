@@ -31,11 +31,12 @@ $(document).ready(function(){
 	 	else{
 	    	$('.Site').addClass(fName);
 	  	}
+		var galleryblock = $('.forside .Index-gallery-item-content');
+		galleryblock.appendTo('.forside .Index-gallery');
 	});
 
 	$(function(){
-		var galleryblock = $('.forside .Index-gallery-item-content');
-		galleryblock.appendTo('.forside .Index-gallery');
+
 	});
 
 	$(window).scroll(function() {
