@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	$(function(){
 		var $galleryblock = $('.forside .Index-gallery-item-content');
-		$galleryblock.parent().after('#bannergalleri');
+		$galleryblock.after('#bannergalleri');
 
 	});
 
