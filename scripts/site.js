@@ -23,7 +23,8 @@ $(document).ready(function(){
 
 	$(function(){
 		$(window).scroll(function(){
-    		$(".Index-gallery-item-content").css("opacity", 1 - $(window).scrollTop() / 1000);
+    		$(".Index-gallery-item-content")
+    				.css("opacity", 1 - $(window).scrollTop() / 1000);
  		 });
 	});
 
