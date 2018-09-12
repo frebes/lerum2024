@@ -14,16 +14,9 @@ $(document).ready(function(){
 		currItem.height(setMaxHeight);
 	});
 
-	$(function(){
-	    $('.Index-page, .Index-gallery').each(function(n){
-	        n+=1;
-	        $(this).addClass('index'+ n++);
-	    });
-    });
-
 	$(function(){		
 		$(window).scroll(function(){
-			var fader = $(window).scrollTop() / 1000;
+			var fader = $(window).scrollTop()/1000;
     		$(".Index-gallery-item-content")
     				.css("opacity", 1 - fader)
     				.css("top", $(window).scrollTop()/10);
