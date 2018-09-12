@@ -26,7 +26,7 @@ $(document).ready(function(){
 			var fader = $(window).scrollTop() / 1000;
     		$(".Index-gallery-item-content")
     				.css("opacity", 1 - fader)
-    				.css("top", 1 - $(window).scrollTop()/10);
+    				.css("top", 1 + $(window).scrollTop()/10);
  		 });
 	});
 
