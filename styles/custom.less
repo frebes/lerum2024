@@ -73,19 +73,25 @@ blockquote{
 
 /* Header */
 
-.Header.Header--top{
-	position:fixed;
-	z-index:10000;
-	overflow:hidden;
-	top:0;
-	width:1441px;
-	margin:0 auto;
+.Header{
+	&.Header--top{
+		position:fixed;
+			z-index:10000;
+			overflow:hidden;
+			top:0;
+			width:1441px;
+			margin:0 auto;
+	}
+	&Header-nav-item--active{
+		border-bottom:2px solid @lerum-color-red;
+	}
 }
 @media screen and (min-width:640px) and (max-width:1440px){
 	.Header.Header--top{
 		width:100%;
 	}
 }
+
 
 /* Page sections */
 
@@ -96,7 +102,7 @@ blockquote{
     .Index-gallery-item-content{
 		background:@lerum-color-white;
 		max-width:100%;
-		
+
 	}
 	h2.Index-gallery-item-content-heading{
 		background:@lerum-color-grey;
