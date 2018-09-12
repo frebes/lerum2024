@@ -21,9 +21,9 @@ $(document).ready(function(){
 	    });
     });
 
-	$(function(){
-		fader = $(window).scrollTop() / 1000;
+	$(function(){		
 		$(window).scroll(function(){
+			var fader = $(window).scrollTop() / 1000;
     		$(".Index-gallery-item-content")
     				.css("opacity", 1 - fader)
     				.css("top", fader);
