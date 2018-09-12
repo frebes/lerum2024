@@ -22,9 +22,11 @@ $(document).ready(function(){
     });
 
 	$(function(){
+		fader = $(window).scrollTop() / 1000;
 		$(window).scroll(function(){
     		$(".Index-gallery-item-content")
-    				.css("opacity", 1 - $(window).scrollTop() / 1000);
+    				.css("opacity", 1 - fader)
+    				.css("top", fader);
  		 });
 	});
 
