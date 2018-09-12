@@ -22,6 +22,12 @@ $(document).ready(function(){
     });
 
 	$(function(){
+		$(window).scroll(function(){
+    		$(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+ 		 });
+	});
+
+	$(function(){
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
 
@@ -33,10 +39,6 @@ $(document).ready(function(){
 	  	}
 		var galleryblock = $('.forside .Index-gallery-item-content');
 		galleryblock.appendTo('.forside .Index-gallery');
-	});
-
-	$(function(){
-
 	});
 
 	$(window).scroll(function() {
