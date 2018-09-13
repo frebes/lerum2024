@@ -23,7 +23,7 @@ $(document).ready(function(){
 			var fader = $(window).scrollTop()/1000;
     		$(".Index-gallery-item-content")
     				.css("opacity", 1 - fader)
-    				.css("top", $(window).scrollTop()/10);
+    				.css("top", $(window).scrollTop()/10); // scroll content
  		 });
 	});
 
