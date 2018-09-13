@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 	// Find pagenames and identify using classes
-	// Rearrange DOM forside
+	// Rearrange DOM forside lerum
 
 	$(function(){
 	  	var pName = window.location.pathname,
