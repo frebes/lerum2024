@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 
+	// Equal heights on selected items
+
 	$(window).bind("load",function(){ //refresh on load/resize
 	    var setMaxHeight = 0,
 	    	currItem = $(".summary-item");
@@ -14,6 +16,8 @@ $(document).ready(function(){
 		currItem.height(setMaxHeight);
 	});
 
+	// Function to fadeout selected elements
+
 	$(function(){		
 		$(window).scroll(function(){
 			var fader = $(window).scrollTop()/1000;
@@ -22,6 +26,9 @@ $(document).ready(function(){
     				.css("top", $(window).scrollTop()/10);
  		 });
 	});
+
+	// Find pagenames and identify using classes
+	// Rearrange DOM forside
 
 	$(function(){
 	  	var pName = window.location.pathname,
@@ -36,6 +43,8 @@ $(document).ready(function(){
 		var galleryblock = $('.forside .Index-gallery-item-content');
 		galleryblock.appendTo('.forside .Index-gallery');
 	});
+
+	// Scroll header function
 
 	$(window).scroll(function() {
 		var pHeight = $('.Header').height();
