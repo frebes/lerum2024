@@ -61,70 +61,70 @@ $(window).on("resize load", function () {
             {.if customContent.tid}
               <div class="item">
                 <div class="title">
-                  Construction # 
+                  Tid 
                 </div>
                 <div class="data">
-                  {number}
+                  {tid}
                 </div>
               </div>
             {.end}
             {.if customContent.vgrad}
               <div class="item">
                 <div class="title">
-                  Year
+                  Vanskeligheitsgrad
                 </div>
                 <div class="data">
-                  {year}
+                  {vgrad}
                 </div>
               </div>
             {.end}
             {.if customContent.ing1}
               <div class="item">
                 <div class="title">
-                  Pax
+                  Ingrediens 1
                 </div>
                 <div class="data">
-                  {pax}
+                  {ing1}
                 </div>
               </div>
             {.end}
             {.if customContent.ing2}
               <div class="item">
                 <div class="title">
-                  Name
+                  Ingrediens 2
                 </div>
                 <div class="data">
-                  {name}
+                  {ing2}
                 </div>
               </div>
             {.end}
             {.if customContent.ing3}
               <div class="item">
                 <div class="title">
-                  Operator 
+                  Ingrediens 3 
                 </div>
                 <div class="data">
-                  {operator}
+                  {ing3}
                 </div>
               </div>
             {.end}
             {.if customContent.ing4}
               <div class="item">
                 <div class="title">
-                  Materials
+                  Ingrediens 4
                 </div>
                 <div class="data">
-                  {materials}
+                  {ing4}
                 </div>
               </div>
             {.end}
             {.if customContent.ing5}
               <div class="item">
                 <div class="title">
-                  L/W/GRT
+                  Ingrediens 5
                 </div>
                 <div class="data">
-                  {dimmensions}
+                  {ing5}
                 </div>
               </div>
             {.end}
