@@ -58,7 +58,7 @@ $(window).on("resize load", function () {
       <h2>Oppskrift test</h2>
       {.section customContent}
         <div class="oppskrift-data">
-            {.if customContent.number}
+            {.if customContent.tid}
               <div class="item">
                 <div class="title">
                   Construction # 
@@ -68,7 +68,7 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-            {.if customContent.year}
+            {.if customContent.vgrad}
               <div class="item">
                 <div class="title">
                   Year
@@ -78,7 +78,7 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-            {.if customContent.pax}
+            {.if customContent.ing1}
               <div class="item">
                 <div class="title">
                   Pax
@@ -88,7 +88,7 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-            {.if customContent.name}
+            {.if customContent.ing2}
               <div class="item">
                 <div class="title">
                   Name
@@ -98,7 +98,7 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-            {.if customContent.operator}
+            {.if customContent.ing3}
               <div class="item">
                 <div class="title">
                   Operator 
@@ -108,7 +108,7 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-            {.if customContent.materials}
+            {.if customContent.ing4}
               <div class="item">
                 <div class="title">
                   Materials
@@ -118,43 +118,13 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-            {.if customContent.dimmensions}
+            {.if customContent.ing5}
               <div class="item">
                 <div class="title">
                   L/W/GRT
                 </div>
                 <div class="data">
                   {dimmensions}
-                </div>
-              </div>
-            {.end}
-            {.if customContent.speed}
-              <div class="item">
-                <div class="title">
-                  Service speed
-                </div>
-                <div class="data">
-                  {speed}
-                </div>
-              </div>
-            {.end}
-            {.if customContent.engine}
-              <div class="item">
-                <div class="title">
-                  Main engine
-                </div>
-                <div class="data">
-                  {engine}
-                </div>
-              </div>
-            {.end}
-            {.if customContent.propulsion}
-              <div class="item">
-                <div class="title">
-                  Propulsion
-                </div>
-                <div class="data">
-                  {propulsion}
                 </div>
               </div>
             {.end}
