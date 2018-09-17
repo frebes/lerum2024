@@ -20,8 +20,9 @@ $(document).ready(function(){
 
 	$(function(){		
 		$(window).scroll(function(){
-			var fader = $(window).scrollTop()/1000;
-    		$(".Index-gallery-item-content")
+			var fadeelement = $(".Index-gallery-item-content"),
+				fader = $(window).scrollTop()/1000;
+    		fadeelement
     				.css("opacity", 1 - fader)
     				.css("top", $(window).scrollTop()/10); // scroll content
  		 });
