@@ -18,7 +18,7 @@ $(window).on("resize load", function () {
 });
 </script>
 
-{.section item}
+
 
   {.main-image?}
     <section id="{urlId}" class="Index-page Index-page--has-image"  data-collection-id="{id}">
@@ -32,12 +32,12 @@ $(window).on("resize load", function () {
       <div class="Index-page-content sqs-alternate-block-style-container">
       </div>
       <figure class="Index-page-image content-fill">
-        <img {@|image-meta} data-load="true" />
+        <img {@|image-meta} data-load="false" />
       </figure>
     </section>
   {.end}
 
-{.end}
+
 
   <section id="oppskrift-content" class="Index-page">
     <div class="Index-page-content">
