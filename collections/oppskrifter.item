@@ -18,9 +18,9 @@ $(window).on("resize load", function () {
 });
 </script>
 
+{.section item}
 
-
-  {.main-image?}
+  
     <section id="{urlId}" class="Index-page Index-page--has-image"  data-collection-id="{id}">
       <div class="Index-page-scroll-indicator hidden" data-controller="ScrollIndicator">
           <div class="Index-page-scroll-indicator-text">{localizedStrings.scroll}</div>
@@ -35,9 +35,9 @@ $(window).on("resize load", function () {
         <img {@|image-meta} data-load="false" />
       </figure>
     </section>
-  {.end}
+  
 
-
+{.end}
 
   <section id="oppskrift-content" class="Index-page">
     <div class="Index-page-content">
