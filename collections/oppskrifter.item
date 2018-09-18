@@ -1,25 +1,7 @@
-<script type="text/javascript">
-// Load all images via Squarespace's Responsive ImageLoader
-function loadAllImages() {
-  var images = document.querySelectorAll('.Index-page-image img[data-src]' );
-  for (var i = 0; i < images.length; i++) {
-    ImageLoader.load(images[i], {load: true});
-  }
-}
 
-// The event subscription that loads images when the page is ready
-document.addEventListener('DOMContentLoaded', loadAllImages);
-
-// The event subscription that reloads images on resize
-window.addEventListener('resize', loadAllImages);
-
-$(window).on("resize load", function () {
-  loadAllImages();
-});
-</script>
 
 {.section item}
-test
+
   {.main-image?}
     <section id="{urlId}" class="Index-page Index-page--has-image"  data-collection-id="{id}">
       <div class="Index-page-scroll-indicator hidden" data-controller="ScrollIndicator">
