@@ -49,7 +49,15 @@ $(window).on("resize load", function () {
           {excerpt}
         </div>
         {.end}
-        {.section customContent}
+      </div>
+    </div>
+  </section>
+
+{.section item}
+  <section id="oppskrift-data" class="Index-page">
+    <div class="Index-page-content">
+      {.section customContent}
+        <div class="oppskrift-data">
             {.if customContent.tid}
               <div class="item">
                 <div class="title">
@@ -60,17 +68,16 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-        {.end}
-      </div>
-    </div>
-  </section>
-
-{.section item}
-  <section id="oppskrift-data" class="Index-page">
-    <div class="Index-page-content">
-      {.section customContent}
-        <div class="oppskrift-data">
-
+            {.if customContent.vgrad}
+              <div class="item">
+                <div class="title">
+                  Vanskeligheitsgrad
+                </div>
+                <div class="data">
+                  {vgrad}
+                </div>
+              </div>
+            {.end}
             {.if customContent.ing1}
               <div class="item">
                 <div class="title">
