@@ -50,6 +50,8 @@ $(window).on("resize load", function () {
         </div>
         {.end}
       </div>
+      
+      {.section item}
       <div class="testcustom">
         {.section customContent}
             {.if customContent.tid}
@@ -64,6 +66,8 @@ $(window).on("resize load", function () {
             {.end}        
         {.end}
       </div>
+      {.end}
+
     </div>
   </section>
 
