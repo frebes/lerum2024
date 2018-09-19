@@ -22,6 +22,10 @@
 	opacity:1!important;
 }
 
+.transparent{
+	background-color:transparent;
+}
+
 /* Typography */
 
 
@@ -223,10 +227,13 @@ blockquote{
 }
 
 .Main--oppskrifter-item{
-	background-color:transparent;
+	transparent();
 	.Main-content{
 		padding-left:0;
 		padding-right:0;
+	}
+	#oppskrift-content, #oppskrift-data{
+		transparent();
 	}
 }
 
