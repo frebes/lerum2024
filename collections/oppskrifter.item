@@ -32,7 +32,7 @@ $(window).on("resize load", function () {
       <div class="Index-page-content sqs-alternate-block-style-container">
       </div> 
       <figure class="Index-page-image content-fill">
-       
+
         <img {@|image-meta} data-load="false" />
       </figure>
     </section>
@@ -56,7 +56,6 @@ $(window).on("resize load", function () {
 {.section item}
   <section id="oppskrift-data" class="Index-page">
     <div class="Index-page-content">
-      <h2>Oppskrift test</h2>
       {.section customContent}
         <div class="oppskrift-data">
             {.if customContent.tid}
