@@ -82,7 +82,7 @@ $(window).on("resize load", function () {
   </section>
 
 {.section item}
-  <section id="oppskrift-data" class="Index-page" style="float:left">
+  <section id="oppskrift-data" class="Index-page" style="float:left;width:30%">
     <div class="Index-page-content">
       {.section customContent}
         <div class="oppskrift-data">
@@ -141,7 +141,7 @@ $(window).on("resize load", function () {
     </div>
   </section>
 
-  <section id="oppskrift-content" class="Index-page" style="float:right">
+  <section id="oppskrift-content" class="Index-page" style="float:right;width:70%">
     <div class="Index-page-content">  
         {body}
         <div class="BlogItem-share">{@|apply sqs-share-buttons}</div>
