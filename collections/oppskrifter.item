@@ -43,8 +43,8 @@ $(window).on("resize load", function () {
   <section id="oppskrift-content-excerpt" class="Index-page">
     <div class="Index-page-content">
       <div class="cont">
-        {.section item}
-        <div class="oppskrift-excerpt">
+        {.section item}     
+        <div class="oppskrift-excerpt">{categories}
           <h1 data-content-field="title" itemprop="headline">{title}</h1>
           {excerpt}
         </div>
