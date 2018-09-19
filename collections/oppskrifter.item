@@ -50,7 +50,7 @@ $(window).on("resize load", function () {
         </div>
         {.end}
       </div>
-      
+
       {.section item}
       <div class="testcustom">
         {.section customContent}
@@ -63,7 +63,17 @@ $(window).on("resize load", function () {
                   {tid}
                 </div>
               </div>
-            {.end}        
+            {.end} 
+            {.if customContent.vgrad}
+              <div class="item">
+                <div class="title">
+                  Vanskeligheitsgrad
+                </div>
+                <div class="data">
+                  {vgrad}
+                </div>
+              </div>
+            {.end}      
         {.end}
       </div>
       {.end}
@@ -76,26 +86,6 @@ $(window).on("resize load", function () {
     <div class="Index-page-content">
       {.section customContent}
         <div class="oppskrift-data">
-            {.if customContent.tid}
-              <div class="item">
-                <div class="title">
-                  Tid 
-                </div>
-                <div class="data">
-                  {tid}
-                </div>
-              </div>
-            {.end}
-            {.if customContent.vgrad}
-              <div class="item">
-                <div class="title">
-                  Vanskeligheitsgrad
-                </div>
-                <div class="data">
-                  {vgrad}
-                </div>
-              </div>
-            {.end}
             {.if customContent.ing1}
               <div class="item">
                 <div class="title">
