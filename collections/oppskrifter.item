@@ -137,6 +137,66 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
+            {.if customContent.ing5}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 5
+                </div>
+                <div class="data">
+                  {ing5}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing6}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 6
+                </div>
+                <div class="data">
+                  {ing6}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing7}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 7
+                </div>
+                <div class="data">
+                  {ing7}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing8}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 8
+                </div>
+                <div class="data">
+                  {ing8}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing9}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 9
+                </div>
+                <div class="data">
+                  {ing9}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing10}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 10
+                </div>
+                <div class="data">
+                  {ing10}
+                </div>
+              </div>
+            {.end}
         </div>
         <div id="tips-content">
             <div class="tips">
