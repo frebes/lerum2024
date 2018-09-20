@@ -48,9 +48,9 @@ $(document).ready(function(){
 
 	$(function(){
 		var summaryInfo = $('.oppskrifter .summary-excerpt'),
-			sumContent = $('<button>Gå til oppskrifta</button>');
+			$sumContent = $('<button>Gå til oppskrifta</button>');
 
-		summaryInfo.text(sumContent);
+		summaryInfo.text($sumContent);
 	});
 
 	// Scroll header function
