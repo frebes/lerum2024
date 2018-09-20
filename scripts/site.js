@@ -51,9 +51,7 @@ $(document).ready(function(){
 			sumContent = $('<div>Gå til oppskrifta</div>');
 
 		summaryInfo.each(function(){
-		    $(this).html(
-		        $(this).html().replace(/<a(.*)>(.*)<\/a>/g, '<a $1><img src="..?anchor=$2" /></a>')
-		    );
+		    $(this).replaceWith('<div>Gå til oppskrifta</div>')
 		});
 
 	});
