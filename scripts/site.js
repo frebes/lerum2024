@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 	$(function(){
 		var summaryInfo = $('.oppskrifter .summary-excerpt'),
-			$sumContent = $('<button>Gå til oppskrifta</button>');
+			$sumContent = $('<div class="sumContent">Gå til oppskrifta</button>');
 
 		summaryInfo.text($sumContent);
 	});
