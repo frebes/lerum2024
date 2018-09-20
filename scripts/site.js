@@ -47,7 +47,7 @@ $(document).ready(function(){
 	// Replace summary info
 
 	$(function(){
-		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt');
+		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-item');
 
 		summaryInfo.each(function(){
 			var sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href');
