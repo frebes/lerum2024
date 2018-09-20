@@ -46,12 +46,12 @@ $(document).ready(function(){
 
 	// Replace summary info
 
-	$(function(){
+//	$(function(){
 		var summaryInfo = $('.oppskrifter .summary-excerpt'),
 			sumContent = $('<div>Gå til oppskrifta</div>');
 
-		$('.oppskrifter .summary-excerpt').html(sumContent);
-	});
+		summaryInfo.html(sumContent);
+//
 
 	// Scroll header function
 
