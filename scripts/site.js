@@ -44,6 +44,13 @@ $(document).ready(function(){
 		galleryblock.appendTo('.forside .Index-gallery');
 	});
 
+	// Replace summary info
+
+	$(function(){
+		var summaryInfo = $('.oppskrifter .summary-excerpt');
+		summaryInfo.html('');
+	});
+
 	// Scroll header function
 
 	$(window).scroll(function() {
