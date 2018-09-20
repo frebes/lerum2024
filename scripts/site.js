@@ -47,13 +47,14 @@ $(document).ready(function(){
 	// Replace summary info
 
 	$(function(){
-		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-item');
+		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-item'),
+			sunnaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
 		summaryInfo.each(function(){
 			var sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href');
 
-			alert(sumLink);
-		    $(this).replaceWith('<p class="oppskrift-link">Gå til oppskrifta</p>')
+			//alert(sumLink);
+		    summaryRep.replaceWith('<p class="oppskrift-link">Gå til oppskrifta</p>')
 		});
 	});
 
