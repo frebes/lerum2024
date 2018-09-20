@@ -163,13 +163,3 @@ $(window).on("resize load", function () {
 
 <squarespace:block-field id="RealatedRecipes" columns="12" label="Add Related Recipes" />  
        
-
-
-      
-
-  
-
-
-
-    
-
