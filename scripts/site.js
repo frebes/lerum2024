@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 	$(function(){
 		var summaryInfo = $('.oppskrifter .summary-excerpt');
-		summaryInfo.html('Gå til oppskrifta');
+		summaryInfo.text('Gå til oppskrifta');
 	});
 
 	// Scroll header function
