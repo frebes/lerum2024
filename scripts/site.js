@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 		summaryInfo.each(function(){
 			var sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href'),
-				sunnaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
+				summaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
 			//alert(sumLink);
 		    summaryRep.replaceWith('<p class="oppskrift-link">Gå til oppskrifta</p>')
