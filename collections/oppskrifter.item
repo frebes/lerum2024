@@ -86,6 +86,7 @@ $(window).on("resize load", function () {
     <div class="Index-page-content">
       {.section customContent}
         <div class="oppskrift-data">
+          <h3>Du treng</h3>
             {.if customContent.ing1}
               <div class="item">
                 <div class="title">
@@ -147,7 +148,8 @@ $(window).on("resize load", function () {
   </section>
 
   <section id="oppskrift-content" class="Index-page">
-    <div class="Index-page-content">  
+    <div class="Index-page-content">
+      <h3>Slik gjer du det</h3>
         {body}
         <div class="BlogItem-share">{@|apply sqs-share-buttons}</div>
         {.if postItemInjectCode}{postItemInjectCode}{.end}   
