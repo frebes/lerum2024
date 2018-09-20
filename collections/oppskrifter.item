@@ -160,7 +160,8 @@ $(window).on("resize load", function () {
 {.end}
 
 <div style="clear:both"></div>
-  
+
+<squarespace:block-field id="blockField1" columns="12"/>  
        
 
 
