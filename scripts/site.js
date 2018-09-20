@@ -51,7 +51,7 @@ $(document).ready(function(){
 			sumContent = $('<div>Gå til oppskrifta</div>');
 
 		summaryInfo.each(function(){
-			$(this).html(sumContent);
+			$(this).html('<div>Gå til oppskrifta</div>');
 		});
 	});
 
