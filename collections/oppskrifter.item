@@ -161,7 +161,7 @@ $(window).on("resize load", function () {
 
 <div style="clear:both"></div>
 
-<squarespace:block-field id="block-5b97a91d6d2a73cf213a0655\" columns="12"/>  
+<squarespace:block-field id="RealatedRecipes" columns="12" title="Add Related Recipes" />  
        
 
 
