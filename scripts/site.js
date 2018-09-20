@@ -47,8 +47,10 @@ $(document).ready(function(){
 	// Replace summary info
 
 	$(function(){
-		var summaryInfo = $('.oppskrifter .summary-excerpt');
-		summaryInfo.text('Gå til oppskrifta');
+		var summaryInfo = $('.oppskrifter .summary-excerpt'),
+			sumContent = $('<button>Gå til oppskrifta</button>');
+
+		summaryInfo.text(sumContent);
 	});
 
 	// Scroll header function
