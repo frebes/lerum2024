@@ -47,10 +47,11 @@ $(document).ready(function(){
 	// Replace summary info
 
 	$(function(){
-		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p'),
-			sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href');
+		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
 		summaryInfo.each(function(){
+			var sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href');
+
 			alert(sumLink);
 		    $(this).replaceWith('<p class="oppskrift-link">Gå til oppskrifta</p>')
 		});
