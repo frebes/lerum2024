@@ -34,56 +34,7 @@
 
 /* Typography */
 
-
-.h1{
-	font-family:"Bree-serif";
-	font-size:65px;
-	line-height:70px;
-	font-weight:normal;
-
-	/* show h4 */
-	strong{
-		font-size:26px;
-		line-height:32px;
-		font-weight:normal;		
-	}
-}
-
-.h2{
-	font-family:"bree-serif";
-	font-size:44px;
-	line-height:50px;	
-	font-weight:normal;
-
-	/* show h5 */
-	strong{
-		color:@lerum-color-darkgrey;
-		font-family:"Open sans";
-		font-size:18px;
-		line-height:24px;
-		font-weight:normal;
-		letter-spacing:3px;
-		text-transform:uppercase;
-	}
-}
-
-.h3{
-	font-family:"bree-serif";
-	font-size:32px;
-	line-height:36px;	
-	font-weight:normal;
-
-	/* show h6 */
-	strong{
-		color:@lerum-color-darkgrey;
-		font-family:"Open sans";
-		font-size:14px;
-		line-height:20px;
-		font-weight:normal;
-		letter-spacing:2px;	
-		text-transform:uppercase;		
-	}
-}
+/* Define h4-h6 as functions in h1-h3 strong classes */
 
 .h4{
 	font-size:26px;
@@ -109,6 +60,42 @@
 	font-weight:normal;
 	letter-spacing:2px;	
 	text-transform:uppercase;			
+}
+
+.h1{
+	font-family:"Bree-serif";
+	font-size:65px;
+	line-height:70px;
+	font-weight:normal;
+
+	/* show h4 */
+	strong{
+		.h4();	
+	}
+}
+
+.h2{
+	font-family:"bree-serif";
+	font-size:44px;
+	line-height:50px;	
+	font-weight:normal;
+
+	/* show h5 */
+	strong{
+		.h5();
+	}
+}
+
+.h3{
+	font-family:"bree-serif";
+	font-size:32px;
+	line-height:36px;	
+	font-weight:normal;
+
+	/* show h6 */
+	strong{
+		.h6();		
+	}
 }
 
 blockquote{
