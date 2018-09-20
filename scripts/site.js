@@ -50,7 +50,7 @@ $(document).ready(function(){
 		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p'),
 			sumContent = $('<div>Gå til oppskrifta</div>');
 
-		$('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p').each(function(){
+		summaryInfo.each(function(){
 		    $(this).replaceWith('<div>Gå til oppskrifta</div>')
 		});
 
