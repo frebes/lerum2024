@@ -50,7 +50,7 @@ $(document).ready(function(){
 		var summaryInfo = $('.oppskrifter .summary-excerpt'),
 			sumContent = $('<div class="sumContent">Gå til oppskrifta</button>');
 
-		summaryInfo.text(sumContent);
+		summaryInfo.html(sumContent);
 	});
 
 	// Scroll header function
