@@ -50,7 +50,7 @@ $(document).ready(function(){
 		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
 		summaryInfo.each(function(){
-		    $(this).replaceWith('<div>Gå til oppskrifta</div>')
+		    $(this).replaceWith('<p>Gå til oppskrifta</p>')
 		});
 
 	});
