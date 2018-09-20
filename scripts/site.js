@@ -47,12 +47,12 @@ $(document).ready(function(){
 	// Replace summary info
 
 	$(function(){
-		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
+		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p'),
+			sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href');
 
 		summaryInfo.each(function(){
 		    $(this).replaceWith('<p class="oppskrift-link">Gå til oppskrifta</p>')
 		});
-
 	});
 
 	// Scroll header function
