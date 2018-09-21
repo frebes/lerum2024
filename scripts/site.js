@@ -50,11 +50,11 @@ $(document).ready(function(){
 	$(function(){
 		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-title a');
 
-		summaryInfo.each(function(){
+		summaryInfo.each(function(index, el){
 			var sumLink = $(this).attr('href'),
 				summaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
-			//alert(sumLink);
+			alert(sumLink);
 		    summaryRep.replaceWith('<p class="oppskrift-link"><a href="'+ sumLink +'">Gå til oppskrifta</a></p>')
 		});
 	});
