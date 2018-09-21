@@ -51,7 +51,7 @@ $(document).ready(function(){
 		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-item');
 
 		summaryInfo.each(function(index, el){
-			var sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href'),
+			var sumLink = $(this).attr('href'),
 				summaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
 			//alert(sumLink);
