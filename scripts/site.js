@@ -48,11 +48,11 @@ $(document).ready(function(){
 	// Replace summary info
 
 	$(function(){
-		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-title a');
+		var summaryInfo = $('#oppskrift-toppgalleri .summary-title a');
 
 		summaryInfo.each(function(index, el){
 			var sumLink = $(this).attr('href'),
-				summaryRep = $($('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p')[index]);
+				summaryRep = $($('#oppskrift-toppgalleri .summary-excerpt p')[index]);
 
 		    summaryRep.replaceWith('<p class="oppskrift-link"><a href="'+ sumLink +'">Gå til oppskrifta</a></p>')
 		});
