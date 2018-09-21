@@ -54,8 +54,8 @@ $(document).ready(function(){
 			var sumLink = $(this).attr('href'),
 				summaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
-			//alert(sumLink);
-		    $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p').replaceWith('<p class="oppskrift-link"><a href="'+ sumLink +'">Gå til oppskrifta</a></p>')
+			alert(sumLink);
+		    summaryRep.replaceWith('<p class="oppskrift-link"><a href="'+ $(this).attr('href') +'">Gå til oppskrifta</a></p>')
 		});
 	});
 
