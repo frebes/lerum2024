@@ -93,7 +93,9 @@ $(window).on("resize load", function () {
                   Ingrediens 1
                 </div>
                 <div class="data">
-                  {ing1}
+                  <form>
+                    <input type="text" name={ing1}>
+                  </form>
                 </div>
               </div>
             {.end}
