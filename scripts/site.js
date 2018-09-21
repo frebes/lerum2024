@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 		$('#valAmount').keypress(function(e){
 			var key = e.which;
-			if(key == 13){ // enter		  
+			if(key == 13){ // enter	key	  
 			    $('input[name = butAssignProd]').click();
 			    return false;  
 			}
