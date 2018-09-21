@@ -70,6 +70,22 @@ $(document).ready(function(){
   		}
 	});
 
+	// Oppskrift calc values
+
+	$(function(){
+		var value1 = $('#item1').val(),
+			value2 = $('#item2').val(),
+			value3 = $('#item3').val();
+
+		$('#valAmount').keypress(function(e){
+			var key = e.which;
+			if(key == 13){ // enter		  
+			    $('input[name = butAssignProd]').click();
+			    return false;  
+			}
+		}); 
+	});
+
 });
 
 
