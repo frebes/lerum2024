@@ -81,10 +81,12 @@ $(document).ready(function(){
 			var key = e.which;
 			if(key == 13){ // enter	key	  
 			    $('input[name = butAssignProd]').click();
+			    calcOppskrift();
 			    return false;  
 			}
 		}); 
 	});
+	
 
 });
 
