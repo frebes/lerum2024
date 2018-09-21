@@ -89,13 +89,11 @@ $(window).on("resize load", function () {
           <h3>Du treng</h3>
             {.if customContent.ing1}
               <div class="item">
-                <div class="title">
-                  Ingrediens 1
-                </div>
-                <div class="data">
                   <form>
                     <input type="text" name={ing1}>
                   </form>
+                <div class="data">
+                    {ing1}
                 </div>
               </div>
             {.end}
