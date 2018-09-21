@@ -90,7 +90,7 @@ $(window).on("resize load", function () {
             {.if customContent.ing1}
               <div class="item">
                   <form>
-                    <input type="text" name="{ing1}">
+                    <input type="text" name="{ing1}" id="valueAmount">
                   </form>
                 <div class="data">
                     {ing1}
