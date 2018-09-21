@@ -48,7 +48,7 @@ $(document).ready(function(){
 	// Replace summary info
 
 	$(function(){
-		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-item a');
+		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-title a');
 
 		summaryInfo.each(function(index, el){
 			var sumLink = $(this).attr('href'),
