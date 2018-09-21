@@ -22,6 +22,7 @@ $(document).ready(function(){
 		$(window).scroll(function(){
 			var fadeelement = $(".Index-gallery-item-content"),
 				fader = $(window).scrollTop()/1000;
+				
     		fadeelement.css("opacity", 1 - fader)
     				   .css("top", $(window).scrollTop()/10); // scroll content
  		 });
