@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$(window).scroll(function(){
 			var fadeelement = $(".Index-gallery-item-content"),
 				fader = $(window).scrollTop()/1000;
-				
+
     		fadeelement.css("opacity", 1 - fader)
     				   .css("top", $(window).scrollTop()/10); // scroll content
  		 });
@@ -50,7 +50,7 @@ $(document).ready(function(){
 	$(function(){
 		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-item');
 
-		summaryInfo.each(function(){
+		summaryInfo.each(function(index, el){
 			var sumLink = $('.oppskrifter #oppskrift-toppgalleri .summary-title a').attr('href'),
 				summaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
