@@ -50,7 +50,7 @@ $(document).ready(function(){
 	$(function(){
 		var summaryInfo = $('.oppskrifter #oppskrift-toppgalleri .summary-title a');
 
-		summaryInfo.each(function(index, el){
+		summaryInfo.each(function(){
 			var sumLink = $(this).attr('href'),
 				summaryRep = $('.oppskrifter #oppskrift-toppgalleri .summary-excerpt p');
 
