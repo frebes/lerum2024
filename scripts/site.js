@@ -19,10 +19,11 @@ $(document).ready(function(){
 	// Frontgallery mouseevent
 
 	$(function(){
-		var textElem = $('#freistande-oppskrifter .summary-title');
+		var textElem = $('#freistande-oppskrifter .summary-title'),
+			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container');
 
 		textElem.hide();
-		textElem.hover(function(){
+		hoverElem.hover(function(){
 			$(this).fadeIn(500).stop();
 			$(this).fadeOut(200);
 		});	
