@@ -23,20 +23,14 @@ $(document).ready(function(){
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container');
 
 		textElem.hide();
-		//if (hoverElem.is(':hover'))
-		//	$(this).next().find('.summary-title').fadeIn();
-		//else
-		//	$(this).next().find('.summary-title').fadeIn();
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
 		}, function(event){
-			if (textElem.is(':hover')){
+			//if (textElem.is(':hover')){
 				//textElem.stop(true);
 				//$('.summary-title').fadeOut();
-				textElem.show();
-			}
-			else
-				textElem.hide();
+				//textElem.show();
+			//}
 			$('.summary-title').fadeOut();
 		});
 	});
