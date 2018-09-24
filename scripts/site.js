@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 		textElem.hide();
 		textElem.hover(function(){
-			$(this).fadeIn(200);
+			$(this).fadeIn(200).stop();
 			$(this).fadeOut(100);
 		});			
 	});
