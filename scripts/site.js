@@ -25,9 +25,6 @@ $(document).ready(function(){
 		textElem.hide();
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
-			textElem.hover(function(){
-				return false;
-			});
 		}, function(event){
 			$('.summary-title').fadeOut();
 		});
