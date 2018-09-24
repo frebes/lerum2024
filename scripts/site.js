@@ -23,9 +23,9 @@ $(document).ready(function(){
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container');
 
 		textElem.hide();
-		hoverElem.hover(function(){
+		hoverElem.hover(function(event){
+			event.preventDefault();
 			$(this).next().find('.summary-title').toggle();
-			return false;
 		});	
 	});
 
