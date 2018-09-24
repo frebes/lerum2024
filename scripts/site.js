@@ -23,8 +23,8 @@ $(document).ready(function(){
 
 		textElem.hide();
 		textElem.hover(function(){
-			$(this).fadeIn(200).stop();
-			
+			$(this).fadeIn(500).stop();
+			$(this).fadeOut(200);
 		});	
 	});
 
