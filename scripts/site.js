@@ -24,8 +24,8 @@ $(document).ready(function(){
 
 		textElem.hide();
 		hoverElem.hover(function(){
-			$(this).fadeIn(500).stop();
-			$(this).fadeOut(200);
+			textElem.fadeIn(500).stop();
+			textElem.fadeOut(200);
 		});	
 	});
 
