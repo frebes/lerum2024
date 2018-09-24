@@ -33,7 +33,7 @@ $(document).ready(function(){
 			if (textElem.is(':hover')){
 				textElem.stop(true);
 				$('.summary-title').fadeOut();
-				return false;
+				
 			}
 			$('.summary-title').fadeOut();
 		});
