@@ -24,10 +24,7 @@ $(document).ready(function(){
 
 		textElem.hide();
 		hoverElem.mouseover(function(){
-			$(this).stop(true, true).next().find('.summary-title').fadeIn(200);
-		});	
-		hoverElem.mouseout(function(){
-			$(this).next().find('.summary-title').fadeOut(200);
+			$(this).next().find('.summary-title').fadeIn(200);
 		});	
 	});
 
