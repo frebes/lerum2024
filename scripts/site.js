@@ -32,7 +32,8 @@ $(document).ready(function(){
 		}, function(event){
 			if (textElem.is(':hover')){
 				textElem.stop(true);
-				//return false;
+				$('.summary-title').fadeOut();
+				return false;
 			}
 			$('.summary-title').fadeOut();
 		});
