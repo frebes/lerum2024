@@ -113,6 +113,18 @@ blockquote{
 	border-left:none!important;
 }
 
+.squarebutton{
+		.next, .previous{
+			border:2px solid @lerum-color-grey;
+		}
+		.previous:before,
+		.next:before{
+			font-size:32px!important;
+			line-height:56px!important;
+			width:56px!important;
+			height:56px!important;
+		}	
+}
 
 /* Header */
 
@@ -252,16 +264,7 @@ blockquote{
 	}
 	.summary-carousel-pager{ 
 		width:160px!important;
-		.next, .previous{
-			border:2px solid @lerum-color-grey;
-		}
-		.previous:before,
-		.next:before{
-			font-size:32px!important;
-			line-height:56px!important;
-			width:56px!important;
-			height:56px!important;
-		}
+		.squarebutton();
 	}
 	.summary-content{
 		.summary-title{
