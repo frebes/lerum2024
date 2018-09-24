@@ -24,9 +24,9 @@ $(document).ready(function(){
 
 		textElem.hide();
 		if (hoverElem.is(':hover'))
-			$(this).next().find('.summary-title').fadeIn();
+			$('.summary-title').fadeIn();
 		else
-			$(this).next().find('.summary-title').fadeOut();
+			$('.summary-title').fadeOut();
 		//	if (textElem.is(':hover'))
 		//		textElem.show();
 		//		return false;
