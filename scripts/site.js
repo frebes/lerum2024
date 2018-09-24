@@ -26,7 +26,7 @@ $(document).ready(function(){
 		if (hoverElem.is(':hover'))
 			$(this).next().find('.summary-title').fadeIn();
 		else
-			$(this).next().find('.summary-title').fadeOut;
+			$(this).next().find('.summary-title').fadeOut();
 		//	if (textElem.is(':hover'))
 		//		textElem.show();
 		//		return false;
