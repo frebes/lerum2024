@@ -23,11 +23,14 @@ $(document).ready(function(){
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container');
 
 		textElem.hide();
+		textElem.hover(function(){
+			show();
+		});
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
 		}, function(event){
 			$('.summary-title').fadeOut();
-		});	
+		});
 	});
 
 	// Function to fadeout selected elements
