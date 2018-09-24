@@ -24,8 +24,8 @@ $(document).ready(function(){
 		textElem.hide();
 		textElem.hover(function(){
 			$(this).fadeIn(200).stop();
-			$(this).fadeOut(100);
-		});			
+			
+		});	
 	});
 
 	// Function to fadeout selected elements
