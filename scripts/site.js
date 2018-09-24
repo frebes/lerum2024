@@ -33,8 +33,10 @@ $(document).ready(function(){
 			if (textElem.is(':hover')){
 				//textElem.stop(true);
 				//$('.summary-title').fadeOut();
-				textElem.show()
+				textElem.show();
 			}
+			else
+				textElem.hide();
 			$('.summary-title').fadeOut();
 		});
 	});
