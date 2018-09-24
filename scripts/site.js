@@ -29,11 +29,11 @@ $(document).ready(function(){
 		//	$(this).next().find('.summary-title').fadeIn();
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
-		//}, function(event){
+		}, function(event){
 			if (textElem.is(':hover')){
 				//textElem.stop(true);
 				//$('.summary-title').fadeOut();
-				return false;
+				textElem.show()
 			}
 			$('.summary-title').fadeOut();
 		});
