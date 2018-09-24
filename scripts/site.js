@@ -31,9 +31,9 @@ $(document).ready(function(){
 			$(this).next().find('.summary-title').fadeIn();
 		//}, function(event){
 			if (textElem.is(':hover')){
-				textElem.stop(true);
-				$('.summary-title').fadeOut();
-				
+				//textElem.stop(true);
+				//$('.summary-title').fadeOut();
+				return false;
 			}
 			$('.summary-title').fadeOut();
 		});
