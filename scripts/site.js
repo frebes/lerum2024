@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 		textElem.hide();
 		hoverElem.hover(function(){
-			$(this).stop().next().find('.summary-title').slideToggle(200);
+			$(this).find('.summary-title').slideToggle(200);
 		});	
 	});
 
