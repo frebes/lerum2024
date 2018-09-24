@@ -16,6 +16,18 @@ $(document).ready(function(){
 		currItem.height(setMaxHeight);
 	});
 
+	// Frontgallery mouseevent
+
+	$(function(){
+		var textElem = $('#freistande-oppskrifter .summary-title');
+
+		textElem.hide();
+		textElem.hover(function(){
+			$(this).fadeIn(200);
+			$(this).fadeOut(100);
+		});			
+	});
+
 	// Function to fadeout selected elements
 
 	$(function(){		
