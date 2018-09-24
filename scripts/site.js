@@ -25,10 +25,10 @@ $(document).ready(function(){
 		textElem.hide();
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
-			if $('.summary-title').is(":hover")
-				return false;
 		}, function(){
 			$('.summary-title').fadeOut();
+			if $('.summary-title').is(":hover")
+				return false;
 		});	
 	});
 
