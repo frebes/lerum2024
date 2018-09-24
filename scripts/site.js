@@ -29,9 +29,10 @@ $(document).ready(function(){
 		//	$(this).next().find('.summary-title').fadeIn();
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
-			if (textElem.is(':hover'))
+			if (textElem.is(':hover')){
 				textElem.stop(true);
 				return false;
+			}
 		}, function(event){
 			$('.summary-title').fadeOut();
 		});
