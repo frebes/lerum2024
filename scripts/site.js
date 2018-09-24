@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 		textElem.hide();
 		textElem.hover(function(){
-			show();
+			show().stop();
 		});
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
