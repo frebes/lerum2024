@@ -27,8 +27,6 @@ $(document).ready(function(){
 			$(this).next().find('.summary-title').fadeIn();
 		}, function(event){
 			$('.summary-title').fadeOut();
-			if $('.summary-title').is(":hover")
-				event.preventDefault();
 		});	
 	});
 
