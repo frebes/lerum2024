@@ -24,9 +24,10 @@ $(document).ready(function(){
 
 		textElem.hide();
 		hoverElem.hover(function(){
-			$(this).next().find('.summary-title').stop().fadeToggle(2000);
-		}, function(event){
-			$('.summary-title').fadeOut();
+			$(this).next().find('.summary-title').fadeToggle();
+			
+		//}, function(event){
+		//	$('.summary-title').fadeOut();
 		});
 	});
 
