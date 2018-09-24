@@ -27,7 +27,7 @@ $(document).ready(function(){
 		//	$(this).next().find('.summary-title').fadeIn();
 		//else
 		//	$(this).next().find('.summary-title').fadeIn();
-		hoverElem.mouseover(function(){
+		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
 			//if (textElem.is(':hover'))
 			//	textElem.show();
