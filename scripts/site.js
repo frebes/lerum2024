@@ -4,9 +4,11 @@ $(document).ready(function(){
 
 	// Rearrange DOM forside lerum
 	
-	var galleryblock = $('.forside .Index-gallery-item-content');
+	$(function(){
+		var galleryblock = $('.forside .Index-gallery-item-content');
 		galleryblock.appendTo('.forside .Index-gallery');
-
+	});
+	
 	
 	// Equal heights on selected items
 
