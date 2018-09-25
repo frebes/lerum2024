@@ -5,12 +5,14 @@
     <meta name="viewport" content="initial-scale=1">
 
     {squarespace-headers}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script tyle="text/javascript"> 
-      window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>');
+    <script>
       window.onload = function() {
         document.getElementById('.forside h2').style.display = 'none';
       };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script tyle="text/javascript"> 
+      window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>');
     </script>
 
     <squarespace:script src="site.js" combo="false" />
