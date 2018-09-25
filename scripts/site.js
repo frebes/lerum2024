@@ -7,6 +7,7 @@ $(document).ready(function(){
 	var galleryblock = $('.forside .Index-gallery-item-content');
 		galleryblock.appendTo('.forside .Index-gallery');
 
+	
 	// Equal heights on selected items
 
 	$(window).bind("load",function(){ //refresh on load/resize
@@ -21,6 +22,7 @@ $(document).ready(function(){
 		currItem.height(setMaxHeight);
 	});
 
+	
 	// Frontgallery mouseevent
 
 	$(function(){
@@ -40,6 +42,7 @@ $(document).ready(function(){
 		});
 	});
 
+	
 	// Function to fadeout selected elements
 
 	$(function(){		
@@ -52,6 +55,7 @@ $(document).ready(function(){
  		 });
 	});
 
+	
 	// Find pagenames and identify using classes
 
 	$(function(){
@@ -66,6 +70,7 @@ $(document).ready(function(){
 	  	}
 	});
 
+	
 	// Replace summary info
 
 	$(function(){
@@ -79,6 +84,7 @@ $(document).ready(function(){
 		});
 	});
 
+	
 	// Scroll header function
 
 	$(window).scroll(function() {
@@ -91,6 +97,7 @@ $(document).ready(function(){
   		}
 	});
 
+	
 	// Oppskrift calc values
 
 	$(function(){
