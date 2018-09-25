@@ -16,7 +16,6 @@ $(document).ready(function(){
 	  	}
 	});
 
-	$('.forside h2.Index-gallery-item-content-heading').show();
 
 	// Rearrange DOM forside lerum
 	
