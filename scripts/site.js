@@ -2,6 +2,11 @@
 
 $(document).ready(function(){
 
+	// Rearrange DOM forside lerum
+	
+	var galleryblock = $('.forside .Index-gallery-item-content');
+		galleryblock.appendTo('.forside .Index-gallery');
+
 	// Equal heights on selected items
 
 	$(window).bind("load",function(){ //refresh on load/resize
@@ -48,7 +53,6 @@ $(document).ready(function(){
 	});
 
 	// Find pagenames and identify using classes
-	// Rearrange DOM forside lerum
 
 	$(function(){
 	  	var pName = window.location.pathname,
@@ -60,8 +64,6 @@ $(document).ready(function(){
 	 	else{
 	    	$('.Site').addClass(fName);
 	  	}
-		var galleryblock = $('.forside .Index-gallery-item-content');
-		galleryblock.appendTo('.forside .Index-gallery');
 	});
 
 	// Replace summary info
