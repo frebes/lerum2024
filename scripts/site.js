@@ -2,7 +2,11 @@
 
 $(document).ready(function(){
 
-	$('.forside h2').hide().removeClass('hide');
+	$(window).load(function() {
+	    setTimeout(function() {
+	        $(".forside h2").show('fadeIn', {}, 500)
+	    }, 2000);
+	});
 
 	// Find pagenames and identify using classes
 
