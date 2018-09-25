@@ -19,14 +19,14 @@ $(document).ready(function(){
 	// Frontgallery mouseevent
 
 	$(function(){
-		var textElem = $('#freistande-oppskrifter .summary-title'),
+		var $textElem = $('#freistande-oppskrifter .summary-title'),
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container');
 
-		textElem.hide();
+		$textElem.hide();
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
 		}, function(){
-			if (textElem.is(':hover')){
+			if ($textElem.is(':hover')){
 				alert('test');
 				//textElem.stop(true);
 				//$('.summary-title').fadeOut();
