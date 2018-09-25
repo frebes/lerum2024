@@ -26,11 +26,11 @@ $(document).ready(function(){
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn();
 		}, function(){
-			//if ($textElem.is(':hover')){
-				//textElem.stop(true);
+			if ($('.summary-title').length!= 0){
+				textElem.stop(true);
 				//$('.summary-title').fadeOut();
 				//textElem.show();
-			//};
+			};
 			$('.summary-title').fadeOut();
 		});
 	});
