@@ -164,6 +164,8 @@ blockquote{
 		max-width:100%;
 	}
 	h2.Index-gallery-item-content-heading{
+    	-webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    	animation: 3s ease 0s normal forwards 1 fadein;
 		background:@lerum-color-grey;
 		width:30%;
 		padding:10%;
@@ -180,6 +182,18 @@ blockquote{
 		line-height:48px;
 		font-weight:400;
 	}
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
 }
 
 #dette-driv-vi-med{
