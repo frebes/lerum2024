@@ -115,6 +115,34 @@ blockquote{
 	border-left:none!important;
 }
 
+/* Amimations */
+
+@keyframes move {
+	0% {
+ 		transform: scale(1) rotate(0deg);
+	}
+	50%	{
+   		transform: scale(1.4) rotate(0.1deg);
+  	}
+  	100%	{
+   		transform: scale(1) rotate(0deg);
+
+  	}
+}
+
+@keyframes fadein{
+    0% { opacity:0; transform: translate3d(0,-20%,0);}
+    20% { opacity:0; transform: translate3d(0,-10%,0);}
+    100% { opacity:1; transform: translate3d(0, 0, 0);}
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; transform: translate3d(0,-20%,0);}
+    20% { opacity:0; transform: translate3d(0,-10%,0);}
+    100% { opacity:1; transform: translate3d(0, 0, 0);}
+}
+
+
 /* Custom buttons */
 
 .squarebutton{
@@ -156,11 +184,13 @@ blockquote{
 }
 
 
-/* Page sections */
 
 /* Forside */
 
 .forside{
+	.Index-gallery-item-image img{
+		animation: move 80s infinite ease-in-out;
+	}
     .Index-gallery-item-content{
 		background:transparent;
 		max-width:100%;
@@ -186,17 +216,7 @@ blockquote{
 	}
 }
 
-@keyframes fadein{
-    0% { opacity:0; transform: translate3d(0,-20%,0);}
-    20% { opacity:0; transform: translate3d(0,-10%,0);}
-    100% { opacity:1; transform: translate3d(0, 0, 0);}
-}
 
-@-webkit-keyframes fadein{
-    0% { opacity:0; transform: translate3d(0,-20%,0);}
-    20% { opacity:0; transform: translate3d(0,-10%,0);}
-    100% { opacity:1; transform: translate3d(0, 0, 0);}
-}
 
 #dette-driv-vi-med{
 	background:transparent;
