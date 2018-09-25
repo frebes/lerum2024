@@ -2,13 +2,28 @@
 
 $(document).ready(function(){
 
+	// Find pagenames and identify using classes
+
+	$(function(){
+	  	var pName = window.location.pathname,
+	  	    fName = pName.slice(1,-1);
+
+	  	if(fName === ''){ // Set first page lerum
+	    	$('.Site').addClass('forside');
+	  	}
+	 	else{
+	    	$('.Site').addClass(fName);
+	  	}
+	});
+
+	
 	// Rearrange DOM forside lerum
 	
 	$(function(){
 		var galleryblock = $('.forside .Index-gallery-item-content');
 		galleryblock.appendTo('.forside .Index-gallery');
 	});
-	
+
 	
 	// Equal heights on selected items
 
@@ -55,21 +70,6 @@ $(document).ready(function(){
     		fadeelement.css("opacity", 1 - fader)
     				   .css("top", $(window).scrollTop()/10); // scroll content
  		 });
-	});
-
-	
-	// Find pagenames and identify using classes
-
-	$(function(){
-	  	var pName = window.location.pathname,
-	  	    fName = pName.slice(1,-1);
-
-	  	if(fName === ''){ // Set first page lerum
-	    	$('.Site').addClass('forside');
-	  	}
-	 	else{
-	    	$('.Site').addClass(fName);
-	  	}
 	});
 
 	
