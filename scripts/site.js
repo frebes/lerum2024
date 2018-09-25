@@ -24,14 +24,14 @@ $(document).ready(function(){
 
 		textElem.hide();
 		hoverElem.hover(function(){
-			$(this).next().find('.summary-title').fadeIn();
+			$(this).next().find('.summary-title').fadeIn(200);
 		}, function(){
 			if ($('.summary-title:hover').length!= 0){
-				textElem.stop(true);
+				textElem.stop(true,true);
 				//$('.summary-title').fadeOut();
 				//textElem.show();
 			};
-			$('.summary-title').fadeOut();
+			$('.summary-title').fadeOut(200);
 		});
 	});
 
