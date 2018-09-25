@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 
+	$('.forside h2').hide().removeClass('hide');
+
 	// Find pagenames and identify using classes
 
 	$(function(){
@@ -16,7 +18,7 @@ $(document).ready(function(){
 	  	}
 	});
 
-	
+
 	// Rearrange DOM forside lerum
 	
 	$(function(){
