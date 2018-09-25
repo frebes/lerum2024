@@ -1,0 +1,227 @@
+<script type="text/javascript">
+// Load all images via Squarespace's Responsive ImageLoader
+function loadAllImages() {
+  var images = document.querySelectorAll('.Index-page-image img[data-src]' );
+  for (var i = 0; i < images.length; i++) {
+    ImageLoader.load(images[i], {load: true});
+  }
+}
+
+// The event subscription that loads images when the page is ready
+document.addEventListener('DOMContentLoaded', loadAllImages);
+
+// The event subscription that reloads images on resize
+window.addEventListener('resize', loadAllImages);
+
+$(window).on("resize load", function () {
+  loadAllImages();
+});
+</script>
+
+{.section item}
+
+  {.main-image?}
+    <section id="{urlId}" class="Index-page Index-page--has-image"  data-collection-id="{id}">
+      <div class="Index-page-scroll-indicator hidden" data-controller="ScrollIndicator">
+          <div class="Index-page-scroll-indicator-text">{localizedStrings.scroll}</div>
+            <svg class="Index-page-scroll-indicator-arrow Icon Icon--caretLarge--down" viewBox="0 0 48 23">
+              <use xlink:href="/assets/ui-icons.svg#caret-down-large-icon"></use>
+            </svg>
+          <div class="Index-page-scroll-indicator-line"></div>
+      </div>
+      <div class="Index-page-content sqs-alternate-block-style-container">
+      </div> 
+      <figure class="Index-page-image content-fill">
+
+        <img {@|image-meta} data-load="false" />
+      </figure>
+    </section>
+  {.end}
+
+{.end}
+
+  <section id="oppskrift-content-excerpt" class="Index-page">
+    <div class="Index-page-content">
+      <div class="cont">
+        {.section item}     
+        <div class="oppskrift-excerpt">{categories}
+          <h1 data-content-field="title" itemprop="headline">{title}</h1>
+          {excerpt}
+        </div>
+        {.end}
+      </div>
+
+      {.section item}
+      <div class="oppskrift-customtop">
+        {.section customContent}
+            {.if customContent.tid}
+              <div class="item">
+                <div class="title">
+                  Tid 
+                </div>
+                <div class="data">
+                  {tid}
+                </div>
+              </div>
+            {.end} 
+            {.if customContent.vgrad}
+              <div class="item">
+                <div class="title">
+                  Vanskeligheitsgrad
+                </div>
+                <div class="data">
+                  {vgrad}
+                </div>
+              </div>
+            {.end}      
+        {.end}
+      </div>
+      {.end}
+
+    </div>
+  </section>
+
+{.section item}
+  <section id="oppskrift-data" class="Index-page">
+    <div class="Index-page-content">
+      {.section customContent}
+        <div class="oppskrift-data">
+          <h3>Du treng</h3>
+            {.if customContent.ing1}
+              <div class="item">
+                  <form>
+                    <input type="text" name="{ing1}" id="valueAmount">
+                  </form>
+                <div class="data">
+                    {ing1}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing2}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 2
+                </div>
+                <div class="data">
+                  {ing2}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing3}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 3 
+                </div>
+                <div class="data">
+                  {ing3}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing4}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 4
+                </div>
+                <div class="data">
+                  {ing4}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing5}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 5
+                </div>
+                <div class="data">
+                  {ing5}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing5}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 5
+                </div>
+                <div class="data">
+                  {ing5}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing6}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 6
+                </div>
+                <div class="data">
+                  {ing6}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing7}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 7
+                </div>
+                <div class="data">
+                  {ing7}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing8}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 8
+                </div>
+                <div class="data">
+                  {ing8}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing9}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 9
+                </div>
+                <div class="data">
+                  {ing9}
+                </div>
+              </div>
+            {.end}
+            {.if customContent.ing10}
+              <div class="item">
+                <div class="title">
+                  Ingrediens 10
+                </div>
+                <div class="data">
+                  {ing10}
+                </div>
+              </div>
+            {.end}
+        </div>
+        <div id="tips-content">
+            <div class="tips">
+                  {tips}
+            </div>
+        </div>
+      {.end}
+    </div>
+  </section>
+
+  <section id="oppskrift-content" class="Index-page">
+    <div class="Index-page-content" data-content-field="main-content">
+      <h3>Slik gjer du det</h3>
+        <article id="article-{item.id}" data-item-id="{item.id}">
+            {body}
+        </article>
+        <div class="BlogItem-share">{@|apply sqs-share-buttons}</div>
+        {.if postItemInjectCode}{postItemInjectCode}{.end}   
+    </div>
+  </section>
+{.end}
+
+<div style="clear:both"></div>
+
+<div class="oppskrift-related">
+    <squarespace:block-field id="RelatedRecipes" columns="12" label="Add Related Recipes" />
+</div> 
+
