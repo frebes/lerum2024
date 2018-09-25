@@ -106,33 +106,6 @@ $(document).ready(function(){
 		}); 
 	});
 
-    $('.forside .Index-gallery-item-content-heading').each(function(){
-      var $t = $(this),
-          rows = $.trim($t.html()).split('<br>');
-
-      $t.html('');
-
-      $.each(rows, function(i, val){
-        $('<span class="row"></span>').appendTo($t);
-        var letters = $.trim(val).split('');
-        $.each(letters, function(j, v){
-          v = (v == ' ') ? '&nbsp;' : v;
-          $('<span>' + $.trim(v) + '</span>').appendTo($('.row:last', $t));
-        });
-      });
-    });
-
-    function roll(){
-      for (i = 0; i < $('.forside .Index-gallery-item-content-heading').length; i++) {
-        (function(ind) {
-          setTimeout(function(){
-              $('.forside .Index-gallery-item-content-heading:not(".row")').eq(ind).toggleClass('animate');
-          }, ind * 60);
-        })(i);
-      }
-    }
-    roll();
-
 });
 
 
