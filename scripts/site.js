@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(window).load(function() {
 	    setTimeout(function() {
 	        $(".forside h2").show('fadeIn', {}, 100)
-	    }, 2000);
+	    }, 500);
 	});
 
 	// Find pagenames and identify using classes
