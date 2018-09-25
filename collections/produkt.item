@@ -95,8 +95,6 @@ $(window).on("resize load", function () {
   </section>
 {.end}
 
-<div style="clear:both"></div>
-
 <div class="produkt-related">
     <squarespace:block-field id="RelatedRecipes" columns="12" label="Add Related Recipes" />
 </div> 
