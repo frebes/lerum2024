@@ -25,13 +25,13 @@ $(document).ready(function(){
 		textElem.hide();
 		hoverElem.hover(function(){
 			$(this).next().find('.summary-title').fadeIn(200);
-			
+
 		}, function(){
 			if ($('.summary-title:hover').length!= 0){
 				textElem.stop(true,true);
 				return false;
 			};
-			$('.summary-title').fadeOut(200);
+			$('.summary-title').fadeOut(10);
 		});
 	});
 
