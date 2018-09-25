@@ -3,11 +3,6 @@
 $(document).ready(function(){
 
 
-	    setTimeout(function() {
-	        $(".forside h2").show();
-	    }, 500);
-
-
 	// Find pagenames and identify using classes
 
 	$(function(){
