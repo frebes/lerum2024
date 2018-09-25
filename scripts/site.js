@@ -27,7 +27,7 @@ $(document).ready(function(){
 			$(this).next().find('.summary-title').fadeIn();
 		}, function(){
 			if ($('.summary-title').length!= 0){
-				textElem.stop(true).show();
+				$(this).next().find('.summary-title').stop(true);
 				//$('.summary-title').fadeOut();
 				//textElem.show();
 			};
