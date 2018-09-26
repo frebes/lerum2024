@@ -99,7 +99,19 @@ $(document).ready(function(){
   		}
 	});
 
-	
+
+  	// Markdown
+
+  	$(function(){
+	  	$('.markdown-block .sqs-block-content h2').addClass('ui-closed').css('cursor','pointer');
+	  	$(".markdown-block .sqs-block-content h2").nextUntil("h2").slideToggle();
+	  	$(".markdown-block .sqs-block-content h2").click(function() {
+	    	 $(this).nextUntil("h2").slideToggle();
+	     	 $(this).toggleClass('ui-closed ui-open');
+	  	});
+  	});
+
+
 	// Oppskrift calc values
 
 	$(function(){
