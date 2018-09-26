@@ -480,6 +480,59 @@ blockquote{
 
 /* General */
 
+.markdown-block {
+  .sqs-block-content {
+    h2 {
+      	margin-bottom: 0;
+        margin-top: 17px;
+        background: #efefef;
+        color: #000000;
+        padding: 15px 17px;
+		font-weight: 300;
+        -webkit-transition: 170ms ease-in-out 0s;
+        -moz-transition: 170ms ease-in-out 0s;
+        transition: 170ms ease-in-out 0s;
+        a {
+          border: 0;
+          &:hover {
+            color: #ffffff !important;
+          }
+        }
+        &:hover,
+        &.ui-open {
+          color: #ffffff;
+          background: #000000;
+        }
+    }
+    p, ul, ol {
+      margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        background: #000000;
+        padding: 15px 17px;
+        color: #ffffff;
+
+        &:first-child {
+          padding-top: 15px;
+        }
+        &:last-child {
+          padding-bottom: 15px;
+        }
+      
+      a {
+        color: #ffffff;
+        text-decoration: underline;
+        
+        &:hover {
+          color: #ffffff !important;
+          text-decoration: none;
+        }
+      }
+    }
+    ul, ol {
+      padding-left: 34px;
+    }
+  }
+}
 
 
 
