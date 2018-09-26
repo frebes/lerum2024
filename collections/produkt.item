@@ -20,10 +20,9 @@ $(window).on("resize load", function () {
 
 {.section item}
 
- 
 
   {.if customContent.main-image}
-  <section id="image-{urlId}" class="Index-page Index-page--has-image frode-test">
+  <section id="image-{urlId}" class="Index-page Index-page--has-image">
     <figure class="Index-page-image content-fill">
       <img {customContent.main-image|image-meta} />
     </figure>
