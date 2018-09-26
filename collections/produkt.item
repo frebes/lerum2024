@@ -26,12 +26,24 @@ $(window).on("resize load", function () {
       <img {customContent.main-image|image-meta} />
     </figure>
   </section>
-
   {.end}
 
+
+
+  <section id="produkt-content-excerpt" class="Index-page">
+    <div class="Index-page-content">
+      <div class="cont">
+        {.section item}     
+        <div class="produkt-excerpt"><div class="produktkat">{categories}</div>
+          <h1 data-content-field="title" itemprop="headline">{title}</h1>
+          {excerpt}
+        </div>
+        {.end}
+      </div>
+    </div>
+  </section>
+
 {.end}
-
-
 
 {.section item}
  
