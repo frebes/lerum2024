@@ -20,15 +20,32 @@ $(window).on("resize load", function () {
 
 {.section item}
 
+  {.main-image?}
+    <section id="{urlId}" class="Index-page Index-page--has-image"  data-collection-id="{id}">
+      <div class="Index-page-scroll-indicator hidden" data-controller="ScrollIndicator">
+          <div class="Index-page-scroll-indicator-text">{localizedStrings.scroll}</div>
+            <svg class="Index-page-scroll-indicator-arrow Icon Icon--caretLarge--down" viewBox="0 0 48 23">
+              <use xlink:href="/assets/ui-icons.svg#caret-down-large-icon"></use>
+            </svg>
+          <div class="Index-page-scroll-indicator-line"></div>
+      </div>
+      <div class="Index-page-content sqs-alternate-block-style-container">
+      </div> 
+      <figure class="Index-page-image content-fill">
+        <img {@|image-meta} data-load="false" />
+      </figure>
+    </section>
+  {.end}
+
   {.if customContent.main-image}
-  <section id="image-{urlId}" class="Index-page Index-page--has-image customMainimage">
+  <section id="image-{urlId}" class="Index-page Index-page--has-image">
     <figure class="Index-page-image content-fill">
       <img {customContent.main-image|image-meta} />
     </figure>
   </section>
   {.end}
 
-
+{.end}
 
   <section id="produkt-content-excerpt" class="Index-page">
     <div class="Index-page-content">
@@ -42,8 +59,6 @@ $(window).on("resize load", function () {
       </div>
     </div>
   </section>
-
-{.end}
 
 {.section item}
  
