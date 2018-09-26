@@ -38,6 +38,34 @@
 }
 
 
+/* Amimations */
+
+@keyframes move {
+	0% {
+ 		transform: scale(1) rotate(0deg);
+	}
+	50%	{
+   		transform: scale(1.4) rotate(0.1deg);
+  	}
+  	100%	{
+   		transform: scale(1) rotate(0deg);
+
+  	}
+}
+
+@keyframes fadein{
+    0% { opacity:0; transform: translate3d(0,-20%,0);}
+    20% { opacity:0; transform: translate3d(0,-10%,0);}
+    100% { opacity:1; transform: translate3d(0, 0, 0);}
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; transform: translate3d(0,-20%,0);}
+    20% { opacity:0; transform: translate3d(0,-10%,0);}
+    100% { opacity:1; transform: translate3d(0, 0, 0);}
+}
+
+
 /* Typography */
 
 /* Define h4-h6 as functions in h1-h3 strong classes */
@@ -113,33 +141,6 @@ blockquote{
 	font-weight:500;
 	padding-left:0!important;
 	border-left:none!important;
-}
-
-/* Amimations */
-
-@keyframes move {
-	0% {
- 		transform: scale(1) rotate(0deg);
-	}
-	50%	{
-   		transform: scale(1.4) rotate(0.1deg);
-  	}
-  	100%	{
-   		transform: scale(1) rotate(0deg);
-
-  	}
-}
-
-@keyframes fadein{
-    0% { opacity:0; transform: translate3d(0,-20%,0);}
-    20% { opacity:0; transform: translate3d(0,-10%,0);}
-    100% { opacity:1; transform: translate3d(0, 0, 0);}
-}
-
-@-webkit-keyframes fadein{
-    0% { opacity:0; transform: translate3d(0,-20%,0);}
-    20% { opacity:0; transform: translate3d(0,-10%,0);}
-    100% { opacity:1; transform: translate3d(0, 0, 0);}
 }
 
 
