@@ -60,7 +60,7 @@ $(window).on("resize load", function () {
   <section id="produkt-content" class="Index-page">
     <div class="Index-page-content" data-content-field="main-content">
         <div class="image-excerpt">
-          <img {customContent.main-image|image-meta} />
+          <img {item|image-meta} />
         </div>
         <article id="article-{item.id}" data-item-id="{item.id}">
             {body}
