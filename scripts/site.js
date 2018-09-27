@@ -110,7 +110,7 @@ $(document).ready(function(){
 	    	 $(this).nextUntil("h2").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
 	  	});
-	  	$('.markdown-block .sqs-block-content p').after('<div class="close">lukk</div>');
+	  	$('<div class="close">lukk</div>').appendTo('.markdown-block .sqs-block-content p');
   	});
 
 
