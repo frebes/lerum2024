@@ -18,6 +18,9 @@ $(window).on("resize load", function () {
 });
 </script>
 
+
+<div class="productwrapper">
+
 {.section item}
 
 
@@ -74,6 +77,8 @@ $(window).on("resize load", function () {
 
 
 {.end}
+
+</div>
 
 <div class="produktoppskrift-related">
     <squarespace:block-field id="RelatedRecipes" columns="12" label="Add Related Recipes" />
