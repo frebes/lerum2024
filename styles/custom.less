@@ -36,7 +36,11 @@
 .border-bottom{
 	border-bottom:1px solid @lerum-color-lightgrey;
 }
-
+.transfade{
+	-webkit-transition: 250ms ease-in-out 0s;
+    -moz-transition: 250ms ease-in-out 0s;
+    transition: 250ms ease-in-out 0s;
+}
 
 /* Amimations */
 
@@ -484,21 +488,18 @@ blockquote{
 
 
 
-.markdown-block {
-  .sqs-block-content {
-    h2 {
+.markdown-block{
+  .sqs-block-content{
+    h2{
     	.h5();
+    	.transfade();
     	border:1px solid @lerum-color-grey;
       	margin-bottom: 0;
         margin-top:17px;
         padding:15px 17px;
-        -webkit-transition: 250ms ease-in-out 0s;
-        -moz-transition: 250ms ease-in-out 0s;
-        transition: 250ms ease-in-out 0s;
+
         a {
           border: 0;
-          &:hover {
-          }
         }
         &:hover,
         &.ui-open {
@@ -506,7 +507,10 @@ blockquote{
         	color:white;
         }
     }
-    p, ul, ol {
+    ul, ol{
+      padding-left:22px;
+    }
+    p, ul, ol{
       	margin-top: 0 !important;
         margin-bottom: 0 !important;
         padding: 15px 17px;
@@ -527,9 +531,6 @@ blockquote{
           text-decoration: none;
         }
       }
-    }
-    ul, ol {
-      padding-left:22px;
     }
   }
 }
