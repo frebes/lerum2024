@@ -103,9 +103,10 @@ $(document).ready(function(){
   	// Markdown
 
   	$(function(){
-	  	$('.markdown-block .sqs-block-content h2').addClass('ui-closed').css('cursor','pointer');
-	  	$(".markdown-block .sqs-block-content h2").nextUntil("h2").slideToggle();
-	  	$(".markdown-block .sqs-block-content h2").click(function() {
+  		var mdblock = $('.markdown-block .sqs-block-content h2');
+	  	mdblock.addClass('ui-closed').css('cursor','pointer');
+	  	mdblock.nextUntil("h2").slideToggle();
+	  	mdblock.click(function() {
 	    	 $(this).nextUntil("h2").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
 	  	});
