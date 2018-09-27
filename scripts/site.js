@@ -107,7 +107,7 @@ $(document).ready(function(){
 	  	mdblock.addClass('ui-closed').css('cursor','pointer');
 	  	mdblock.nextUntil("h2").slideToggle();
 	  	mdblock.click(function() {
-	    	 $(this).nextUntil("h2, .close").slideToggle();
+	    	 $(this).nextUntil("h2,p").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
 	  	});
 	  	$('<div class="close">LUKK</div>').appendTo('.markdown-block .sqs-block-content p');
