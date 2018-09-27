@@ -110,6 +110,7 @@ $(document).ready(function(){
 	    	 $(this).nextUntil("h2").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
 	  	});
+	  	$('.markdown-block .sqs-block-content p').html('lukk');
   	});
 
 
