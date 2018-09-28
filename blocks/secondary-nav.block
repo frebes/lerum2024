@@ -1,0 +1,64 @@
+{.section items}
+  <div class="Header-nav-inner desktop">
+    <div class="mobile-nav-trigger"><!-- W3C Fix --></div>
+    <a class="Header-nav-item breadcrumb breadcrumb-title">Breadcrumb</a>
+
+    {.repeated section @}
+
+      {.collection?}
+        {.folder?}
+          {.index?}
+            {.section collection}
+              <a href="{fullUrl}" class="Header-nav-item Secondary-nav-trigger{.if active} Header-nav-item--active{.end}" data-test="template-nav">{navigationTitle}</a>
+            {.end}
+          {.or}
+            <a href="{.repeated section items}{.equal? @index 1}{collection.fullUrl}{.end}{.end}" class="{.if folderActive}breadcrumb breadcrumb-second-title Secondary-nav-show Header-nav-item{.or}Header-nav-item Secondary-nav-trigger{.end}" data-test="template-nav">{collection.navigationTitle}</a>
+            {.repeated section items}
+              {.if active}
+                {.equal? @index 1}
+                {.or}
+                  <a href="{collection.fullUrl}" class="Header-nav-item Secondary-nav-show breadcrumb breadcrumb-third-title" data-test="template-nav">{collection.navigationTitle}</a>
+                {.end}
+
+              {.end}
+            {.end}
+          {.end}
+        {.or}
+          {.section collection}
+            <a href="{fullUrl}" class="Header-nav-item Secondary-nav-trigger{.if active} Header-nav-item--active{.end}" data-test="template-nav">{navigationTitle}</a>
+          {.end}
+        {.end}
+
+      {.end}
+            
+      {.section externalLink}
+        <a href="{url}"{.section newWindow} target="_blank"{.end} class="Header-nav-item Secondary-nav-trigger">{title}</a>
+      {.end}
+
+
+      {.if folderActive}
+        {.folder?}
+          {.index?}
+            {.or}
+              
+                <!-- If Folder Active make list -->
+                {.repeated section items}
+                  {.equal? @index 1}
+                  {.or} 
+                    {.collection?}
+                      <a href="{collection.fullUrl}" class="Header-nav-item Secondary-nav-show{.if active} Header-nav-item--active{.end}" data-test="template-nav">{collection.navigationTitle}</a>
+                    {.or}
+                      {.section externalLink}
+                        <a href="{url}"{.section newWindow} target="_blank"{.end} class="Header-nav-item">{title}</a>
+                      {.end}
+                    {.end}
+                  {.end}
+                {.end}
+                     
+          {.end}
+        {.end}
+      {.end}
+
+    {.end}
+  </div>
+{.end}
