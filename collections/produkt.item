@@ -67,10 +67,7 @@ $(window).on("resize load", function () {
         </article>
 
     </div>
-  </section>
-
-  <div class="BlogItem-share">{@|apply sqs-share-buttons}</div>
-        {.if postItemInjectCode}{postItemInjectCode}{.end}   
+  </section> 
 
 
 {.end}
