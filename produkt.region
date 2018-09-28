@@ -153,7 +153,7 @@
               {squarespace.main-content}
               <!-- Show Activities Blocks navigation under Index Pages -->
               <section class="Block-navigation">
-                <squarespace:navigation navigationId="activitiesNavigation" template="block-nav" />
+                <squarespace:navigation navigationId="produktNavigation" template="block-nav" />
               </section>
               <!-- End -->
             {.or}
