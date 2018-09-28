@@ -1,0 +1,129 @@
+<script type="text/javascript">
+// Load all images via Squarespace's Responsive ImageLoader
+function loadAllImages() {
+  var images = document.querySelectorAll('.Block-nav-inner img[data-src]' );
+  for (var i = 0; i < images.length; i++) {
+    ImageLoader.load(images[i], {load: true});
+  }
+}
+
+// The event subscription that loads images when the page is ready
+document.addEventListener('DOMContentLoaded', loadAllImages);
+
+// The event subscription that reloads images on resize
+window.addEventListener('resize', loadAllImages);
+
+
+$(window).on("resize load", function () {
+  loadAllImages();
+});
+</script>
+
+{.section items}
+  <div class="BLogList Block-nav-inner" data-columns="4">
+    {.repeated section @}
+
+      {.collection?}
+
+        {.folder?}
+          {.index?}
+            {.section collection}
+              <a href="{fullUrl}" class="BlogList-item Block-nav-item{.if active} Block-nav-item--active{.end}" data-test="template-nav">
+                {.if mainImage}
+                  <div class="thumbnail-image content-fill">
+                    <img {mainImage|image-meta} />
+                  </div>
+                {.end}
+                <div class="Block-nav-item-description">
+                  <h2>{navigationTitle}</h2>
+                  {.if description}
+                    <div class="description">{description|safe}</div>
+                  {.end}
+                </div>
+              </a>
+            {.end}
+          {.or}
+            {.if folderActive}
+            {.or}
+              <a href="{.repeated section items}{.equal? @index 1}{collection.fullUrl}{.end}{.end}" class="BlogList-item Block-nav-item" data-test="template-nav">           
+                {.repeated section items}
+                  {.equal? @index 1}
+                    {.if collection.mainImage}
+                      <div class="thumbnail-image content-fill">
+                        <img {collection.mainImage|image-meta} />
+                      </div>
+                    {.end}
+                    <div class="Block-nav-item-description">
+                      <h2>{collection.navigationTitle}</h2>
+                      {.if collection.description}
+                        <div class="description">{collection.description|safe}</div>
+                      {.end}
+                    </div>
+                  {.end}
+                {.end}               
+              </a>
+            {.end}
+          {.end}
+        {.or}
+          {.section collection}
+            <a href="{fullUrl}" class="BlogList-item Block-nav-item{.if active} Block-nav-item--active{.end}" data-test="template-nav">
+              {.if mainImage}
+                <div class="thumbnail-image content-fill">
+                  <img {mainImage|image-meta} />
+                </div>
+              {.end}
+              <div class="Block-nav-item-description">
+                <h2>{navigationTitle}</h2>
+                {.if description}
+                  <div class="description">{description|safe}</div>
+                {.end} 
+              </div>
+            </a>
+          {.end}
+        {.end}
+
+      {.end}
+            
+      {.section externalLink}
+        <!-- No external links ar shown as Blocks -->
+      {.end}
+
+
+      {.if folderActive}
+        {.folder?}
+          {.index?}
+            {.or}
+              
+                <!-- If Folder Active make list -->
+                {.repeated section items}
+                  {.equal? @index 1}
+                  {.or} 
+                    {.collection?}
+                      <a href="{collection.fullUrl}" class="BlogList-item Block-nav-folder-item{.if active} Block-nav-item--active{.end}" data-test="template-nav">
+                        {.if collection.mainImage}
+                        <div class="thumbnail-image content-fill">
+                          <img {collection.mainImage|image-meta} />
+                        </div>
+                        {.end}
+                        <div class="Block-nav-item-description">
+                          <h2>{collection.navigationTitle}</h2>
+                          {.if collection.description}
+                            <div class="description">{collection.description|safe}</div>
+                          {.end}
+                        </div>      
+                      </a>
+                    {.or}
+                      {.section externalLink}
+                        <!-- No external links ar shown as Blocks -->
+                      {.end}
+                    {.end}
+                  {.end}
+                {.end}
+                     
+          {.end}
+        {.end}
+      {.end}
+
+    {.end}
+  </div>
+{.end}
