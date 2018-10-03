@@ -79,14 +79,14 @@ $(document).ready(function(){
 		var valElem = $('.oppskrift-customtop .data-grad');
 
 		if (valElem.html() == "1"){
-			valElem.addClass('enk');
+			$('.oppskrift-customtop .data-grad').addClass('enk');
 		}
 		else if (valElem.html() == "2"){
-			valElem.addClass('mid');
+			$('.oppskrift-customtop .data-grad').addClass('mid');
 		}
 		else if (valElem.html() == "3"){
 			alert(valElem);
-			valElem.addClass('van');
+			$('.oppskrift-customtop .data-grad').addClass('van');
 		}
 	});
 
