@@ -84,7 +84,8 @@ $(document).ready(function(){
 			valElemBack.addClass('enk').text('Enkel');
 		}
 		else if (valNum == "2"){
-			valElemBack.addClass('mid').text('Middels');
+			valElemBack.addClass('mid');
+			valElem.text('Middels');
 		}
 		else if (valNum == "3"){
 			valElemBack.addClass('van').text('Vanskelig');
