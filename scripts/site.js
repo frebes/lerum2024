@@ -73,7 +73,7 @@ $(document).ready(function(){
 	});
 
 
-	// Oppskrift show info
+	// Oppskrift show content
 
 	$(function(){
 		var valElem = $('.oppskrift-customtop .data-grad'),
