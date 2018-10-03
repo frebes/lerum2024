@@ -56,20 +56,14 @@ $(window).on("resize load", function () {
         {.section customContent}
             {.if customContent.tid}
               <div class="item">
-                <div class="title">
-                  Tid 
-                </div>
-                <div class="data">
+                <div class="data-time">
                   {tid}
                 </div>
               </div>
             {.end} 
             {.if customContent.vgrad}
               <div class="item">
-                <div class="title">
-                  Vanskeligheitsgrad
-                </div>
-                <div class="data">
+                <div class="data-grad">
                   {vgrad}
                 </div>
               </div>
