@@ -72,7 +72,21 @@ $(document).ready(function(){
  		 });
 	});
 
-	
+
+	// Oppskrift show info
+
+	$(function(){
+		var valElem = $('.data-grad');
+
+		if ($('.data-grad') == "1")
+			valElem.addClass('enk');
+		else if ($('.data-grad') == "2")
+			valElem.addClass('mid');
+		else if ($('.data-grad') == "3")
+			valElem.addClass('van');
+	});
+
+
 	// Replace summary info
 
 	$(function(){
