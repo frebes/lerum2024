@@ -78,13 +78,13 @@ $(document).ready(function(){
 	$(function(){
 		var valElem = $('.oppskrift-customtop .data-grad');
 
-		if (valElem.html() == "1"){
+		if (valElem.text() == "1"){
 			$('.oppskrift-customtop .data-grad').addClass('enk');
 		}
-		else if (valElem.html() == "2"){
+		else if (valElem.text() == "2"){
 			$('.oppskrift-customtop .data-grad').addClass('mid');
 		}
-		else if (valElem.html() == "3"){
+		else if (valElem.text() == "3"){
 			alert(valElem);
 			$('.oppskrift-customtop .data-grad').addClass('van');
 		}
