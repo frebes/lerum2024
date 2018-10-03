@@ -56,8 +56,6 @@ $(window).on("resize load", function () {
         {.section customContent}
             {.if customContent.tid}
               <div class="item">
-                <div class="data-time-back">                
-                </div>
                 <div class="data-time">
                   {tid}
                 </div>
@@ -65,8 +63,6 @@ $(window).on("resize load", function () {
             {.end} 
             {.if customContent.vgrad}
               <div class="item">
-                <div class="data-grad-back">                 
-                </div>
                 <div class="data-grad">
                   {vgrad}
                 </div>
