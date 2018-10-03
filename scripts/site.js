@@ -78,13 +78,13 @@ $(document).ready(function(){
 	$(function(){
 		var valElem = $('.oppskrift-customtop .data-grad');
 
-		if ($('.data-grad').html() == "1"){
+		if (valElem.html() == "1"){
 			valElem.addClass('enk');
 		}
-		else if ($('.data-grad').html() == "2"){
+		else if (valElem.html() == "2"){
 			valElem.addClass('mid');
 		}
-		else if ($('.data-grad').html() == "3"){
+		else if (valElem.html() == "3"){
 			alert('this');
 			valElem.addClass('van');
 		}
