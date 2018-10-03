@@ -79,11 +79,11 @@ $(document).ready(function(){
 		var valElem = $('.oppskrift-customtop .data-grad');
 
 		if ($('.data-grad').html() == "1")
-			valElem.addClass('enk');
+			$('.data-grad').addClass('enk');
 		else if ($('.data-grad').html() == "2")
-			valElem.addClass('mid');
+			$('.data-grad').addClass('mid');
 		else if ($('.data-grad').html() == "3")
-			valElem.addClass('van');
+			$('.data-grad').addClass('van');
 	});
 
 
