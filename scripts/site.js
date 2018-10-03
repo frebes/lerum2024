@@ -76,7 +76,7 @@ $(document).ready(function(){
 	// Oppskrift show content
 
 	$(function(){
-		var valElem = $('.oppskrift-customtop .data-grad'),
+		var valElem = $('.oppskrift-customtop .data-grad-back'),
 			valNum = parseInt(valElem.text());
 
 		if (valNum == "1"){
