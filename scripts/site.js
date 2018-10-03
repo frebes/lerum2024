@@ -80,13 +80,13 @@ $(document).ready(function(){
 			valNum = parseInt(valElem.text());
 
 		if (valNum == "1"){
-			valElem.addClass('enk').hide();
+			valElem.addClass('enk').empty();
 		}
 		else if (valNum == "2"){
-			valElem.addClass('mid').hide();
+			valElem.addClass('mid').empty();
 		}
 		else if (valNum == "3"){
-			valElem.addClass('van').hide();
+			valElem.addClass('van').empty();
 		}
 	});
 
