@@ -77,7 +77,7 @@ $(document).ready(function(){
 
 	$(function(){
 		var valElem = $('.oppskrift-customtop .data-grad'),
-			valNum = parseInt(valElem.text();
+			valNum = parseInt(valElem.text());
 
 		if (valNum == "1"){
 			$('.oppskrift-customtop .data-grad').addClass('enk');
