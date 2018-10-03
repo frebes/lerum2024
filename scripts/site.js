@@ -78,12 +78,16 @@ $(document).ready(function(){
 	$(function(){
 		var valElem = $('.oppskrift-customtop .data-grad');
 
-		if ($('.data-grad').html() == "1")
-			$('.data-grad').addClass('enk');
-		else if ($('.data-grad').html() == "2")
-			$('.data-grad').addClass('mid');
-		else if ($('.data-grad').html() == "3")
-			$('.data-grad').addClass('van');
+		if ($('.data-grad').html() == "1"){
+			valElem.addClass('enk');
+		}
+		else if ($('.data-grad').html() == "2"){
+			valElem.addClass('mid');
+		}
+		else if ($('.data-grad').html() == "3"){
+			alert('this');
+			valElem.addClass('van');
+		}
 	});
 
 
