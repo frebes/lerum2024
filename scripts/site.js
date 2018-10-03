@@ -78,11 +78,11 @@ $(document).ready(function(){
 	$(function(){
 		var valElem = $('.data-grad');
 
-		if ($('.data-grad') == "1")
+		if ($('.data-grad').text() == "1")
 			valElem.addClass('enk');
-		else if ($('.data-grad') == "2")
+		else if ($('.data-grad').text() == "2")
 			valElem.addClass('mid');
-		else if ($('.data-grad') == "3")
+		else if ($('.data-grad').text() == "3")
 			valElem.addClass('van');
 	});
 
