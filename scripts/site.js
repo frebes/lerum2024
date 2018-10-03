@@ -86,7 +86,6 @@ $(document).ready(function(){
 			$('.oppskrift-customtop .data-grad').addClass('mid');
 		}
 		else if (valNum == "3"){
-			alert(valElem);
 			$('.oppskrift-customtop .data-grad').addClass('van');
 		}
 	});
