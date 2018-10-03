@@ -55,7 +55,7 @@ $(document).ready(function(){
 				//textElem.stop(true,true);
 				return false;
 			};
-			$('.summary-title').fadeOut(10);
+			$('.summary-title').fadeOut(100);
 		});
 	});
 
