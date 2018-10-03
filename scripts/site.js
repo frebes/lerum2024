@@ -80,13 +80,13 @@ $(document).ready(function(){
 			valNum = parseInt(valElem.text());
 
 		if (valNum == "1"){
-			$('.oppskrift-customtop .data-grad').addClass('enk');
+			valElem.addClass('enk');
 		}
 		else if (valNum == "2"){
-			$('.oppskrift-customtop .data-grad').addClass('mid');
+			valElem.addClass('mid');
 		}
 		else if (valNum == "3"){
-			$('.oppskrift-customtop .data-grad').addClass('van');
+			valElem.addClass('van');
 		}
 	});
 
