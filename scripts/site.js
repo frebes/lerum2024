@@ -80,13 +80,13 @@ $(document).ready(function(){
 			valNum = parseInt(valElem.text());
 
 		if (valNum == "1"){
-			valElem.addClass('enk');
+			valElem.addClass('enk').text('Enkel');
 		}
 		else if (valNum == "2"){
-			valElem.addClass('mid');
+			valElem.addClass('mid').text('Middels');
 		}
 		else if (valNum == "3"){
-			valElem.addClass('van');
+			valElem.addClass('van').text('Vanskelig');
 		}
 	});
 
