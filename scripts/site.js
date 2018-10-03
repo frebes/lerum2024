@@ -76,7 +76,7 @@ $(document).ready(function(){
 	// Oppskrift show info
 
 	$(function(){
-		var valElem = $('.data-grad');
+		var valElem = $('.oppskrift-customtop .data-grad');
 
 		if ($('.data-grad').text() == "1")
 			valElem.addClass('enk');
