@@ -53,7 +53,6 @@ $(window).on("resize load", function () {
 
       {.section item}
       <div class="oppskrift-customtop">
-        (1 = enkel, 2 = middels, 3 = vanskelig)
         {.section customContent}
             {.if customContent.tid}
               <div class="item">
