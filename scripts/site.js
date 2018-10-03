@@ -85,7 +85,7 @@ $(document).ready(function(){
 			valElem.addClass('mid');
 		}
 		else if (valElem.html() == "3"){
-			alert('this');
+			alert(valElem);
 			valElem.addClass('van');
 		}
 	});
