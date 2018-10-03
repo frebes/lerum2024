@@ -76,19 +76,17 @@ $(document).ready(function(){
 	// Oppskrift show content
 
 	$(function(){
-		var valElem = $('.oppskrift-customtop .data-grad'), 
-			valElemBack = $('.oppskrift-customtop .data-grad-back'), // split into 4 columns due to layout issues
-			valNum = parseInt(valElem.text()); 
+		var valElem = $('.oppskrift-customtop .data-grad'),
+			valNum = parseInt(valElem.text());
 
 		if (valNum == "1"){
-			valElemBack.addClass('enk').text('Enkel');
+			valElem.addClass('enk').text('Enkel');
 		}
 		else if (valNum == "2"){
-			valElemBack.addClass('mid');
-			valElem.text('Middels');
+			valElem.addClass('mid').text('Middels');
 		}
 		else if (valNum == "3"){
-			valElemBack.addClass('van').text('Vanskelig');
+			valElem.addClass('van').text('Vanskelig');
 		}
 	});
 
