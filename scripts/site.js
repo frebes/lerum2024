@@ -76,15 +76,16 @@ $(document).ready(function(){
 	// Oppskrift show info
 
 	$(function(){
-		var valElem = $('.oppskrift-customtop .data-grad');
+		var valElem = $('.oppskrift-customtop .data-grad'),
+			valNum = parseInt(valElem.text();
 
-		if (valElem.text() == "1"){
+		if (valNum.text() == "1"){
 			$('.oppskrift-customtop .data-grad').addClass('enk');
 		}
-		else if (valElem.text() == "2"){
+		else if (valNum.text() == "2"){
 			$('.oppskrift-customtop .data-grad').addClass('mid');
 		}
-		else if (valElem.text() == "3"){
+		else if (valNum.text() == "3"){
 			alert(valElem);
 			$('.oppskrift-customtop .data-grad').addClass('van');
 		}
