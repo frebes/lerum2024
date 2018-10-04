@@ -55,18 +55,18 @@ $(window).on("resize load", function () {
       <div class="oppskrift-customtop">
         {.section customContent}
             {.if customContent.tid}
-              <div class="item">
+
                 <div class="data-time">
                   {tid}
                 </div>
-              </div>
+
             {.end} 
             {.if customContent.vgrad}
-              <div class="item">
+
                 <div class="data-grad">
                   {vgrad}
                 </div>
-              </div>
+
             {.end}      
         {.end}
       </div>
