@@ -160,6 +160,7 @@ $(window).on("resize load", function () {
         </div>
         <div id="tips-content">
             <div class="tips">
+              <h3>Tips</h3>
                   {tips}
             </div>
         </div>
