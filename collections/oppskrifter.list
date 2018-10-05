@@ -20,7 +20,7 @@ $(window).on("resize load", function () {
 
 {.section item}
 
-<h2>Oppskrifter for {categories}</h2>
+<h2>Oppskrifter</h2>
 
 {.end}
 
@@ -32,7 +32,7 @@ $(window).on("resize load", function () {
 
   <article id="article-{id}" class="BlogList-item hentry{.if categories.0} has-categories{.end}{.if tags.0} has-tags{.end}{.if location.addressTitle || location.addressLine1 || location.addressLine2 || location.addressCountry} has-location{.end}{.comments?} has-comments{.end}" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
     
-
+{categories}
     <div class="Blog-header Blog-header--list{.main-image?} Blog-header--has-image{.end}">
     
       <div class="Blog-header-content">
