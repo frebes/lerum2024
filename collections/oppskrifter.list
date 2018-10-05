@@ -18,7 +18,7 @@ $(window).on("resize load", function () {
 });
 </script>
 
-<h2>Oppskrifter</h2>
+<h2>Oppskrifter for {categories}</h2>
 
 <section data-columns="3" class="OppskrifterList BlogList BlogList--posts-excerpt sqs-blog-list clear">
 
