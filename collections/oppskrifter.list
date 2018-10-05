@@ -18,11 +18,13 @@ $(window).on("resize load", function () {
 });
 </script>
 
+{.section item}
+
 <h2>Oppskrifter for {categories}</h2>
 
 <section data-columns="3" class="OppskrifterList BlogList BlogList--posts-excerpt sqs-blog-list clear">
 
-
+{.end}
   
 {.repeated section items}
 
