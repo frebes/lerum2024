@@ -42,10 +42,11 @@ $(window).on("resize load", function () {
              <img {@|image-meta} />
            </a>
         </div>   
-        {categories}
+
         {.end}
 
         <a data-content-field="title" class="BlogList-item-title" href="{fullUrl}">{title}</a>
+        {categories}
 
       </div>     
 
