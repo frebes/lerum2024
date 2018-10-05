@@ -18,6 +18,7 @@ $(window).on("resize load", function () {
 });
 </script>
 
+<div class="{tags}">
 
 {.section item}
 
@@ -81,3 +82,4 @@ $(window).on("resize load", function () {
     <squarespace:block-field id="RelatedProducts" columns="12" label="Add Related Products" />
 </div> 
 
+</div>
