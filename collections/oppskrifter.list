@@ -18,6 +18,8 @@ $(window).on("resize load", function () {
 });
 </script>
 
+<h2>Oppskrifter</h2>
+
 <section data-columns="3" class="OppskrifterList BlogList BlogList--posts-excerpt sqs-blog-list clear">
 
 
@@ -25,8 +27,8 @@ $(window).on("resize load", function () {
 {.repeated section items}
 
   <article id="article-{id}" class="BlogList-item hentry{.if categories.0} has-categories{.end}{.if tags.0} has-tags{.end}{.if location.addressTitle || location.addressLine1 || location.addressLine2 || location.addressCountry} has-location{.end}{.comments?} has-comments{.end}" data-item-id="{id}" data-offset="{addedOn}"{.if pagination.nextPage}{.or} data-last-page{.end}>
-    <h2>Oppskrifter</h2>
     
+
     <div class="Blog-header Blog-header--list{.main-image?} Blog-header--has-image{.end}">
     
       <div class="Blog-header-content">
