@@ -149,10 +149,14 @@ $(document).ready(function(){
 	});
 
 	// Global
-	var repClass = ('#productFind'),
-		thisClass = repClass.attr('class');
-	$("#productFind").attr('class', thisClass.replace(/,/g, ' '));
+	$(function(){
+		var repClass = ('#productFind'),
+			thisClass = repClass.attr('class');
+		$("#productFind").attr('class', thisClass.replace(/,/g, ' '));
 
-});
+	});
+
+
+}); // End dom ready
 
 
