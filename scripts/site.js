@@ -152,7 +152,7 @@ $(document).ready(function(){
 	$(function(){
 		var repClass = ('#productFind'),
 			thisClass = repClass.attr('class');
-		$("#productFind").attr('class', thisClass.replace(/,/g, ' '));
+		thisClass.attr('class', repClass.replace(/,/g, ' '));
 
 	});
 
