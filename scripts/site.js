@@ -148,6 +148,10 @@ $(document).ready(function(){
 		}); 
 	});
 
+	// Global
+	var repClass = ('#productFind');
+	$("#productFind").attr('class', repClass.replace(/,/g, ' '));
+
 });
 
 
