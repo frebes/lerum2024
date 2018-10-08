@@ -153,7 +153,8 @@ $(document).ready(function(){
 
 	$(function(){
 		$('#productFind').each(function() {
-    		var repClass = jQuery(this).attr('class');
+    		var repClass = $(this).attr('class');
+    		
     		$(this).attr('class', repClass.replace(/,/g, ' '));
 		});
 	});
