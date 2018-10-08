@@ -124,6 +124,7 @@ $(document).ready(function(){
   		var mdblock = $('.markdown-block .sqs-block-content h2');
 	  	mdblock.addClass('ui-closed').css('cursor','pointer');
 	  	mdblock.nextUntil("h2").slideToggle();
+
 	  	mdblock.click(function() {
 	    	 $(this).nextUntil("h2").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
@@ -149,12 +150,12 @@ $(document).ready(function(){
 	});
 
 
-	// Global
+	// Global replace product class
 
 	$(function(){
 		$('#productFind').each(function() {
     		var repClass = $(this).attr('class');
-    		
+
     		$(this).attr('class', repClass.replace(/,/g, ' '));
 		});
 	});
