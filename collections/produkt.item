@@ -22,7 +22,7 @@ $(window).on("resize load", function () {
 
 {.section item}
 
-<div id="{tags}">
+<div class="{tags}">
 
     <section id="{urlId}" class="Index-page--has-image customMainimage"  data-collection-id="{id}">
       <div class="Index-page-scroll-indicator hidden" data-controller="ScrollIndicator">
