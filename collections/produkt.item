@@ -60,6 +60,7 @@ $(window).on("resize load", function () {
 
 {.section item}
  
+ <div class="background-product-wrapper">
   <section id="produkt-content" class="Index-page">
     <div class="Index-page-content" data-content-field="main-content">
         <div class="image-excerpt">
@@ -71,6 +72,7 @@ $(window).on("resize load", function () {
 
     </div>
   </section> 
+ </div>
 
 
 {.end}
