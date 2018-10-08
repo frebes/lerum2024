@@ -91,6 +91,17 @@ $(document).ready(function(){
 	});
 
 
+	// Replace product class
+
+	$(function(){
+		$('#productFind').each(function() {
+    		var repClass = $(this).attr('class');
+
+    		$(this).attr('class', repClass.replace(/,/g, ' '));
+		});
+	});
+
+
 	// Replace summary info
 
 	$(function(){
@@ -147,17 +158,6 @@ $(document).ready(function(){
 			    return false;  
 			}
 		}); 
-	});
-
-
-	// Global replace product class
-
-	$(function(){
-		$('#productFind').each(function() {
-    		var repClass = $(this).attr('class');
-
-    		$(this).attr('class', repClass.replace(/,/g, ' '));
-		});
 	});
 
 
