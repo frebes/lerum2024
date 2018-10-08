@@ -149,8 +149,9 @@ $(document).ready(function(){
 	});
 
 	// Global
-	var repClass = ('#productFind');
-	$("#productFind").attr('class', repClass.replace(/,/g, ' '));
+	var repClass = ('#productFind'),
+		thisClass = repClass.attr('class');
+	$("#productFind").attr('class', thisClass.replace(/,/g, ' '));
 
 });
 
