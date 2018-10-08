@@ -148,11 +148,14 @@ $(document).ready(function(){
 		}); 
 	});
 
+
 	// Global
+
 	$(function(){
-		var repClass = ('#productFind'),
-			thisClass = repClass.attr('class');
-		repClass.replace(/,/g, ' ');
+		$('#productFind').each(function() {
+    		var repClass = jQuery(this).attr('class');
+    		$(this).attr('class', repClass.replace(/,/g, ' '));
+		});
 	});
 
 
