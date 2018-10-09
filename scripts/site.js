@@ -151,7 +151,7 @@ $(document).ready(function(){
 		var parts = location.href.split('/').slice(3);
 
 		alert('parts');
-		parts[0] = 'Forside ';
+		parts[0] = '<a href="/">Forside</a> ';
 		var breadcrumb = parts.join(' / ');
 		$('.bc').html(breadcrumb);
 
