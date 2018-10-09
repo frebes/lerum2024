@@ -155,10 +155,11 @@ $(document).ready(function(){
       			$bc = $('<div class="item"></div>');
 
   			$this.parents('li').each(function(n, li){
-      		var $a = $(li).children('a').clone().prepend(' / ');
+      			var $a = $(li).children('a').clone().prepend(' / ');
      		 	$bc.prepend($a);
   			});
-    	bcMain.html( $bc.prepend('<a href="/">Forside</a>'));
+  			
+    	bcMain.html($bc.prepend('<a href="/">Forside</a>'));
     	return false;
 }) 
 
