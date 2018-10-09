@@ -154,12 +154,8 @@ $(document).ready(function(){
   			var $this = $(this),
       			$bc = $('<div class="item"></div>');
 
-  			$this.parents('a').each(function(n, a){
-      			var $a = $(a).children('a').clone().prepend(' / ');
-     		 	$bc.prepend($a);
-  			});
-
-    	$('.bc').html($bc.prepend('<a href="/">Forside</a>'));
+      		$('.bc').html($bc.prepend('<a href="/">Forside</a>'));
+      		
     	return false;
 	});
 
