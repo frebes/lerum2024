@@ -148,35 +148,7 @@ $(document).ready(function(){
 
   	$(function(){
 
-	     var slug = location.href;
-	     var slugDivided = slug.split('/').slice(2);
-	     var slugLength = slugDivided.length;
-	     var bc = $('.bc');
-	     var addToBC = '';
-	     var addToBCurl = '';
-	 
-	     for (var i = 0; i < slugLength; i++) {
-	         console.log(slugDivided[i]);
-	         var bcCleanUp = slugDivided[i].replace(/\W+/g, " ");
-	         var bcUppercase = bcCleanUp.toUpperCase();
-	         
-	         if (i === 0) {
-	             console.log('0');
-	             addToBCurl += slugDivided[0];
-	             console.log(addToBCurl);
-	         }
-	         else {
-	             console.log('0+');
-	             addToBCurl += '/' + slugDivided[i];
-	             console.log(addToBCurl);
-	         }
-	 
-	         addToBC += ' / <span class="bc-item" id=\"bc-base-' + (i+1) + '\"><a href=\"{website.baseUrl}/' + addToBCurl + '\">' + bcUppercase + '</a></span>';                
-	     }
-	 
-	     addToBC += '{.section item} / <span class="bc-item" id="bc-last">{title}</span>{.end}'
-	     console.log(addToBC);
-	     bc.append(addToBC);
+
 
 		// var parts = location.href.split('/').slice(3);
 	
