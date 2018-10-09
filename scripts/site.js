@@ -133,6 +133,7 @@ $(document).ready(function(){
 
   	$(function(){
   		var mdblock = $('.markdown-block .sqs-block-content h2');
+
 	  	mdblock.addClass('ui-closed').css('cursor','pointer');
 	  	mdblock.nextUntil("h2").slideToggle();
 
@@ -140,6 +141,15 @@ $(document).ready(function(){
 	    	 $(this).nextUntil("h2").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
 	  	});
+  	});
+
+
+  	// BC
+
+  	$(function(){
+  		var bcmain = $('.bc'),
+  			findNavelem = $('.nav');
+
   	});
 
 
