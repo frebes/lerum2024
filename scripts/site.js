@@ -173,10 +173,10 @@ $(document).ready(function(){
 	             console.log(addToBCurl);
 	         }
 	 
-	         addToBC += '    /     <span class="bc-item" id=\"bc-base-' + (i+1) + '\"><a href=\"{website.baseUrl}/' + addToBCurl + '\">' + bcUppercase + '</a></span>';                
+	         addToBC += ' / <span class="bc-item" id=\"bc-base-' + (i+1) + '\"><a href=\"{website.baseUrl}/' + addToBCurl + '\">' + bcUppercase + '</a></span>';                
 	     }
 	 
-	     addToBC += '{.section item}     /     <span class="bc-item" id="bc-last">{title}</span>{.end}'
+	     addToBC += '{.section item} / <span class="bc-item" id="bc-last">{title}</span>{.end}'
 	     console.log(addToBC);
 	     bc.append(addToBC);
 
