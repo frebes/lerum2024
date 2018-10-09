@@ -146,7 +146,6 @@ $(document).ready(function(){
 
   	// BC
 
-
   	$(function(){
 		var url = location.pathname; // = location.href
 		var parts = location.href.split('/').slice(3);
