@@ -152,7 +152,7 @@ i=j();if(i){crumbCheck=i.split("*");crumbCheck.splice(l,crumbCheck.length-l);i=c
 d.c&&f.a("fg-button ui-state-default ui-priority-primary ui-corner-right ui-state-active");a(".fg-button:not(.ui-state-disabled)").k(function(){a(this).a("ui-state-hover")},function(){a(this).n("ui-state-hover")})}})}})(jQuery);
 
 
-	$('.bc').jCrumb(); 
+	$('#basic').jCrumb(); 
 
   	//$(function(){
 	//	var url = location.pathname; // = location.href
