@@ -137,7 +137,7 @@ $(document).ready(function(){
 	  	mdblock.addClass('ui-closed').css('cursor','pointer');
 	  	mdblock.nextUntil("h2").slideToggle();
 
-	  	mdblock.click(function(){
+	  	mdblock.click(function() {
 	    	 $(this).nextUntil("h2").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
 	  	});
@@ -150,12 +150,16 @@ $(document).ready(function(){
   		var bcmain = $('.bc'),
   			findNavelem = $('.Header-nav-inner a');
 
-		findNavelem.on('click',function(){
+		$('.Header-nav-inner a').on('click',function(){
   			var $this = $(this),
       			$bc = $('<div class="item"></div>');
 
-      		$('.bc').html($bc.prepend('<a href="/">Forside</a>'));
-      		
+  			$this.parents('a').each(function(n, a){
+      			var $a = $(a).children('a').clone().prepend(' / ');
+     		 	$bc.prepend($a);
+  			});
+
+    	$('.bc').html($bc.prepend('<a href="/">Forside</a>'));
     	return false;
 	});
 
