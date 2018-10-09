@@ -149,7 +149,7 @@ $(document).ready(function(){
   	$(function(){
 
 	     var slug = location.href;
-	     var slugDivided = slug.split('/');
+	     var slugDivided = slug.split('/').slice(2);
 	     var slugLength = slugDivided.length;
 	     var bc = $('.bc');
 	     var addToBC = '';
