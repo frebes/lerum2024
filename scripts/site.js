@@ -147,9 +147,9 @@ $(document).ready(function(){
   	// BC
 
   	$(function(){
-
 		var url = location.pathname; // = location.href
 		var parts = location.href.split('/').slice(3);
+
 		parts[0] = 'Forside ';
 		var breadcrumb = parts.join(' / ');
 		$('.bc').html(breadcrumb);
