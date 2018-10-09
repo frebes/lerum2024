@@ -150,7 +150,7 @@ $(document).ready(function(){
   		var bcmain = $('.bc'),
   			findNavelem = $('.Header-nav-inner a');
 
-		$('.Header-nav-inner a').on('click',function(){
+		findNavelem.on('click',function(){
   			var $this = $(this),
       			$bc = $('<div class="item"></div>');
 
