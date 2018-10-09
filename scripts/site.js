@@ -161,7 +161,7 @@ $(document).ready(function(){
 
     	$('.bc').html($bc.prepend('<a href="/">Forside</a>'));
     	return false;
-}) 
+	});
 
 
   	});
