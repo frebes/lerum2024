@@ -158,9 +158,7 @@ $(document).ready(function(){
 	     for (var i = 0; i < slugLength; i++) {
 	         console.log(slugDivided[i]);
 	         var bcCleanUp = slugDivided[i].replace(/\W+/g, " ");
-	         console.log(bcCleanUp);
 	         var bcUppercase = bcCleanUp.toUpperCase();
-	         console.log(bcUppercase);
 	         
 	         if (i === 0) {
 	             console.log('0');
