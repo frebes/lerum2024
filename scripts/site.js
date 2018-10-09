@@ -147,22 +147,12 @@ $(document).ready(function(){
   	// BC
 
   	$(function(){
-  		var bcmain = $('.bc'),
-  			findNavelem = $('.Header-nav-inner a');
 
-		$('.Header-nav-inner a').on('click',function(){
-  			var $this = $(this),
-      			$bc = $('<div class="item"></div>');
-
-  			$this.parents('a').each(function(n, a){
-      			var $a = $(a).children('a').clone().prepend(' / ');
-     		 	$bc.prepend($a);
-  			});
-
-    	$('.bc').html($bc.prepend('<a href="/">Forside</a>'));
-    	return false;
-	});
-
+		var url = location.pathname; // = location.href
+		var parts = location.href.split('/').slice(3);
+		parts[0] = 'Forside ';
+		var breadcrumb = parts.join(' &gt; ');
+		$('.bc').html(breadcrumb);
 
   	});
 
