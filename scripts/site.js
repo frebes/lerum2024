@@ -148,7 +148,7 @@ $(document).ready(function(){
 
   	$(function(){
 
-	     var slug = "{collection.urlId}";
+	     var slug = location.href;
 	     var slugDivided = slug.split('/');
 	     var slugLength = slugDivided.length;
 	     var bc = $('.bc');
