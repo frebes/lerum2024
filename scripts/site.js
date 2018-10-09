@@ -159,7 +159,7 @@ $(document).ready(function(){
      		 	$bc.prepend($a);
   			});
   			
-    	bcMain.html($bc.prepend('<a href="/">Forside</a>'));
+    	$('.bc').html($bc.prepend('<a href="/">Forside</a>'));
     	return false;
 }) 
 
