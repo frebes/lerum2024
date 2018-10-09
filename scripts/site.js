@@ -154,8 +154,8 @@ $(document).ready(function(){
   			var $this = $(this),
       			$bc = $('<div class="item"></div>');
 
-  			$this.parents('a').each(function(n, li){
-      			var $a = $(li).children('a').clone().prepend(' / ');
+  			$this.parents('a').each(function(n, a){
+      			var $a = $(a).children('a').clone().prepend(' / ');
      		 	$bc.prepend($a);
   			});
 
