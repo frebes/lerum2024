@@ -2,6 +2,21 @@
 
 $(document).ready(function(){
 
+	// Find pagenames and identify using classes
+
+	$(function(){
+	  	var pName = window.location.pathname,
+	  	    fName = pName.slice(1,-1);
+
+	  	if(fName === ''){ // Set first page lerum
+	    	$('.Site').addClass('forside');
+	  	}
+	 	else{
+	    	$('.Site').addClass(fName);
+	  	}
+	});
+
+
 	// Rearrange DOM forside lerum
 	
 	$(function(){
@@ -127,21 +142,6 @@ $(document).ready(function(){
 	  	});
   	});
 
-
-	// Find pagenames and identify using classes
-
-	$(function(){
-	  	var pName = window.location.pathname,
-	  	    fName = pName.slice(1,-1);
-
-	  	if(fName === ''){ // Set first page lerum
-	    	$('.Site').addClass('forside');
-	  	}
-	 	else{
-	    	$('.Site').addClass(fName);
-	  	}
-	});
-	
 
 	// Oppskrift calc values
 
