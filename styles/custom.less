@@ -593,18 +593,21 @@ blockquote{
 			z-index:10000;			
 	}
 	#productFind{
-		&.bringebær .background-product-wrapper{	
+		&.bringebær .background-product{	
 			.make-product-defaults();	
 			background-image:url(/assets/bringeber.png), url(/assets/bringeber_hoyre.png);
 			background-repeat:no-repeat, no-repeat;
 			background-position:left 1450px, right 620px; 
 		}
-		&.blåbær .background-product-wrapper{	
+		&.blåbær .background-product{	
 			.make-product-defaults();	
 			background-image:url(/assets/blaber-1.png), url(/assets/blaber-2.png);
 			background-repeat:no-repeat, no-repeat;
 			background-position:left 1200px, right 620px; 
 		}		
+	}
+	.background-product{
+		background:rgba(255,255,255,.5);
 	}
 }
 
