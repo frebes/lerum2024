@@ -148,7 +148,7 @@ $(document).ready(function(){
 
   	$(function(){
 		var url = location.pathname; // = location.href
-		var parts = location.href.split('/').slice(3);
+		var parts = url.href.split('/').slice(3);
 
 		
 		parts[0] = '<a href="/">Forside</a> ';
