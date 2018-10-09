@@ -148,7 +148,20 @@ $(document).ready(function(){
 
   	$(function(){
   		var bcmain = $('.bc'),
-  			findNavelem = $('.nav');
+  			findNavelem = $('.Header-nav-inner a');
+
+		findNavelem.on('click',function(){
+  			var $this = $(this),
+      			$bc = $('<div class="item"></div>');
+
+  			$this.parents('li').each(function(n, li){
+      		var $a = $(li).children('a').clone().prepend(' / ');
+     		 	$bc.prepend($a);
+  			});
+    	bcMain.html( $bc.prepend('<a href="/">Forside</a>'));
+    	return false;
+}) 
+
 
   	});
 
