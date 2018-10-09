@@ -146,8 +146,8 @@ $(document).ready(function(){
 
   	// BC
 
-	$('#basic').jCrumb(); 
-	
+	$('.bc').jCrumb(); 
+
   	//$(function(){
 	//	var url = location.pathname; // = location.href
 	//	var parts = location.href.split('/').slice(3);
