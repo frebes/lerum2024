@@ -329,9 +329,14 @@ blockquote{
 		}
 	}
 	.summary-thumbnail-image{
-		width:100%;
+		@media @mobile{
+			width:100%;
+			height:auto;
+			position:relative;
+		}
+	}
+	.summary-item{
 		height:auto;
-		position:relative;
 	}
 }
 
