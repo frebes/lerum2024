@@ -264,7 +264,10 @@ blockquote{
 	}
 	.image-block-outer-wrapper{
 		.intrinsic .image-block-wrapper img{
-			transform:scale(.6);
+			transform:scale(.5);
+			@media @mobile{
+				transform:scale(.25);	
+			}
 		}
 		.image-caption-wrapper p{
 			color:@lerum-color-greybrown;
