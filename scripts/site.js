@@ -49,9 +49,9 @@ $(document).ready(function(){
 		if ($(window).width() > 641){
 			textElem.hide();
 		    hoverElem.hover(function(){
-		        $(this).find('.summary-title').fadeIn(300);
+		        $(this).find('#freistande-oppskrifter .summary-title').fadeIn(300);
 		    }, function() {
-		        $(this).find('.summary-title').fadeOut(100);
+		        $(this).find('#freistande-oppskrifter .summary-title').fadeOut(100);
 		    });
 		}
 	});
