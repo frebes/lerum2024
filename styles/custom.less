@@ -168,19 +168,21 @@ blockquote{
 /* Custom buttons */
 
 .squarebutton{
-	.next, .previous{
-		border:2px solid @lerum-color-grey;
-	}
-	.previous:before,
-	.next:before{
-		font-size:30px!important;
-		line-height:50px!important;
-		width:52px!important;
-		height:52px!important;
-	}
-	.previous:hover,.next:hover{
-		background-color:@lerum-color-grey;
-		color:white!important;
+	@media @notmobile{
+		.next, .previous{
+			border:2px solid @lerum-color-grey;
+		}
+		.previous:before,
+		.next:before{
+			font-size:30px!important;
+			line-height:50px!important;
+			width:52px!important;
+			height:52px!important;
+		}
+		.previous:hover,.next:hover{
+			background-color:@lerum-color-grey;
+			color:white!important;
+		}
 	}
 }
 
