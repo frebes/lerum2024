@@ -49,7 +49,7 @@ $(document).ready(function(){
 		if ($(window).width() > 641){
 			textElem.hide();
 			hoverElem.hover(function(){
-				$(this).find('.summary-title').fadeIn(200);
+				$(this).next().find('.summary-title').fadeIn(200);
 
 			}, function(){
 				if ($('.summary-title:hover').length != 0){
@@ -145,6 +145,22 @@ $(document).ready(function(){
 	  	});
   	});
 
+
+  	callElemTh = function(){
+  		if ($(window).width() > 641){
+			textElem.hide();
+			hoverElem.hover(function(){
+				$(this).next().find('.summary-title').fadeIn(200);
+
+			}, function(){
+				if ($('.summary-title:hover').length != 0){
+					textElem.stop(true, false);
+					return false;
+				};
+				$('.summary-title').fadeOut(100);
+			});
+		}
+  	}
 
   	// BC
 
