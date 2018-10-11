@@ -348,13 +348,13 @@ blockquote{
 		}
 	}
 	.summary-carousel-pager{
-		
+		.squarebutton();
 		.summary-carousel-pager-prev{
 			position:absolute;
 			z-index:9999;
 			left:25px;
 			top:37%;
-			@media @mobile{			
+			@media @mobile{				
 				bottom:0;
 				top:100%;
 			}
@@ -374,6 +374,13 @@ blockquote{
 		@media @mobile{
 
 		}
+	}
+} 
+
+// Override inline media query
+@media @mobile{
+	.summary-carousel-pager{
+		
 	}
 }
 
