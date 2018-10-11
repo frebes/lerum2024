@@ -46,7 +46,7 @@ $(document).ready(function(){
 		var textElem = $('#freistande-oppskrifter .summary-title'),
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container');
 
-		if ($(window.width() > 641){
+		if ($(window).width() > 641){
 			textElem.hide();
 			hoverElem.hover(function(){
 				$(this).next().find('.summary-title').fadeIn(200);
