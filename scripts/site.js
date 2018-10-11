@@ -49,6 +49,7 @@ $(document).ready(function(){
 		if ($(window).width() > 641){
 			textElem.hide();
 		    $('#freistande-oppskrifter .summary-thumbnail').hover(function(){
+		    	alert('test');
 		        $(this).find('#freistande-oppskrifter .summary-title').stop(true, true).fadeIn(300);
 		    }, function() {
 		        $(this).find('#freistande-oppskrifter .summary-title').stop(true, true).fadeOut(100);
