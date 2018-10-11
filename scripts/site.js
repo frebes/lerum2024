@@ -47,7 +47,7 @@ $(document).ready(function(){
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container');
 
 		if ($(window).width() > 641){
-			//textElem.hide();
+			textElem.hide();
 		    hoverElem.hover(function(){
 		        $(this).find('#freistande-oppskrifter .summary-title').fadeIn(300);
 		    }, function() {
