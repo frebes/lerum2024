@@ -49,7 +49,7 @@ $(document).ready(function(){
 		if ($(window).width() > 641){
 			textElem.hide();
 			hoverElem.hover(function(){
-				$(this).next().find('.summary-title').fadeIn(200);
+				$(this).find('.summary-title').fadeIn(200);
 
 			}, function(){
 				if ($('.summary-title:hover').length != 0){
