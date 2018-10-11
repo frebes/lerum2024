@@ -306,6 +306,7 @@ blockquote{
 #freistande-oppskrifter{
 	.summary-title{
 		.h4();
+		.hide();
 		padding:10px 20px;
 		position:relative;
 		z-index:10;
@@ -314,10 +315,14 @@ blockquote{
     	background:@lerum-color-grey;
     	color:white;
     	@media @mobile{
+    		display:block;
     		font-size:15px;
     		line-height:17px;
     		bottom:15px;
     	}
+	}
+	.summary-thumbnail-container:hover .summary-title{
+		display:block;
 	}
 	.summary-heading{
 		.hide();
