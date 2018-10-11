@@ -42,7 +42,7 @@ $(document).ready(function(){
 	
 	// Frontgallery mouseevent
 
-	$(function(){
+	testHover = function(){
 		var textElem = $('#freistande-oppskrifter .summary-title'),
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail-container');
 
@@ -59,7 +59,7 @@ $(document).ready(function(){
 				$('.summary-title').fadeOut(100);
 			});
 		}
-	});
+	};
 
 	
 	// Function to fadeout selected elements
