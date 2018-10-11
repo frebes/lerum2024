@@ -349,15 +349,17 @@ blockquote{
 		}
 	}
 	.summary-carousel-pager{
-		.squarebutton();
-		.summary-carousel-pager-prev{
-			position:absolute;
-			z-index:9999;
-			left:25px;
-			top:37%;
-			@media @mobile{				
-				bottom:0;
-				top:100%;
+		@media @notmobile{
+			.squarebutton();
+			.summary-carousel-pager-prev{
+				position:absolute;
+				z-index:9999;
+				left:25px;
+				top:37%;
+				@media @mobile{				
+					bottom:0;
+					top:100%;
+				}
 			}
 		}
 		.summary-carousel-pager-next{
