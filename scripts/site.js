@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 		if ($(window).width() > 641){
 			textElem.hide();
-			textElem.hover(function(){
+			hoverElem.hover(function(){
 				$(this).next().find('.summary-title').fadeIn(200);
 
 			}, function(){
