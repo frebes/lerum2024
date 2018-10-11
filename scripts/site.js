@@ -53,8 +53,8 @@ $(document).ready(function(){
 
 			}, function(){
 				if ($('.summary-title:hover').length != 0){
+					textElem.stop();
 					
-					return false;
 				};
 				$('.summary-title').fadeOut(100);
 			});
