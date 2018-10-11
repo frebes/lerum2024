@@ -160,7 +160,7 @@ $(document).ready(function(){
 				$('.summary-title').fadeOut(100);
 			});
 		}
-  	}
+  	};
 
   	// BC
 
