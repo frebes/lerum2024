@@ -52,9 +52,9 @@ $(document).ready(function(){
 				$(this).next().find('.summary-title').fadeIn(200);
 
 			}, function(){
-				if ($('.summary-title:hover').length!= 0){
+				if ($('.summary-title:hover').length != 0){
 					textElem.stop();
-					
+					return false;
 				};
 				$('.summary-title').fadeOut(100);
 			});
