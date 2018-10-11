@@ -46,14 +46,18 @@ $(document).ready(function(){
 		var textElem = $('#freistande-oppskrifter .summary-title'),
 			hoverElem = $('#freistande-oppskrifter .summary-thumbnail');
 
-		if ($(window).width() > 641){
-			
-		    $('#freistande-oppskrifter .summary-thumbnail').hover(function(){
-		    	//alert('test');
-		        $(this).find('#freistande-oppskrifter .summary-title').stop(true, true).fadeIn(300);
-		    }, function() {
-		        $(this).find('#freistande-oppskrifter .summary-title').stop(true, true).fadeOut(100);
-		    });
+  		if ($(window).width() > 641){
+			textElem.hide();
+			hoverElem.hover(function(){
+				$(this).next().find('.summary-title').fadeIn(200);
+
+			}, function(){
+				if ($('.summary-title:hover').length != 0){
+					textElem.stop(true, false);
+					return false;
+				};
+				$('.summary-title').fadeOut(100);
+			});
 		}
 	});
 
