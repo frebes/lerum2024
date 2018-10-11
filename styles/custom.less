@@ -375,13 +375,21 @@ blockquote{
 			transform:scale(1.1);
 		}
 		.summary-carousel-pager-prev{
-			left:20px!important;
+			left:40px!important;
 			&:before{
-				content:" "!important;
+				display:block;
+				content:" "!important;			
+				background-image:url(/assets/pil_venstre.png)!important;
+				background-repeat:no-repeat;
+				width:108px!important;
+				height:24px!important;
+			}
+			&:hover{
+				background:transparent;
 			}
 		}
 		.summary-carousel-pager-next{
-			right:20px!important;
+			right:40px!important;
 			&:before{
 				display:block;
 				content:" "!important;			
@@ -389,6 +397,9 @@ blockquote{
 				background-repeat:no-repeat;
 				width:108px!important;
 				height:24px!important;
+			}
+			&:hover{
+				background:transparent;
 			}
 		}
 	}
