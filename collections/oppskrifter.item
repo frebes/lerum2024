@@ -79,9 +79,9 @@ $(window).on("resize load", function () {
           <h3>Du treng</h3>
             {.if customContent.ing1}
               <div class="item">
-                  <form>
+                  <!--<form>
                     <input type="text" name="{ing1}" id="valueAmount">
-                  </form>
+                  </form>-->
                 <div class="data">
                     {ing1}
                 </div>
