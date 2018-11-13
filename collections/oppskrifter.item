@@ -115,13 +115,6 @@ $(window).on("resize load", function () {
                 </div>
               </div>
             {.end}
-            {.if customContent.ing5}
-              <div class="item">
-                <div class="data">
-                  {ing5}
-                </div>
-              </div>
-            {.end}
             {.if customContent.ing6}
               <div class="item">
                 <div class="data">
