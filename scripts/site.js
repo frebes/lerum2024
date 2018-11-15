@@ -187,6 +187,8 @@ $(document).ready(function(){
   			bc.append('&nbsp;/&nbsp;<a href="/berekraft/">Bærekraft</a>');
     	else if (bc_omoss[0])
   			bc.append('&nbsp;/&nbsp;<a href="/omoss/">Om oss</a>');
+      	else if (bc_kontakt[0])
+  			bc.append('&nbsp;/&nbsp;<a href="/kontakt/">Kontakt oss</a>');
   	});
 
 
