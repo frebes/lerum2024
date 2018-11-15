@@ -165,7 +165,7 @@ $(document).ready(function(){
   	// BC
 
   	$(function(){
-  		var bc = $('.bc'),
+  		var bc = $('.bc a'),
   			bc_produkt = $('.Site.produkt'),
   			bc_fruktber = $('.Site.frukt-ber'),
   			bc_oppskrift = $('.Site.oppskrifter'),
