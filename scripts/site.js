@@ -209,15 +209,16 @@ $(document).ready(function(){
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append('&nbsp;/&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
+  		
   		if (bc_fruktber[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
-  		if (bc_oppskrift[0])
+  		else if (bc_oppskrift[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/oppskrifter/">Oppskrifter</a>');
-  		if (bc_berekraft[0])
+  		else if (bc_berekraft[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/berekraft/">Bærekraft</a>');
-    	if (bc_omoss[0])
+    	else if (bc_omoss[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/omoss/">Om oss</a>');
-      	if (bc_kontakt[0])
+      	else if (bc_kontakt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/kontakt/">Kontakt oss</a>');
 
   	});
@@ -239,7 +240,7 @@ $(document).ready(function(){
 			    return false;  
 			}
 		}); 
-		
+
 	});
 
 
