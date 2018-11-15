@@ -208,7 +208,7 @@ $(document).ready(function(){
   		if (bc_produkt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>&nbsp;/&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
+  			bc.append('&nbsp;/&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
   		else if (bc_fruktber[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
   		else if (bc_oppskrift[0])
