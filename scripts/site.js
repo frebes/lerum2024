@@ -211,6 +211,10 @@ $(document).ready(function(){
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
     	if (bc_prod_saft[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-saft/">Saft</a>');
+    	if (bc_prod_jus[0])
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-juice/">Juice</a>');
+    	if (bc_prod_jule[0])
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-julebrus/">Julebrus</a>');
 
   		if (bc_fruktber[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
