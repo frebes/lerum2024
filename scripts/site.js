@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 
+
 	// Find pagenames and identify using classes
 
 	$(function(){
@@ -248,7 +249,6 @@ $(document).ready(function(){
 		}); 
 
 	});
-
 
 
 
