@@ -171,7 +171,7 @@ $(document).ready(function(){
   			bc_oppskrift = $('.Site.oppskrifter'),
   			bc_berekraft = $('.Site.berekraft'),
   			bc_omoss = $('.Site.om-lerum'),
-  			bc_kontakt = $('.Site.kontakt');
+  			bc_kontakt = $('.Site.kontakt-oss-innhold');
 
 		// var parts = location.href.split('/').slice(3);
 	
