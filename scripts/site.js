@@ -176,7 +176,7 @@ $(document).ready(function(){
  		var parts = location.href.split('/').slice(3);	
 		parts[0] = '<a href="/">Forside</a> ';
 		var breadcrumb = parts.join(' / ');
-		$('.bc').html(breadcrumb);
+		$('.bcc').html(breadcrumb);
 
   		if (bc_produkt[0])
   			bc.prepend('<a href="/produkt">Produkt</a>');
