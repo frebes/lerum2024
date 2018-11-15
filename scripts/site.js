@@ -179,9 +179,9 @@ $(document).ready(function(){
 		$('.bcc').html(breadcrumb);
 
   		if (bc_produkt[0])
-  			bc.append('<a href="/produkt">Produkt</a>');
+  			bc.append('/ <a href="/produkt">Produkt</a>');
   		else if (bc_fruktber[0])
-  			bc.append('<a href="/frukt-ber">Frukt & bær</a>');
+  			bc.append('/ <a href="/frukt-ber">Frukt & bær</a>');
 
 
   	});
