@@ -177,7 +177,7 @@ $(document).ready(function(){
   		if (bc_produkt[0])
   			bc.after('<a href="/produkt">Produkt</a>');
   		else if (bc_fruktber[0])
-  			bc.after('<a href="/fruktber">Frukt & bær</a>');
+  			bc.wrapInner('<a href="/fruktber">Frukt & bær</a>');
 		// var parts = location.href.split('/').slice(3);
 	
 		// parts[0] = '<a href="/">Forside</a> ';
