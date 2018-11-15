@@ -165,13 +165,17 @@ $(document).ready(function(){
   	// BC
 
   	$(function(){
-  		var bc_produkt = $('.Site.produkt'),
+  		var bc = $('.bc'),
+  			bc_produkt = $('.Site.produkt'),
   			bc_fruktber = $('.Site.frukt-ber'),
   			bc_oppskrift = $('.Site.oppskrifter'),
   			bc_berekraft = $('.Site.berekraft'),
   			bc_omoss = $('.Site.om-lerum'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
 
+  		
+  		if (bc_produkt[0])
+  			bc.wrapInner('<a href="/produkt">Produkt</a>');
 		// var parts = location.href.split('/').slice(3);
 	
 		// parts[0] = '<a href="/">Forside</a> ';
