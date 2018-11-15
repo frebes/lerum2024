@@ -180,10 +180,13 @@ $(document).ready(function(){
   		if (bc_produkt[0])
   			bc.append('&nbsp;/&nbsp;<a href="/produkt/">Produkt</a>');
   		else if (bc_fruktber[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/frukt-ber/">Frukt & bær</a>');
+  			bc.append('&nbsp;/&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
   		else if (bc_oppskrift[0])
   			bc.append('&nbsp;/&nbsp;<a href="/oppskrifter/">Oppskrifter</a>');
-
+  		else if (bc_berekraft[0])
+  			bc.append('&nbsp;/&nbsp;<a href="/berekraft/">Bærekraft</a>');
+    	else if (bc_omoss[0])
+  			bc.append('&nbsp;/&nbsp;<a href="/omoss/">Om oss</a>');
   	});
 
 
