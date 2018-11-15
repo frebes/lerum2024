@@ -172,17 +172,17 @@ $(document).ready(function(){
   			bc_berekraft = $('.Site.berekraft'),
   			bc_omoss = $('.Site.om-lerum'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
+ 
+ 		var parts = location.href.split('/').slice(3);	
+		parts[0] = '<a href="/">Forside</a> ';
+		var breadcrumb = parts.join(' / ');
+		$('.bc').html(breadcrumb);
 
-  		
   		if (bc_produkt[0])
   			bc.wrap('<a href="/produkt">Produkt</a>');
   		else if (bc_fruktber[0])
   			bc.wrap('<a href="/frukt-ber">Frukt & bær</a>');
-		// var parts = location.href.split('/').slice(3);
-	
-		// parts[0] = '<a href="/">Forside</a> ';
-		// var breadcrumb = parts.join(' / ');
-		// $('.bc').html(breadcrumb);
+
 
   	});
 
