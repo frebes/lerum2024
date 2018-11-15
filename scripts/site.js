@@ -173,9 +173,9 @@ $(document).ready(function(){
   			bc_omoss = $('.Site.om-lerum'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
- 		var parts = location.href.split('/').slice(3);	
+ 		var parts = location.href.split('/').slice(3),
+ 			breadcrumb = parts.join('/');	
 		parts[0] = '<a href="/">';
-		var breadcrumb = parts.join('/');
 
   		if (bc_produkt[0])
   			bc.append('&nbsp;/&nbsp;<a href="/produkt/">Produkt</a>');
