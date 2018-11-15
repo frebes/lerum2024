@@ -195,7 +195,8 @@ $(document).ready(function(){
   			bc_prod_sylt = $('div[class*="sylt"]'),
   			bc_prod_saft = $('div[class*="saf"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
-    		bc_prod_jule = $('div[class*="jule"]'),   		
+    		bc_prod_jule = $('div[class*="jule"]'),
+    			
   			bc_fruktber = $('div[class*="frukt-ber"]'),
   			bc_oppskrift = $('.Site[class*="oppskrifter"]'),
   			bc_berekraft = $('.Site.berekraft'),
