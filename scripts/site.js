@@ -168,7 +168,7 @@ $(document).ready(function(){
   		var bc = $('.bc a'),
   			bc_produkt = $('.Site:contains("produkt")'),
   			bc_fruktber = $('.Site:contains("frukt-ber")'),
-  			bc_oppskrift = $('.Site[class*="oppskrifter"]'),
+  			bc_oppskrift = $('[class*="oppskrifter"]'),
   			bc_berekraft = $('.Site.berekraft'),
   			bc_omoss = $('.Site.om-lerum'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
