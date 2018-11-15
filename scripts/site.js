@@ -5,6 +5,7 @@ $(document).ready(function(){
 	// Find pagenames and identify using classes
 
 	$(function(){
+
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
 
@@ -14,21 +15,25 @@ $(document).ready(function(){
 	 	else{
 	    	$('.Site').addClass(fName);
 	  	}
+
 	});
 
 
 	// Rearrange DOM forside lerum
 	
 	$(function(){
+
 		var galleryblock = $('.forside .Index-gallery-item-content');
-		
+
 		galleryblock.appendTo('.forside .Index-gallery');
+
 	});
 
 	
 	// Equal heights on selected items
 
 	$(window).bind("load",function(){ //refresh on load/resize
+
 	    var setMaxHeight = 0,
 	    	currItem = $(".summary-item");
 		
@@ -38,12 +43,14 @@ $(document).ready(function(){
 	            };
 			});
 		currItem.height(setMaxHeight);
+
 	});
 
 	
 	// Frontgallery mouseevent
 
 	testHover = function(){
+
 		var textElem = $('#freistande-oppskrifter .summary-title'),
 			hoverElem = $('#freistande-oppskrifter .summary-item');
 
@@ -60,12 +67,14 @@ $(document).ready(function(){
 				$('.summary-title').fadeOut(100);
 			});
 		}
+
 	};
 
 	
 	// Function to fadeout selected elements
 
 	$(function(){		
+
 		$(window).scroll(function(){
 			var fadeelement = $(".Index-gallery-item-content"),
 				fader = $(window).scrollTop()/1000;
@@ -73,12 +82,14 @@ $(document).ready(function(){
     		fadeelement.css("opacity", 1 - fader)
     				   .css("top", $(window).scrollTop()/10); // scroll content
  		 });
+
 	});
 
 
 	// Oppskrift show content
 
 	$(function(){
+
 		var valElem = $('.oppskrift-customtop .data-grad'),
 			valNum = parseInt(valElem.text());
 
@@ -91,23 +102,27 @@ $(document).ready(function(){
 		else if (valNum == "3"){
 			valElem.addClass('van').text('Vanskelig');
 		}
+
 	});
 
 
 	// Replace product class
 
 	$(function(){
+
 		$('#productFind').each(function() {
     		var repClass = $(this).attr('class');
 
     		$(this).attr('class', repClass.replace(/,/g, ' '));
 		});
+
 	});
 
 
 	// Replace summary info
 
 	$(function(){
+
 		var summaryInfo = $('#oppskrift-toppgalleri .summary-title a');
 
 		summaryInfo.each(function(index, el){
@@ -116,12 +131,14 @@ $(document).ready(function(){
 
 		    summaryRep.replaceWith('<p class="oppskrift-link"><a href="'+ sumLink +'">Gå til oppskrifta</a></p>')
 		});
+
 	});
 
 	
 	// Scroll header function
 
 	$(window).scroll(function() {
+
 		var pHeight = $('.Header').height();
 
   		if ($(document).scrollTop() > pHeight) {
@@ -129,12 +146,14 @@ $(document).ready(function(){
   		} else {
     		$('.Header').removeClass('small');
   		}
+
 	});
 
 
   	// Markdown
 
   	$(function(){
+
   		var mdblock = $('.markdown-block .sqs-block-content h2');
 
 	  	mdblock.addClass('ui-closed').css('cursor','pointer');
@@ -144,10 +163,12 @@ $(document).ready(function(){
 	    	 $(this).nextUntil("h2").slideToggle();
 	     	 $(this).toggleClass('ui-closed ui-open');
 	  	});
+
   	});
 
 
   	callElemTh = function(){
+
   		if ($(window).width() > 641){
 			textElem.hide();
 			hoverElem.hover(function(){
@@ -161,11 +182,13 @@ $(document).ready(function(){
 				$('.summary-title').fadeOut(100);
 			});
 		}
+
   	};
 
   	// BC
 
   	$(function(){
+
   		var bc = $('.bc a'),
   			bc_produkt = $('div[class*="produkt"]'),
   			bc_prod_sylt = $('div[class*="sylt"]'),
@@ -184,7 +207,7 @@ $(document).ready(function(){
 
   		if (bc_produkt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>');
-  		else if (bc_prod_sylt[0])
+  		if (bc_prod_sylt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>&nbsp;/&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
   		else if (bc_fruktber[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
@@ -196,12 +219,14 @@ $(document).ready(function(){
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/omoss/">Om oss</a>');
       	else if (bc_kontakt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/kontakt/">Kontakt oss</a>');
+
   	});
 
 
 	// Oppskrift calc values
 
 	$(function(){
+
 		var value1 = $('#item1').val(),
 			value2 = $('#item2').val(),
 			value3 = $('#item3').val();
@@ -214,6 +239,7 @@ $(document).ready(function(){
 			    return false;  
 			}
 		}); 
+		
 	});
 
 
