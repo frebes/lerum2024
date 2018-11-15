@@ -165,7 +165,7 @@ $(document).ready(function(){
   	// BC
 
   	$(function(){
-  		var bc = $('.bc').nextSibling(),
+  		var bc = $('.bc'),
   			bc_produkt = $('.Site.produkt'),
   			bc_fruktber = $('.Site.frukt-ber'),
   			bc_oppskrift = $('.Site.oppskrifter'),
