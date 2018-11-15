@@ -42,6 +42,10 @@
     -moz-transition: 250ms ease-in-out 0s;
     transition: 250ms ease-in-out 0s;
 }
+.transfade_op{
+	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    animation: 2s ease 0s normal forwards 1 fadein;
+}
 .transopacity{
     -webkit-transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -555,7 +559,7 @@ blockquote{
 	#oppskrift-content{
 		float:right;
 		width:70%;
-		.sqs-layout > .span-12 > .row{
+		.sqs-layout > .row, .sqs-layout > .span-12 > .row{
 			background:white;
 			margin-bottom:25px;
 		}
