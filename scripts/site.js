@@ -174,7 +174,7 @@ $(document).ready(function(){
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
  		var parts = location.href.split('/').slice(3);	
-		parts[0] = '<a href="/">Forside</a> ';
+		parts[0] = '<a href="/">';
 		var breadcrumb = parts.join(' / ');
 
   		if (bc_produkt[0])
