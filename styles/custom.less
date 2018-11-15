@@ -562,7 +562,13 @@ blockquote{
 		.sqs-col-12 > .row{
 			background:white;
 			margin-bottom:25px;
+			&:first-child{
+				& > .col{
+					padding-top:20px;
+				}
+			}
 		}
+
 		.sqs-block.image-block{
 			padding:0;
 		}
