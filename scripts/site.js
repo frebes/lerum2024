@@ -166,7 +166,7 @@ $(document).ready(function(){
 
   	$(function(){
   		var bc = $('.bc a'),
-  			bc_produkt = $('div[class*="pr"]'),
+  			bc_produkt = $('div[class*="produkt"]'),
   			bc_prod_sylt = $('div[class*="sylt"]'),
   			bc_prod_saft = $('div[class*="saf"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
