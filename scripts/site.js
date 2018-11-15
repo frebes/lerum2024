@@ -167,11 +167,11 @@ $(document).ready(function(){
   	$(function(){
   		var bc = $('.bc a'),
   			bc_produkt = $('.Site:contains("produkt")'),
-  			bc_fruktber = $('.Site.frukt-ber'),
-  			bc_oppskrift = $('.Site.oppskrifter'),
-  			bc_berekraft = $('.Site.berekraft'),
-  			bc_omoss = $('.Site.om-lerum'),
-  			bc_kontakt = $('.Site.kontakt-oss-innhold');
+  			bc_fruktber = $('.Site:contains("frukt-ber")'),
+  			bc_oppskrift = $('.Site:contains("oppskrifter")'),
+  			bc_berekraft = $('.Site:contains("berekraft")'),
+  			bc_omoss = $('.Site:contains("om-lerum")'),
+  			bc_kontakt = $('.Site:contains("kontakt-oss-innhold")');
  
  		var parts = location.href.split('/').slice(3);	
 		parts[0] = '<a href="/">';
