@@ -181,7 +181,7 @@ $(document).ready(function(){
   		if (bc_produkt[0])
   			bc.prepend('<a href="/produkt">Produkt</a>');
   		else if (bc_fruktber[0])
-  			bc.preend('<a href="/frukt-ber">Frukt & bær</a>');
+  			bc.prepend('<a href="/frukt-ber">Frukt & bær</a>');
 
 
   	});
