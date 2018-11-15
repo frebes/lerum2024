@@ -175,7 +175,7 @@ $(document).ready(function(){
  
  		var parts = location.href.split('/').slice(3);	
 		parts[0] = '<a href="/">';
-		var breadcrumb = parts.join(' / ');
+		var breadcrumb = parts.join('/');
 
   		if (bc_produkt[0])
   			bc.append('&nbsp;/&nbsp;<a href="/produkt/">Produkt</a>');
