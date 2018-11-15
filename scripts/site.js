@@ -166,7 +166,12 @@ $(document).ready(function(){
 
   	$(function(){
 
-
+  		var bc_produkt = $('.Site.produkt'),
+  			bc_fruktber = $('.Site.frukt-ber'),
+  			bc_oppskrift = $('.Site.oppskrifter'),
+  			bc_berekraft = $('.Site.berekraft'),
+  			bc_omoss = $('.Site.om-lerum'),
+  			bc_kontakt = $('.Site.kontakt');
 
 		// var parts = location.href.split('/').slice(3);
 	
