@@ -209,7 +209,9 @@ $(document).ready(function(){
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
-  		
+    	if (bc_prod_saft[0])
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-saft/">Saft</a>');
+
   		if (bc_fruktber[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
   		else if (bc_oppskrift[0])
