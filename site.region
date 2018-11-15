@@ -131,7 +131,7 @@
           </div>
         </header>
 
-        <div class="bc"><a href="/">Forside</a>  /  </div>
+        <div class="bc"><a href="/">Forside</a></div>
 
         <div class="Content-outer">
           {.if collection}{.if item}{.or}{.equal? collection.typeName "index"}{.or}
