@@ -165,7 +165,7 @@ $(document).ready(function(){
   	// BC
 
   	$(function(){
-  		var bc = $('.bc a'),
+  		var bc = $('.bc').nextSibling(),
   			bc_produkt = $('.Site.produkt'),
   			bc_fruktber = $('.Site.frukt-ber'),
   			bc_oppskrift = $('.Site.oppskrifter'),
@@ -175,9 +175,9 @@ $(document).ready(function(){
 
   		
   		if (bc_produkt[0])
-  			bc.after('<a href="/produkt">Produkt</a>');
+  			bc.wrap('<a href="/produkt">Produkt</a>');
   		else if (bc_fruktber[0])
-  			bc.wrapInner('<a href="/frukt-ber">Frukt & bær</a>');
+  			bc.wrap('<a href="/frukt-ber">Frukt & bær</a>');
 		// var parts = location.href.split('/').slice(3);
 	
 		// parts[0] = '<a href="/">Forside</a> ';
