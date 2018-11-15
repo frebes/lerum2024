@@ -182,19 +182,19 @@ $(document).ready(function(){
 		parts[0] = '<a href="/">';
 
   		if (bc_produkt[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/produkt/">Produkt</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>');
   		else if (bc_prod_sylt[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/produkt/">Produkt</a>&nbsp;/&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>&nbsp;/&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
   		else if (bc_fruktber[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
   		else if (bc_oppskrift[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/oppskrifter/">Oppskrifter</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/oppskrifter/">Oppskrifter</a>');
   		else if (bc_berekraft[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/berekraft/">Bærekraft</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/berekraft/">Bærekraft</a>');
     	else if (bc_omoss[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/omoss/">Om oss</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/omoss/">Om oss</a>');
       	else if (bc_kontakt[0])
-  			bc.append('&nbsp;/&nbsp;<a href="/kontakt/">Kontakt oss</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/kontakt/">Kontakt oss</a>');
   	});
 
 
