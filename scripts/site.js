@@ -212,7 +212,7 @@ $(document).ready(function(){
     	if (bc_prod_saft[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-saft/">Saft</a>');
     	if (bc_prod_jus[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-juice/">Juice</a>');
+  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-jus-og-nektar/">Juice</a>');
     	if (bc_prod_jule[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-julebrus/">Julebrus</a>');
 
