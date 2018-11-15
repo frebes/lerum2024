@@ -173,10 +173,7 @@ $(document).ready(function(){
   			bc_omoss = $('.Site.om-lerum'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
- 		var parts = location.href.split('/').slice(3);	
-		parts[0] = '<a href="/">Forside</a> ';
-		var breadcrumb = parts.join(' / ');
-		$('.bcc').html(breadcrumb);
+
 
   		if (bc_produkt[0])
   			bc.append('&nbsp;/&nbsp;<a href="/produkt/">Produkt</a>');
