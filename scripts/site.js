@@ -209,15 +209,15 @@ $(document).ready(function(){
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append('&nbsp;/&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
-  		else if (bc_fruktber[0])
+  		if (bc_fruktber[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
-  		else if (bc_oppskrift[0])
+  		if (bc_oppskrift[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/oppskrifter/">Oppskrifter</a>');
-  		else if (bc_berekraft[0])
+  		if (bc_berekraft[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/berekraft/">Bærekraft</a>');
-    	else if (bc_omoss[0])
+    	if (bc_omoss[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/omoss/">Om oss</a>');
-      	else if (bc_kontakt[0])
+      	if (bc_kontakt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/kontakt/">Kontakt oss</a>');
 
   	});
