@@ -250,6 +250,10 @@ blockquote{
     .Index-gallery-item-content{
 		background:transparent;
 		max-width:100%;
+		@media @tablet{
+			max-width:100%;
+			width:100%;
+		}
 	}
 	h2.Index-gallery-item-content-heading{
     	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
@@ -262,10 +266,6 @@ blockquote{
 		@media @mobile{
 			max-width:80%;
 			width:80%;
-		}
-		@media @tablet{
-			max-width:100%;
-			width:100%;
 		}
 	}
 	.Index-gallery-item-content{
