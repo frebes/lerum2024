@@ -196,7 +196,7 @@ $(document).ready(function(){
   			bc_prod_saft = $('div[class*="saf"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
-    			
+
   			bc_fruktber = $('div[class*="frukt-ber"]'),
   			bc_oppskrift = $('.Site[class*="oppskrifter"]'),
   			bc_berekraft = $('.Site.berekraft'),
@@ -204,7 +204,8 @@ $(document).ready(function(){
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
  		var parts = location.href.split('/').slice(3),
- 			breadcrumb = parts.join('/');	
+ 			breadcrumb = parts.join('/');
+ 			
 		parts[0] = '<a href="/">';
 
   		if (bc_produkt[0])
