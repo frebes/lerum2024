@@ -752,7 +752,10 @@ blockquote{
 		padding-top:150px;
   	  	background:@lerum-color-background url(/assets/historiebanner3.png) no-repeat; 
   	  	background-position:0 50px;
-  	  	background-size:contain;	
+  	  	background-size:contain;
+  	  	@media @mobile{
+  	  		background-size:cover;
+  	  	}	
 		.Index-page-content{
 			margin:0 auto;
 			width:55%;
