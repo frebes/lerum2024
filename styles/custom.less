@@ -582,6 +582,10 @@ blockquote{
 	#oppskrift-data{
 		float:left;
 		width:30%;
+		@media @mobile{
+			float:none;
+			width:auto;
+		}
 		.data{
 			width:60%;
 			border-bottom:1px solid #bbb;
@@ -607,6 +611,10 @@ blockquote{
 	#oppskrift-content{
 		float:right;
 		width:70%;
+		@media @mobile{
+			float:none;
+			width:auto;
+		}
 		.sqs-col-12 > .row{
 			background:white;
 			margin-bottom:25px;
