@@ -225,9 +225,6 @@ blockquote{
 
 .forside .bc{
 	.hide();
-	@media @mobile{
-		.hide();
-	}
 }
 .bc{
 	.transparent();
@@ -239,6 +236,9 @@ blockquote{
 	left:150px;
 	font-size:15px;
 	color:white;
+	@media @mobile{
+		.hide();
+	}
 }
 .produkt .bc,
 .om-lerum .bc,
