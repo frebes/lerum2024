@@ -58,6 +58,7 @@ $(document).ready(function(){
 		heightElem.each(function(){
 			setHeight = $(this).height()/2;
 			setHeightElem.css('bottom', setHeight + 'px');
+			alert(setHeight);
 		});
 
 	});
