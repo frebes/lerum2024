@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 		currItem.height(setMaxHeight); // summary-item
 
-		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height imgwrapper forside
+		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height thumbwrapper forside
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
 		heightElem.each(function(){
