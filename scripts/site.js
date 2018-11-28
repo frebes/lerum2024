@@ -117,8 +117,7 @@ $(document).ready(function(){
 			valElem.addClass('van').text('Vanskelig');
 		}
 
-		// Check tip content
-		var tipContent = $('#oppskrift-data .tipscontent');
+		var tipContent = $('#oppskrift-data .tipscontent'); // Tip content
 
 		if (tipContent.is(':empty'))
 			$('#tips-content').css('display','none');
