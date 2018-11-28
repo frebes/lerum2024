@@ -100,7 +100,7 @@ $(document).ready(function(){
 	});
 
 
-	// Oppskrift show content
+	// Oppskrift show content oppskrift
 
 	$(function(){
 
