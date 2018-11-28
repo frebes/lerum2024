@@ -52,9 +52,13 @@ $(document).ready(function(){
 
 	$(function(){
 
-		var heightElem = $('#freistande-oppskrifter .img-wrapper').height();
+		var heightElem = $('#freistande-oppskrifter .img-wrapper'),
+			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
-		alert(heightElem);
+		heightElem.each(function(){
+			setHeightElem.css('top', ($(this).height)/2);
+		});
+
 	});
 
 
