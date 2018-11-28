@@ -138,7 +138,7 @@ $(document).ready(function(){
 	});
 
 
-	// Replace summary info
+	// Replace summary info oppskrift
 
 	$(function(){
 
