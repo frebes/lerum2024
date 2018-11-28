@@ -120,7 +120,7 @@ $(document).ready(function(){
 		// Check tips content
 		var tipContent = $('#oppskrift-data .tipscontent');
 
-		if (tipContent.length() == 0)
+		if (tipContent.is(':empty'))
 			$('#tips-content').css('display','none');
 	});
 
