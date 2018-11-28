@@ -117,6 +117,11 @@ $(document).ready(function(){
 			valElem.addClass('van').text('Vanskelig');
 		}
 
+		// Check tips content
+		var tipContent = $('.oppskrift .tipscontent');
+
+		if (tipContent.length() == 0)
+			$('#tips-content').css('display','none');
 	});
 
 
