@@ -732,9 +732,6 @@ blockquote{
 			text-align:left;
 			padding:8px 0 0 50px;
 			margin-left:50px;
-			@media @mobile{
-				margin:0;
-			}
 			&.enk{
 				background:url(/assets/niva_enkel.png) no-repeat 0% 50%;
 			}
@@ -743,6 +740,10 @@ blockquote{
 			}
 			&.van{
 				background:url(/assets/niva_vanskelig.png) no-repeat 0% 50%;
+			}
+			@media @mobile{
+				margin:0;
+				background-size:20%;
 			}
 		}
 	}
