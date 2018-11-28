@@ -118,7 +118,7 @@ $(document).ready(function(){
 		}
 
 		// Check tips content
-		var tipContent = $('.oppskrift .tipscontent');
+		var tipContent = $('#oppskrift-data .tipscontent');
 
 		if (tipContent.length() == 0)
 			$('#tips-content').css('display','none');
