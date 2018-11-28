@@ -55,10 +55,10 @@ $(document).ready(function(){
 		var heightElem = $('#freistande-oppskrifter .img-wrapper'),
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
+		alert(heightElem.height());
 		heightElem.each(function(){
 			setHeight = $(this).height();
 			setHeightElem.css('bottom', setHeight + 'px');
-			// alert(setHeight);
 		});
 
 	});
