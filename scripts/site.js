@@ -49,10 +49,12 @@ $(document).ready(function(){
 		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height thumbwrapper forside
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
-		heightElem.each(function(){
-			setHeight = $(this).height()/1.6;
-			setHeightElem.css('bottom', setHeight + 'px');
-		});
+		if ($(window).width() > 641){
+			heightElem.each(function(){
+				setHeight = $(this).height()/1.6;
+				setHeightElem.css('bottom', setHeight + 'px');
+			});
+		}
 
 	});
 
