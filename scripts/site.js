@@ -45,20 +45,24 @@ $(document).ready(function(){
 			});
 		currItem.height(setMaxHeight);
 
-	});
-
-
 	// Find middle point height imgwrapper
 
-	$(window).bind("load",function(){
-
-		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'),
-			setHeightElem = $('#freistande-oppskrifter .summary-title');
+	var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'),
+		setHeightElem = $('#freistande-oppskrifter .summary-title');
 
 		heightElem.each(function(){
 			setHeight = $(this).height()/1.6;
 			setHeightElem.css('bottom', setHeight + 'px');
 		});
+
+	});
+
+
+	
+
+	$(window).bind("load",function(){
+
+
 
 	});
 
