@@ -46,10 +46,11 @@ $(document).ready(function(){
 
 		currItem.height(setMaxHeight); // summary-item
 
-		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height thumbwrapper forside
+		var breakPoint = 1000,
+			heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height thumbwrapper forside
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
-		if ($(window).width() > 1000){
+		if ($(window).width() > breakPoint){
 			heightElem.each(function(){
 				setHeight = $(this).height()/1.6;
 				setHeightElem.css('bottom', setHeight + 'px');
