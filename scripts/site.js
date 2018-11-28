@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 	$(window).bind("load",function(){
 
-		var heightElem = $('#freistande-oppskrifter .img-wrapper'),
+		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'),
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
 		alert(heightElem.height());
