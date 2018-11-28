@@ -49,7 +49,7 @@ $(document).ready(function(){
 		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height thumbwrapper forside
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
-		if ($(window).width() > 641){
+		if ($(window).width() > 1000){
 			heightElem.each(function(){
 				setHeight = $(this).height()/1.6;
 				setHeightElem.css('bottom', setHeight + 'px');
