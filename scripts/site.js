@@ -47,7 +47,17 @@ $(document).ready(function(){
 
 	});
 
-	
+
+	// Find middle point height imgwrapper
+
+	$(function(){
+
+		var heightElem = $('#freistande-oppskrifter .img-wrapper').height();
+
+		alert(heightElem);
+	});
+
+
 	// Frontgallery mouseevent
 
 	testHover = function(){
