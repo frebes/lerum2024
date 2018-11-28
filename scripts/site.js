@@ -47,8 +47,8 @@ $(document).ready(function(){
 
 	// Find middle point height imgwrapper
 
-	var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'),
-		setHeightElem = $('#freistande-oppskrifter .summary-title');
+		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'),
+			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
 		heightElem.each(function(){
 			setHeight = $(this).height()/1.6;
