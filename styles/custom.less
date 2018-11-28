@@ -715,6 +715,9 @@ blockquote{
 			width:50%;
   			margin-right:auto;
 			text-align:right;
+			@media @mobile{
+				text-align:right;
+			}
 		}
 		.data-time::before{
 			content:url(/assets/tid.png);
@@ -728,6 +731,9 @@ blockquote{
 			text-align:left;
 			padding:8px 0 0 50px;
 			margin-left:50px;
+			@media @mobile{
+				text-align:left;
+			}
 			&.enk{
 				background:url(/assets/niva_enkel.png) no-repeat 0% 50%;
 			}
