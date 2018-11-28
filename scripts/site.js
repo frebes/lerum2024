@@ -43,7 +43,8 @@ $(document).ready(function(){
 	          	setMaxHeight = $(this).height(); 
 	            };
 			});
-		currItem.height(setMaxHeight);
+
+		currItem.height(setMaxHeight); // summary-item
 
 		var heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height imgwrapper forside
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
