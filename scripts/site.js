@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 	// Find middle point height imgwrapper
 
-	$(function(){
+	$(window).bind("load",function(){
 
 		var heightElem = $('#freistande-oppskrifter .img-wrapper'),
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
