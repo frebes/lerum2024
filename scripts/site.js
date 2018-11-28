@@ -56,9 +56,9 @@ $(document).ready(function(){
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
 		heightElem.each(function(){
-			setHeight = $(this).height()/2;
+			setHeight = $(this).height();
 			setHeightElem.css('bottom', setHeight + 'px');
-			alert(setHeight);
+			// alert(setHeight);
 		});
 
 	});
