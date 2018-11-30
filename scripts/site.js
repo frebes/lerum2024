@@ -230,24 +230,24 @@ $(document).ready(function(){
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
+  			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
     	if (bc_prod_saft[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-saft/">Saft</a>');
+  			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
     	if (bc_prod_jus[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-jus-og-nektar/">Juice</a>');
+  			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
     	if (bc_prod_jule[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-julebrus/">Julebrus</a>');
+  			bc.append(htmls + '<a href="/produkt-julebrus/">Julebrus</a>');
 
   		if (bc_fruktber[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/frukt-ber/">Frukt&bær</a>');
+  			bc.append(htmls + '<a href="/frukt-ber/">Frukt&bær</a>');
   		else if (bc_oppskrift[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/oppskrifter/">Oppskrifter</a>');
+  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
   		else if (bc_berekraft[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/berekraft/">Bærekraft</a>');
+  			bc.append(htmls + '<a href="/berekraft/">Bærekraft</a>');
     	else if (bc_omoss[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/omoss/">Om oss</a>');
+  			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
       	else if (bc_kontakt[0])
-  			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/kontakt/">Kontakt oss</a>');
+  			bc.append(htmls + '<a href="/kontakt/">Kontakt oss</a>');
 
   	});
 
