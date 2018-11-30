@@ -999,11 +999,16 @@ blockquote{
 }
 
 .produkt{
-	.image-block-v2 .intrinsic img{
-		.transfade();
-		&:hover{
-			opacity:.5;
-		}	
+	.image-block-v2 .intrinsic{
+		img{
+			.transfade;
+			.transmove;			
+		}
+    	&:hover {
+    		img {
+    			opacity:0.5;
+    		}
+		}
 	}
 }
 
