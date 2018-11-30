@@ -221,12 +221,13 @@ $(document).ready(function(){
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
  		var parts = location.href.split('/').slice(3),
- 			breadcrumb = parts.join('/');
+ 			breadcrumb = parts.join('/'),
+ 			htmls = $('&nbsp;&nbsp;/&nbsp;&nbsp;');
  			
 		parts[0] = '<a href="/">';
 
   		if (bc_produkt[0])
-  			bc.append('<div class="bcpad"><a href="/produkt/">Produkt</a></div>');
+  			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
     	if (bc_prod_saft[0])
