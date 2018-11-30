@@ -222,12 +222,13 @@ $(document).ready(function(){
  
  		var parts = location.href.split('/').slice(3),
  			breadcrumb = parts.join('/'),
- 			$htmls = $('&nbsp;&nbsp;/&nbsp;&nbsp;');
+ 			htmls = '&nbsp;&nbsp;/&nbsp;&nbsp;',
+ 			addBc = $.parseHTML(htmls);
  			
 		parts[0] = '<a href="/">';
 
   		if (bc_produkt[0])
-  			bc.append($htmls + '<a href="/produkt/">Produkt</a>');
+  			bc.append(addBc + '<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append('&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/produkt-syltetoy/">Syltetøy</a>');
     	if (bc_prod_saft[0])
