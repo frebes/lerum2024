@@ -18,7 +18,15 @@ $(window).on("resize load", function () {
 });
 </script>
 
+<squarespace:query collection="historie" limit="10">
 
+  <ol>
+    {.repeated section items}
+      <li><a href="{fullUrl}">{title}</a></li>
+    {.end}
+  </ol>
+
+</squarespace:query>
 
 {.section item}
 
