@@ -34,7 +34,7 @@ $(window).on("resize load", function () {
     
     <div class="Blog-header Blog-header--list{.main-image?} Blog-header--has-image{.end}">
     
-      <div class="Blog-header-content"> dsa
+      <div class="Blog-header-content"> 
 
         {.main-image?}
         <div class="BlogList-item-image">
