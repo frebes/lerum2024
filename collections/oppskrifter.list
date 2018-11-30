@@ -20,7 +20,9 @@ $(window).on("resize load", function () {
 
 
 {.section items}
+
 <h2>Oppskrifter for {categories}</h2>
+
 {.end}
 
 
