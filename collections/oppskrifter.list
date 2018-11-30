@@ -20,7 +20,7 @@ $(window).on("resize load", function () {
 
 
 
-<h2>Oppskrifter</h2>
+<h2>Oppskrifter for {categories}</h2>
 
 
 
