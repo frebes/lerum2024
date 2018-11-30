@@ -19,7 +19,7 @@ $(window).on("resize load", function () {
 </script>
 
 
-{.repeated section items}
+{.section items}
 <h2>Oppskrifter for {categories}</h2>
 {.end}
 
