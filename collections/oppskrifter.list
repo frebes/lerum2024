@@ -24,7 +24,7 @@ $(window).on("resize load", function () {
 
 
 
-<section data-columns="3" class="OppskrifterList BlogList BlogList--posts-excerpt sqs-blog-list clear">
+<section data-columns="4" class="OppskrifterList BlogList BlogList--posts-excerpt sqs-blog-list clear">
 
 
   
