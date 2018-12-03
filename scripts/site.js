@@ -275,5 +275,5 @@ $(document).ready(function(){
 
 }); // End dom ready
 
-
+var sitelanguage = "nynorsk";
 
