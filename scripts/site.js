@@ -222,7 +222,7 @@ $(document).ready(function(){
  
  		var parts = location.href.split('/').slice(3),
  			breadcrumb = parts.join('/'),
- 			htmls = '&nbsp;&nbsp;/&nbsp;&nbsp;',
+ 			htmls = '&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;',
  			addBc = $.parseHTML(htmls);
  			
 		parts[0] = '<a href="/">';
