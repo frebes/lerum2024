@@ -43,37 +43,6 @@ $(window).on("resize load", function () {
 {.end}
 
 
-
-  <section id="history-content-excerpt" class="Index-page">
-    <div class="Index-page-content">
-      <div class="cont">
-        {.section item}     
-        <div class="history-excerpt"><div>{categories}</div>
-          <h1 data-content-field="title" itemprop="headline">{title}</h1>
-          {excerpt}
-        </div>
-        {.end}
-      </div>
-    </div>
-  </section>
-
-{.section item}
- 
-
-  <section id="history-content" class="Index-page">
-    <div class="Index-page-content" data-content-field="main-content">
-        <div class="image-excerpt">
-          <img {customContent.history-second-image|image-meta} />
-        </div>
-        <article id="article-{item.id}" data-item-id="{item.id}" class="history-contentright">
-            {body}
-        </article>
-
-    </div>
-  </section> 
-
-{.end}
-
 {.section pagination}
   <nav class="BlogItem-pagination clear">
 
@@ -107,3 +76,37 @@ $(window).on("resize load", function () {
 
   </nav>
 {.end}
+
+
+
+  <section id="history-content-excerpt" class="Index-page">
+    <div class="Index-page-content">
+      <div class="cont">
+        {.section item}     
+        <div class="history-excerpt"><div>{categories}</div>
+          <h1 data-content-field="title" itemprop="headline">{title}</h1>
+          {excerpt}
+        </div>
+        {.end}
+      </div>
+    </div>
+  </section>
+
+{.section item}
+ 
+
+  <section id="history-content" class="Index-page">
+    <div class="Index-page-content" data-content-field="main-content">
+        <div class="image-excerpt">
+          <img {customContent.history-second-image|image-meta} />
+        </div>
+        <article id="article-{item.id}" data-item-id="{item.id}" class="history-contentright">
+            {body}
+        </article>
+
+    </div>
+  </section> 
+
+{.end}
+
+
