@@ -224,7 +224,7 @@ $(document).ready(function(){
   			bc_oppskrift = $('.Site[class*="oppskrifter"]'),
   			bc_berekraft = $('.Site.berekraft'),
   			bc_omoss = $('.Site.om-lerum'),
-  			bc_hist = $('.Site.histori'),
+  			bc_hist = $('div[class*="hist"]'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
  		var parts = location.href.split('/').slice(3),
@@ -257,7 +257,7 @@ $(document).ready(function(){
     	if (bc_omoss[0])
   			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
       	if (bc_hist[0])
-  			bc.append(htmls + '<a href="/omoss/">Om oss</a><a href="/historie/">Historie</a>');
+  			bc.append(htmls + '<a href="/historie/">Historie</a>');
 
   	});
 
