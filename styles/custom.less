@@ -921,7 +921,10 @@ blockquote{
 			.make-product-defaults();	
 			background-image:url(/assets/bringeber.png), url(/assets/bringeber_hoyre.png);
 			background-position:left 1350px, right 620px; 
-			background-size:15%;	
+			background-size:15%;
+			@media @mobile{
+				background-position-y:25%; 
+			}	
 		}
 		&.appelsin .background-product{	
 			.make-product-defaults();	
