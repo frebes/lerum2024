@@ -29,7 +29,7 @@ $(document).ready(function(){
 	$(function(){
 
 		var galleryblock = $('.forside .Index-gallery-item-content');
-
+		console.log(galleryblock);
 		galleryblock.appendTo('.forside .Index-gallery');
 
 	});
