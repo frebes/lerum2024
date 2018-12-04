@@ -250,10 +250,11 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
   		else if (bc_berekraft[0])
   			bc.append(htmls + '<a href="/berekraft/">Bærekraft</a>');
-    	else if (bc_omoss[0])
-  			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
       	else if (bc_kontakt[0])
   			bc.append(htmls + '<a href="/kontakt/">Kontakt oss</a>');
+  		
+    	if (bc_omoss[0])
+  			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
 
   	});
 
