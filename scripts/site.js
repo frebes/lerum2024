@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	  	//alert(fName);
 	  	console.log(fName);
-	  	
+
 	  	if(fName === ''){ // Set first page lerum
 	    	$('.Site').addClass('forside');
 	  	}
@@ -49,11 +49,13 @@ $(document).ready(function(){
 			});
 
 		currItem.height(setMaxHeight); // summary-item
-
+		
 		var breakPoint = 1000,
 			heightElem = $('#freistande-oppskrifter .summary-thumbnail-outer-container'), // Find middle point height thumbwrapper forside
 			setHeightElem = $('#freistande-oppskrifter .summary-title');
 
+		console.log(heightElem);
+		console.log(setHeightElem);
 		if ($(window).width() > breakPoint){
 			heightElem.each(function(){
 				setHeight = $(this).height()/1.6; // consider padding bottom
