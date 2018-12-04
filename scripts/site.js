@@ -225,6 +225,7 @@ $(document).ready(function(){
   			bc_berekraft = $('.Site.berekraft'),
   			bc_omoss = $('.Site.om-lerum'),
   			bc_hist = $('div[class*="hist"]'),
+  			bc_styre = $('div[class*="styre"]'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
  		var parts = location.href.split('/').slice(3),
@@ -258,6 +259,8 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
       	if (bc_hist[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/historie/">Historie</a>');
+      	if (bc_styre[0])
+  			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/styre-og-leiing/">Styre og leiing</a>');
 
   	});
 
