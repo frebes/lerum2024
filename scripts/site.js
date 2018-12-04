@@ -209,7 +209,7 @@ $(document).ready(function(){
 
   	};
 
-  	// BC (temp until better solution found)
+  	// BC (temp until better breadcrumb solution found)
 
   	$(function(){
 
