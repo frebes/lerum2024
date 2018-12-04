@@ -152,6 +152,7 @@ $(document).ready(function(){
 			var sumLink = $(this).attr('href'),
 				summaryRep = $($('#oppskrift-toppgalleri .summary-excerpt p')[index]);
 
+			console.log(sumLink);
 		    summaryRep.replaceWith('<p class="oppskrift-link"><a href="'+ sumLink +'">Gå til oppskrifta</a></p>')
 		});
 
@@ -208,7 +209,7 @@ $(document).ready(function(){
 
   	};
 
-  	// BC
+  	// BC (temp until better solution found)
 
   	$(function(){
 
