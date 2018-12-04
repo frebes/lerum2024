@@ -257,7 +257,7 @@ $(document).ready(function(){
     	if (bc_omoss[0])
   			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
       	if (bc_hist[0])
-  			bc.append(htmls + '<a href="/historie/">Historie</a>');
+  			bc.append(htmls + '<a href="/omoss/">Om oss</a><a href="/historie/">Historie</a>');
 
   	});
 
