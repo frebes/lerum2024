@@ -20,9 +20,9 @@ $(window).on("resize load", function () {
 
 
 
-
-<h2>Oppskrifter for {.section items}{tags}{.end}</h2>
-
+{.section items}
+<h2>Oppskrifter for {tags}</h2>
+{.end}
 
 
 
