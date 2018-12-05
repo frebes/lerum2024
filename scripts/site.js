@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	// Find pagenames and identify using classes
 
-	$(window).bind("load",function(){
+	$(function(){
 
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
