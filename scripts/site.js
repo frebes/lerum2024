@@ -67,6 +67,21 @@ $(document).ready(function(){
 	});
 
 
+    // Summary Height
+
+    $(function(){
+        var setMaxHeight = 0,
+          currItem = $(".histori .summary-content");
+      
+      currItem.each(function(){
+          if($(this).height() > setMaxHeight){ 
+                setMaxHeight = $(this).height(); 
+                };
+        });
+      currItem.height(setMaxHeight);
+    });
+
+
 	// Gallery mouseevent
 
 	testHover = function(){
