@@ -67,18 +67,22 @@ $(document).ready(function(){
 	});
 
 
-    // Summary Height
+    // Element heights summary content
 
     $(function(){
+
         var setMaxHeight = 0,
-          currItem = $(".histori .summary-content");
+          	currItem = $(".histori .summary-content");
       
-      currItem.each(function(){
-          if($(this).height() > setMaxHeight){ 
-                setMaxHeight = $(this).height(); 
-                };
+      	currItem.each(function(){
+
+        if($(this).height() > setMaxHeight){ 
+            setMaxHeight = $(this).height(); 
+            };
         });
-      currItem.height(setMaxHeight);
+
+      	currItem.height(setMaxHeight);
+
     });
 
 
