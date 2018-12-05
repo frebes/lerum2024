@@ -1025,20 +1025,6 @@ blockquote{
 
 }
 
-/* test 
-
-.summary-thumbnail-outer-container{
-	img{
-		.transmove();
-	}
-   	&:hover {
-   		img {
-   			transform:scale(.98);
-   		}
-	}
-}
-
-*/
 
 
 /* Sesongkalender */
@@ -1152,7 +1138,10 @@ blockquote{
 		}
 	}
 	.sqs-gallery-controls{
-
+		position:relative;
+		z-index:1000;
+		top:100%;
+		right:0px;
 	}
 	.summary-block-header .summary-heading{
 		.hide();
