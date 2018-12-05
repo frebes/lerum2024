@@ -278,7 +278,7 @@ $(document).ready(function(){
     	if (bc_omoss[0])
   			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
       	if (bc_hist[0])
-  			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/historie/">Historie</a>');
+  			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/historie">Historie</a>');
       	if (bc_styre[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/styre-og-leiing/">Styre og leiing</a>');
 
