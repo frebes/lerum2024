@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$(function(){
 
 	  	var pName = window.location.pathname,
-	  	    fName = pName.slice(1);
+	  	    fName = pName.slice(1,-1);
 
 	  	//alert(fName);
 	  	console.log(pName);
