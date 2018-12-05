@@ -12,6 +12,7 @@ $(document).ready(function(){
 	  	    fName = pName.slice(1,-1);
 
 	  	//alert(fName);
+	  	console.log(pName);
 	  	console.log(fName);
 
 	  	if(fName === ''){ // Set first page lerum
