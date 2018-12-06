@@ -298,7 +298,7 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/styre-og-leiing/">Styre og leiing</a>');
 
       	if (bc_kontakt[0])
-  			bc.append(htmls + '<a href="/kontakt/">Kontakt oss</a>');
+  			bc.append(htmls + '<a href="/kontakt-oss-innhold/">Kontakt oss</a>');
 
   	});
 
