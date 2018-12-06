@@ -242,7 +242,7 @@ $(document).ready(function(){
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
 
-  			bc_fruktber = $('.Site[class*="frukt-ber"]'),
+  			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_oppskrift = $('div[class*="oppskrift"]'),
   			bc_berekraft = $('.Site.berekraft'),
   			
