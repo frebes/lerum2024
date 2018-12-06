@@ -247,6 +247,7 @@ $(document).ready(function(){
 
   			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_fruktbere = $('.Site[class*="frukt-og-ber"]'),
+  			bc_sunnheit = $('.Site[class*="sunnheit-og-helse"]'),
 
   			bc_omoss = $('.Site.om-lerum'),
   			bc_hist = $('.Site[class*="hist"]'),
@@ -279,15 +280,17 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
   		else if (bc_fruktbere[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>' + htmls + '<a href="/frukt-og-ber/">Frukt & bær</a>');
+  		else if (bc_sunnheit[0])
+  			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>' + htmls + '<a href="/sunnheit-og-helse/">Frukt & bær</a>');
 
       	if (bc_kontakt[0])
   			bc.append(htmls + '<a href="/kontakt/">Kontakt oss</a>');
 
     	if (bc_omoss[0])
   			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
-      	if (bc_hist[0])
+      	else if (bc_hist[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/historie/">Historie</a>');
-      	if (bc_styre[0])
+      	else if (bc_styre[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/styre-og-leiing/">Styre og leiing</a>');
 
   	});
