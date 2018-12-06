@@ -248,6 +248,7 @@ $(document).ready(function(){
   			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_fruktbere = $('.Site[class*="frukt-og-ber"]'),
   			bc_sunnheit = $('.Site[class*="sunnheit-og-helse"]'),
+  			bc_menneske = $('.Site[class*="menneske"]'),
 
   			bc_omoss = $('.Site.om-lerum'),
   			bc_hist = $('.Site[class*="hist"]'),
@@ -282,6 +283,8 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>' + htmls + '<a href="/frukt-og-ber/">Frukt & bær</a>');
   		else if (bc_sunnheit[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>' + htmls + '<a href="/sunnheit-og-helse/">Sunnheit & helse</a>');
+  		else if (bc_menneske[0])
+  			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>' + htmls + '<a href="/menneske/">Menneske</a>');
 
 
     	if (bc_omoss[0])
