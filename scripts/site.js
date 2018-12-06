@@ -236,19 +236,21 @@ $(document).ready(function(){
   	$(function(){
 
   		var bc = $('.bc a'),
+
   			bc_produkt = $('.Site[class*="produkt"]'),
   			bc_prod_sylt = $('div[class*="sylte"]'),
   			bc_prod_saft = $('div[class*="saft"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
 
-  			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_oppskrift = $('div[class*="oppskrift"]'),
-  			bc_berekraft = $('.Site.berekraft'),
+
+  			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
 
   			bc_omoss = $('.Site.om-lerum'),
   			bc_hist = $('.Site[class*="hist"]'),
   			bc_styre = $('.Site[class*="styre"]'),
+
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
  		var parts = location.href.split('/').slice(3),
@@ -269,13 +271,13 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
+  		if (bc_oppskrift[0])
+  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
+
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
-  		else if (bc_oppskrift[0])
-  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
-  		else if (bc_berekraft[0])
-  			bc.append(htmls + '<a href="/berekraft/">Bærekraft</a>');
-      	else if (bc_kontakt[0])
+
+      	if (bc_kontakt[0])
   			bc.append(htmls + '<a href="/kontakt/">Kontakt oss</a>');
 
     	if (bc_omoss[0])
