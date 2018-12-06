@@ -24,7 +24,7 @@ $(window).on("resize load", function () {
 
 <div id="productFind" class="{tags}">
 
- <div class="background-product">
+ <div class="produkt background-product">
  </div>
  
     <section id="{urlId}" class="Index-page--has-image customMainimage"  data-collection-id="{id}">
