@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 	  	//alert(fName);
 	  	console.log(pName);
-	  	console.log(id);
+	  	console.log(fName);
 
 	  	if(fName === ''){ // Set first page lerum
 	    	$('.Site').addClass('forside');
