@@ -270,11 +270,11 @@ $(document).ready(function(){
 
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-ber/">Frukt&bær</a>');
-  		if (bc_oppskrift[0])
+  		else if (bc_oppskrift[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
-  		if (bc_berekraft[0])
+  		else if (bc_berekraft[0])
   			bc.append(htmls + '<a href="/berekraft/">Bærekraft</a>');
-      	if (bc_kontakt[0])
+      	else if (bc_kontakt[0])
   			bc.append(htmls + '<a href="/kontakt/">Kontakt oss</a>');
 
     	if (bc_omoss[0])
