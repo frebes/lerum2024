@@ -266,7 +266,7 @@ $(document).ready(function(){
     	if (bc_prod_jus[0])
   			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
     	if (bc_prod_jule[0])
-  			bc.append(htmls + '<a href="/produkt-julebrus/">Julebrus</a>');
+  			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-ber/">Frukt&bær</a>');
