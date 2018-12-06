@@ -1181,8 +1181,11 @@ div[class*="hist"]{
 /*********** General ************/
 
 .Site{
-	a:hover{
-		border-bottom:1px solid @lerum-color-red!important;
+	a{
+		border-bottom:1px solid transparent;
+		&:hover{
+			border-bottom:1px solid @lerum-color-red!important;
+		}
 	}
 }
 .Main.Main--blog-item{
