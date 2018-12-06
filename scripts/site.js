@@ -236,7 +236,7 @@ $(document).ready(function(){
   	$(function(){
 
   		var bc = $('.bc a'),
-  			bc_produkt = $('.Site[class*="produkt"]'),
+  			bc_produkt = $('div[class*="produkt"]'),
   			bc_prod_sylt = $('.Site[class*="sylte"]'),
   			bc_prod_saft = $('.Site[class*="saft"]'),
   			bc_prod_jus = $('.Site[class*="jus"]'),
