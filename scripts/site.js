@@ -236,11 +236,11 @@ $(document).ready(function(){
   	$(function(){
 
   		var bc = $('.bc a'),
-  			bc_produkt = $('div[class*="produkt"]'),
-  			bc_prod_sylt = $('.Site[class*="sylte"]'),
-  			bc_prod_saft = $('.Site[class*="saft"]'),
-  			bc_prod_jus = $('.Site[class*="jus"]'),
-    		bc_prod_jule = $('.Site[class*="jule"]'),
+  			bc_produkt = $('.Site[class*="produkt"]'),
+  			bc_prod_sylt = $('div[class*="sylte"]'),
+  			bc_prod_saft = $('div[class*="saft"]'),
+  			bc_prod_jus = $('div[class*="jus"]'),
+    		bc_prod_jule = $('div[class*="jule"]'),
 
   			bc_fruktber = $('.Site[class*="frukt-ber"]'),
   			bc_oppskrift = $('div[class*="oppskrift"]'),
