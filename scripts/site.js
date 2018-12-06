@@ -10,10 +10,15 @@ $(document).ready(function(){
 
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
+		var url = "http://www.place.com/forum/d7/9999/";
+		var isLastSlash = (url[url.length -1]=="/")? true: false;
+		var url= url.split("/");
+		var id = url[url.length - (isLastSlash? 2: 1)];
 
 	  	//alert(fName);
 	  	console.log(pName);
 	  	console.log(fName);
+	  	console.log(id);
 
 	  	if(fName === ''){ // Set first page lerum
 	    	$('.Site').addClass('forside');
