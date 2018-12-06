@@ -9,11 +9,11 @@ $(document).ready(function(){
 	$(function(){
 
 	  	var pName = window.location.pathname,
-	  	    fName = pName.slice(1,-1);
-		var url = pName;
-		var isLastSlash = (url[url.length -1]=="/")? true: false;
-		var url= url.split("/");
-		var id = url[url.length - (isLastSlash? 2: 1)];
+	  	    fName = pName.slice(1,-1),
+			url = pName,
+			isLastSlash = (url[url.length -1]=="/")? true: false,
+			url = url.split("/"),
+			id = url[url.length - (isLastSlash? 2: 1)];
 
 	  	//alert(fName);
 	  	console.log(pName);
@@ -24,7 +24,7 @@ $(document).ready(function(){
 	    	$('.Site').addClass('forside');
 	  	}
 	 	else{
-	    	$('.Site').addClass(fName);
+	    	$('.Site').addClass(id);
 	  	}
 
 	});
