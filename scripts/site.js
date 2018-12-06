@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	  	var pName = window.location.pathname,
 	  	    fName = pName.slice(1,-1);
-		var url = "http://www.place.com/forum/d7/9999/";
+		var url = pName;
 		var isLastSlash = (url[url.length -1]=="/")? true: false;
 		var url= url.split("/");
 		var id = url[url.length - (isLastSlash? 2: 1)];
