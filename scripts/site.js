@@ -242,12 +242,12 @@ $(document).ready(function(){
   			bc_prod_jus = $('.Site[class*="jus"]'),
     		bc_prod_jule = $('.Site[class*="jule"]'),
 
-  			bc_fruktber = $('div[class*="frukt-ber"]'),
+  			bc_fruktber = $('.Site[class*="frukt-ber"]'),
   			bc_oppskrift = $('.Site[class*="oppskrift"]'),
   			bc_berekraft = $('.Site.berekraft'),
   			bc_omoss = $('.Site.om-lerum'),
-  			bc_hist = $('div[class*="hist"]'),
-  			bc_styre = $('div[class*="styre"]'),
+  			bc_hist = $('.Site[class*="hist"]'),
+  			bc_styre = $('.Site[class*="styre"]'),
   			bc_kontakt = $('.Site.kontakt-oss-innhold');
  
  		var parts = location.href.split('/').slice(3),
