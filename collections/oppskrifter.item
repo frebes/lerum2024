@@ -18,7 +18,7 @@ $(window).on("resize load", function () {
 });
 </script>
 
-<div class="oppskrifterdet">
+<div class="oppskrifter">
 
 {.section item}
 
