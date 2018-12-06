@@ -245,7 +245,7 @@ $(document).ready(function(){
   			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_oppskrift = $('div[class*="oppskrift"]'),
   			bc_berekraft = $('.Site.berekraft'),
-  			
+
   			bc_omoss = $('.Site.om-lerum'),
   			bc_hist = $('.Site[class*="hist"]'),
   			bc_styre = $('.Site[class*="styre"]'),
@@ -270,7 +270,7 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
   		if (bc_fruktber[0])
-  			bc.append(htmls + '<a href="/frukt-ber/">Frukt&bær</a>');
+  			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
   		else if (bc_oppskrift[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
   		else if (bc_berekraft[0])
