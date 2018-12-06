@@ -77,7 +77,7 @@ $(document).ready(function(){
     $(function(){
 
         var setMaxHeight = 0,
-          	currItem = $(".histori .summary-content");
+          	currItem = $(".historie .summary-content");
       
       	currItem.each(function(){
 
