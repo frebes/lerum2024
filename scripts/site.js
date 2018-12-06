@@ -246,6 +246,7 @@ $(document).ready(function(){
   			bc_oppskrift = $('div[class*="oppskrift"]'),
 
   			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
+  			bc_fruktbere = $('.Site[class*="frukt-og-ber"]'),
 
   			bc_omoss = $('.Site.om-lerum'),
   			bc_hist = $('.Site[class*="hist"]'),
@@ -276,6 +277,8 @@ $(document).ready(function(){
 
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
+  		if (bc_fruktbere[0])
+  			bc.append(htmls + '<a href="/frukt-og-ber/">Frukt & bær</a>');
 
       	if (bc_kontakt[0])
   			bc.append(htmls + '<a href="/kontakt/">Kontakt oss</a>');
