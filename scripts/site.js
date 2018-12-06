@@ -8,23 +8,20 @@ $(document).ready(function(){
 
 	$(function(){
 
-	  	var pName = window.location.pathname,
-	  	    fName = pName.slice(1,-1),
-			url = pName,
+	  	var pName = window.location.pathname,url = pName,		
 			isLastSlash = (url[url.length -1]=="/")? true: false,
 			url = url.split("/"),
-			id = url[url.length - (isLastSlash? 2: 1)];
+			fName = url[url.length - (isLastSlash? 2: 1)];
 
 	  	//alert(fName);
 	  	console.log(pName);
-	  	console.log(fName);
 	  	console.log(id);
 
 	  	if(fName === ''){ // Set first page lerum
 	    	$('.Site').addClass('forside');
 	  	}
 	 	else{
-	    	$('.Site').addClass(id);
+	    	$('.Site').addClass(fName);
 	  	}
 
 	});
