@@ -268,8 +268,7 @@ $(document).ready(function(){
  			addBc = $.parseHTML(htmls);
  			
 		var first = $(location).attr('pathname');
-		first.indexOf(1);
-		first.toLowerCase();
+		first.indexOf(1); first.toLowerCase();
 		first = first.split("/")[1];
 
   		if (bc_produkt[0])
