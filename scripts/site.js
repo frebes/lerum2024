@@ -276,9 +276,7 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
-  		if (bc_oppskrift[0])
-  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
-  		else if (bc_oppskrift_det[0])
+  		if (bc_oppskrift[0] || bc_oppskrift_det[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
 
   		if (bc_fruktber[0])
