@@ -244,6 +244,7 @@ $(document).ready(function(){
     		bc_prod_jule = $('div[class*="jule"]'),
 
   			bc_oppskrift = $('.Site[class*="oppskrift"]'),
+  			bc_oppskrift_det = $('div[class*="oppskrifter"]'),
 
   			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_fruktbere = $('.Site[class*="frukt-og-ber"]'),
@@ -277,7 +278,9 @@ $(document).ready(function(){
 
   		if (bc_oppskrift[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
-
+  		if (bc_oppskrift_det[0])
+  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
+  		
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
   		else if (bc_fruktbere[0])
