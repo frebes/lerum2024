@@ -238,12 +238,12 @@ $(document).ready(function(){
   		var bc = $('.bc a'),
 
   			bc_produkt = $('.Site[class*="produkt"]'),
-  			bc_prod_sylt = $('div[class*="sylte"]'),
+  			bc_prod_sylt = $('div[class*="syltetoy"]'),
   			bc_prod_saft = $('div[class*="saft"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
 
-  			bc_oppskrift = $('.Site[class*="oppskrift"]'),
+  			bc_oppskrift = $('div[class*="oppskrift"]'),
 
   			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_fruktbere = $('.Site[class*="frukt-og-ber"]'),
