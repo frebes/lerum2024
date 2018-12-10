@@ -276,6 +276,11 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
+  		if ('#produkt-content-excerpt').length{
+  			bc.empty();
+  			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
+  		};
+
   		if (bc_oppskrift[0] || bc_oppskrift_det[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
 
