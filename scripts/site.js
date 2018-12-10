@@ -291,7 +291,7 @@ $(document).ready(function(){
 
 
     	if (bc_omoss[0])
-  			bc.append(htmls + '<a href="/omoss/">Om oss</a>');
+  			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>');
       	else if (bc_hist[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>' + htmls + '<a href="/historie/">Historie</a>');
       	else if (bc_styre[0])
