@@ -276,7 +276,7 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
-  		if ('#produkt-content-excerpt').length()
+  		if ('#produkt-content-excerpt').length
   			//bc.empty();
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
   		
