@@ -280,7 +280,7 @@ $(document).ready(function(){
     	if (bc_prod_saft[0]){
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');	
 	  		if (produrl == 'saft')
-	  			bc.append(htmls + '<a href="/produkt-saft/">Syltetøy</a>');
+	  			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
   		}
 
     	if (bc_prod_jus[0])
