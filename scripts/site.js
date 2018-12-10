@@ -275,7 +275,7 @@ $(document).ready(function(){
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
-  		
+
   		if (bc_prod_sylt[0])
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
   		if (produrl == 'syltety')
@@ -283,6 +283,9 @@ $(document).ready(function(){
 
     	if (bc_prod_saft[0])
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
+  		if (produrl == 'saft')
+  			bc.append(htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-saft/">Syltetøy</a>');
+
     	if (bc_prod_jus[0])
   			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
     	if (bc_prod_jule[0])
