@@ -238,7 +238,7 @@ $(document).ready(function(){
   		var bc = $('.bc a'),
 
   			bc_produkt = $('.Site[class*="produkt"]'),
-  			bc_prod_sylt = $('div[class*="syltetøy"]'),
+  			bc_prod_sylt = $('div[class*="syltet"]'),
   			bc_prod_saft = $('div[class*="saft"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
