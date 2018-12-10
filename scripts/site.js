@@ -272,6 +272,9 @@ $(document).ready(function(){
 		produrl = produrl.split("/")[1];
 		console.log(produrl);
 
+		var bc_produrl = produrl[0];
+		console.log(produrl);
+
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
@@ -283,6 +286,7 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
+  		if ()
 //  		if (('#produkt-content-excerpt').length){		
 //   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
 //  		}
