@@ -273,7 +273,7 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
 		  		if (produrl == 'saft')
 		  			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
-	  		}
+	  		
   		}
 
   		if (bc_prod_sylt[0])
