@@ -269,11 +269,11 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
-    	else if (bc_prod_saft[0])
+    	if (bc_prod_saft[0])
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
-    	else if (bc_prod_jus[0])
+    	if (bc_prod_jus[0])
   			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
-    	else if (bc_prod_jule[0])
+    	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
   		if (bc_oppskrift[0])
