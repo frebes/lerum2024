@@ -240,7 +240,7 @@ $(document).ready(function(){
 			url = url.split("/"),
 			fName = url[url.length - (isLastSlash? 2: 1)];
 
-	  	console.log(fName);
+	  	console.log(pName);
 
   		var bc = $('.bc a'),
 
