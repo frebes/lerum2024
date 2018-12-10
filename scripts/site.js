@@ -271,7 +271,6 @@ $(document).ready(function(){
  			addBc = $.parseHTML(htmls);
  			
 		parts[0] = '<a href="/">';
-		console.log(parts);
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
