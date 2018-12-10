@@ -284,7 +284,8 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
-
+  		if (produrl == 'syltety')
+  			console.log('ok');
 
   		if (bc_oppskrift[0] || bc_oppskrift_det[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
