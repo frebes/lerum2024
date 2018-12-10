@@ -243,7 +243,7 @@ $(document).ready(function(){
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
 
-  			bc_oppskrift = $('div[class*="oppskrift"]'),
+  			bc_oppskrift = $('.Site[class*="oppskrift"]'),
 
   			bc_fruktber = $('.Site[class*="frukt-og-berekraft"]'),
   			bc_fruktbere = $('.Site[class*="frukt-og-ber"]'),
@@ -268,11 +268,11 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
-    	if (bc_prod_saft[0])
+    	else if (bc_prod_saft[0])
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
-    	if (bc_prod_jus[0])
+    	else if (bc_prod_jus[0])
   			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
-    	if (bc_prod_jule[0])
+    	else if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
   		if (bc_oppskrift[0])
