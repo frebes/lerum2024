@@ -271,12 +271,8 @@ $(document).ready(function(){
 		var first = $(location).attr('pathname');
 
 		first.indexOf(1);
-
 		first.toLowerCase();
-
 		first = first.split("/")[1];
-
-		alert(first);
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
