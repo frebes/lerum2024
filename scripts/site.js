@@ -235,6 +235,13 @@ $(document).ready(function(){
 
   	$(function(){
 
+	  	var pName = window.location.pathname,url = pName,		
+			isLastSlash = (url[url.length -1]=="/")? true: false,
+			url = url.split("/"),
+			fName = url[url.length - (isLastSlash? 2: 1)];
+
+	  	console.log(fName);
+
   		var bc = $('.bc a'),
 
   			bc_produkt = $('.Site[class*="produkt"]'),
