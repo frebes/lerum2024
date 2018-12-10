@@ -238,7 +238,7 @@ $(document).ready(function(){
   		var bc = $('.bc a'),
 
   			bc_produkt = $('.Site[class*="produkt"]'),
-  			bc_prod_sylt = $('div[class*="syltet"]'),
+  			bc_prod_sylt = $('div[class*="syltetoy"]'),
   			bc_prod_saft = $('div[class*="saft"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
@@ -275,7 +275,8 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
-
+  		if (bc_oppskrift[0])
+  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
 
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
@@ -298,9 +299,6 @@ $(document).ready(function(){
 
       	if (bc_kontakt[0])
   			bc.append(htmls + '<a href="/kontakt-oss-innhold/">Kontakt oss</a>');
-
-  		if (bc_oppskrift[0])
-  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
 
   	});
 
