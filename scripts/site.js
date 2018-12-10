@@ -275,8 +275,7 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
-  		if (bc_oppskrift[0])
-  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
+
 
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
@@ -299,6 +298,9 @@ $(document).ready(function(){
 
       	if (bc_kontakt[0])
   			bc.append(htmls + '<a href="/kontakt-oss-innhold/">Kontakt oss</a>');
+
+  		if (bc_oppskrift[0])
+  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
 
   	});
 
