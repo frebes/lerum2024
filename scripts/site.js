@@ -267,10 +267,10 @@ $(document).ready(function(){
  			htmls = '&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;',
  			addBc = $.parseHTML(htmls);
  			
-		var first = $(location).attr('pathname');
-		first.indexOf(1); first.toLowerCase();
-		first = first.split("/")[1];
-		console.log(first);
+		var produrl = $(location).attr('pathname');
+		produrl.indexOf(1); produrl.toLowerCase();
+		produrl = produrl.split("/")[1];
+		console.log(produrl);
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
