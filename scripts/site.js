@@ -235,10 +235,7 @@ $(document).ready(function(){
 
   	$(function(){
 
-	  	var pName = window.location.pathname,url = pName,		
-			isLastSlash = (url[url.length -1]=="/")? true: false,
-			url = url.split("/"),
-			fName = url[url.length - (isLastSlash? 2: 1)];
+	  	var pName = window.location.pathname;
 
 	  	console.log(pName);
 
