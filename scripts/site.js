@@ -272,8 +272,6 @@ $(document).ready(function(){
 		produrl = produrl.split("/")[1];
 		console.log(produrl);
 
-		var bc_produrl = produrl[0];
-		console.log(bc_produrl);
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
