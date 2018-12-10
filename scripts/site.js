@@ -267,9 +267,7 @@ $(document).ready(function(){
  			htmls = '&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;',
  			addBc = $.parseHTML(htmls);
  			
-		parts[0] = '<a href="/">';
 		var first = $(location).attr('pathname');
-
 		first.indexOf(1);
 		first.toLowerCase();
 		first = first.split("/")[1];
