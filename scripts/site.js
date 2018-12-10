@@ -268,8 +268,8 @@ $(document).ready(function(){
 		produrl = produrl.split("/")[1];
 		console.log(produrl);
 
-  		if (bc_produkt[0])
-  			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
+  		//if (bc_produkt[0])
+  		//	bc.append(htmls + '<a href="/produkt/">Produkt</a>');
 
   		if (bc_prod_sylt[0])
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
