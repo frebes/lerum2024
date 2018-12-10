@@ -278,9 +278,9 @@ $(document).ready(function(){
 
   		if (bc_oppskrift[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
-  		if (bc_oppskrift_det[0])
+  		else if (bc_oppskrift_det[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
-  		
+
   		if (bc_fruktber[0])
   			bc.append(htmls + '<a href="/frukt-og-berekraft/">Frukt & bærekraft</a>');
   		else if (bc_fruktbere[0])
