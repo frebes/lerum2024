@@ -235,10 +235,6 @@ $(document).ready(function(){
 
   	$(function(){
 
-	  	var pName = window.location.pathname;
-
-	  	console.log(pName);
-
   		var bc = $('.bc a'),
 
   			bc_produkt = $('.Site[class*="produkt"]'),
