@@ -265,7 +265,7 @@ $(document).ready(function(){
  			
 		parts[0] = '<a href="/">';
 
-  		if (bc_produkt[0])
+  		if (bc_produkt[0] || (('#produkt-content-excerpt').length))
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
   		if (bc_prod_sylt[0])
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
@@ -276,10 +276,7 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
-  		if (('#produkt-content-excerpt').length){
-  			bc.empty();
-  			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
-  		}
+
 
   		if (bc_oppskrift[0] || bc_oppskrift_det[0])
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
