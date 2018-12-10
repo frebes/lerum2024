@@ -275,8 +275,12 @@ $(document).ready(function(){
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
-  		else if (bc_prod_sylt[0] || produrl == 'syltety')
+  		
+  		if (bc_prod_sylt[0])
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
+  		if (produrl == 'syltety')
+  			bc.append(htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
+
     	if (bc_prod_saft[0])
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
     	if (bc_prod_jus[0])
