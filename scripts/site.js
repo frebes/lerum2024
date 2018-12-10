@@ -275,7 +275,7 @@ $(document).ready(function(){
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
-  		if (bc_prod_sylt[0] || produrl == 'syltety')
+  		else if (bc_prod_sylt[0] || produrl == 'syltety')
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
     	if (bc_prod_saft[0])
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');
