@@ -485,6 +485,14 @@ blockquote{
 } 
 
 // Override inline media query forside / buttons mobile
+.mobilebut{
+	display:block;
+	content:" "!important;			
+	background-image:url(/assets/pil_venstre.png)!important;
+	background-repeat:no-repeat;
+	width:108px!important;
+	height:24px!important;	
+}
 
 @media @mobile{
 	.summary-carousel-pager{	
@@ -496,12 +504,7 @@ blockquote{
 		.summary-carousel-pager-prev{
 			left:50px!important;
 			&:before{
-				display:block;
-				content:" "!important;			
-				background-image:url(/assets/pil_venstre.png)!important;
-				background-repeat:no-repeat;
-				width:108px!important;
-				height:24px!important;
+				.mobilebut();
 			}
 			&:hover, &:active{
 				background:transparent!important;
@@ -510,12 +513,7 @@ blockquote{
 		.summary-carousel-pager-next{
 			right:50px!important;
 			&:before{
-				display:block;
-				content:" "!important;			
-				background-image:url(/assets/pil_venstre.png)!important;
-				background-repeat:no-repeat;
-				width:108px!important;
-				height:24px!important;
+				.mobilebut();
 				transform:scaleX(-1);
 			}
 			&:hover, &:active{
