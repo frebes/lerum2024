@@ -485,7 +485,8 @@ blockquote{
 } 
 
 // Override inline media query forside / buttons mobile
-.mobilebut{
+
+.mobilebutton{
 	display:block;
 	content:" "!important;			
 	background-image:url(/assets/pil_venstre.png)!important;
@@ -504,7 +505,7 @@ blockquote{
 		.summary-carousel-pager-prev{
 			left:50px!important;
 			&:before{
-				.mobilebut();
+				.mobilebutton();
 			}
 			&:hover, &:active{
 				background:transparent!important;
@@ -513,7 +514,7 @@ blockquote{
 		.summary-carousel-pager-next{
 			right:50px!important;
 			&:before{
-				.mobilebut();
+				.mobilebutton();
 				transform:scaleX(-1);
 			}
 			&:hover, &:active{
