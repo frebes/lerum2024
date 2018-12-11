@@ -59,6 +59,7 @@ $(document).ready(function(){
 
 		console.log(heightElem);
 		console.log(setHeightElem);
+		
 		if ($(window).width() > breakPoint){
 			heightElem.each(function(){
 				setHeight = $(this).height()/1.55; // consider padding bottom
