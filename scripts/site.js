@@ -280,13 +280,14 @@ $(document).ready(function(){
   		if (produrl == 'syltety')
   			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
 
-    	if (bc_prod_saft[0])
+    	if (bc_prod_saft[0] && produrl == 'saft')
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');	
 	  	if (produrl == 'saft')
 	  		bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-saft/">Saft</a>');
 
     	if (bc_prod_jus[0])
   			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
+  		
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
