@@ -286,11 +286,10 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
- 		//if (bc_oppskrift[0] || bc_oppskrift_det[0])
  		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-')
   			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
 
-  		if (bc_fruktber[0])
+  		if (bc_fruktber[0] || bc_fruktbere[0] || bc_sunnheit[0] || bc_menneske[0] || bc_miljo[0])
   			bc.append(htmls + '<a href="/frukt-og-berkraft/">Frukt & bærkraft</a>');
   		else if (bc_fruktbere[0])
   			bc.append(htmls + '<a href="/frukt-og-berkraft/">Frukt & bærkraft</a>' + htmls + '<a href="/frukt-og-ber/">Frukt & bær</a>');
@@ -300,7 +299,6 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/frukt-og-berkraft/">Frukt & bærkraft</a>' + htmls + '<a href="/menneske/">Menneske</a>');
   		else if (bc_miljo[0])
   			bc.append(htmls + '<a href="/frukt-og-berkraft/">Frukt & bærkraft</a>' + htmls + '<a href="/milj/">Miljø</a>');
-
 
     	if (bc_omoss[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>');
