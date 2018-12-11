@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 		console.log(heightElem);
 		console.log(setHeightElem);
-		
+
 		if ($(window).width() > breakPoint){
 			heightElem.each(function(){
 				setHeight = $(this).height()/1.55; // consider padding bottom
@@ -275,7 +275,7 @@ $(document).ready(function(){
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
 
-  		if (bc_prod_sylt[0])
+  		if (bc_prod_sylt[0] && !(produrl=='oppskrifter-'))
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
   		if (produrl == 'syltety')
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
