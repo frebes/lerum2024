@@ -292,7 +292,7 @@ $(document).ready(function(){
   		if (bc_fruktber[0] || bc_fruktbere[0] || bc_sunnheit[0] || bc_menneske[0] || bc_miljo[0])
   			bc.append(htmls + '<a href="/frukt-og-berkraft/">Frukt & bærkraft</a>');
 
-    	if (bc_omoss[0])
+    	if (bc_omoss[0] || bc_omoss[0] || bc_styre[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>');
 
       	if (bc_kontakt[0])
