@@ -267,6 +267,7 @@ $(document).ready(function(){
 		
 		produrl.indexOf(1); produrl.toLowerCase();
 		produrl = produrl.split("/")[1];
+		
 		console.log(produrl);
 
   		if (bc_produkt[0])
