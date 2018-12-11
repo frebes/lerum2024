@@ -275,7 +275,7 @@ $(document).ready(function(){
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
 
-  		if (bc_prod_sylt[0] && !(produrl=='oppskrifter-'))
+  		if (bc_prod_sylt[0])
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
   		if (produrl == 'syltety')
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
@@ -290,8 +290,10 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
- 		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-')
-  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
+ 		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-'){
+ 			if !(produrl == 'syltety')
+  				bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
+ 		}
 
   		if (bc_fruktber[0] || bc_fruktbere[0] || bc_sunnheit[0] || bc_menneske[0] || bc_miljo[0])
   			bc.append(htmls + '<a href="/frukt-og-berkraft/">Frukt & bærkraft</a>');
