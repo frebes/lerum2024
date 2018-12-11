@@ -292,7 +292,7 @@ $(document).ready(function(){
 
  		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-'){
  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
-
+ 			bc.removeByContent('syltetoy');​
  		}
 
   		if (bc_fruktber[0] || bc_fruktbere[0] || bc_sunnheit[0] || bc_menneske[0] || bc_miljo[0])
