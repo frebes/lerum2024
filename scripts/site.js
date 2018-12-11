@@ -291,7 +291,7 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
  		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-'){
- 			if (!produrl == 'syltety')
+ 			if (!(produrl == 'syltety'))
   				bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
  		}
 
