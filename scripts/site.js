@@ -262,8 +262,8 @@ $(document).ready(function(){
  			breadcrumb = parts.join('/'),
  			htmls = '&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;',
  			addBc = $.parseHTML(htmls);
- 			
-		var produrl = $(location).attr('pathname');
+ 			produrl = $(location).attr('pathname');
+		
 		produrl.indexOf(1); produrl.toLowerCase();
 		produrl = produrl.split("/")[1];
 		console.log(produrl);
