@@ -290,7 +290,7 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/produkt-julebrus/">Juleprodukter</a>');
 
- 		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-'){
+ 		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-')
  			//if (!(bc_prod_sylt[0]))
   				bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
  		//}
