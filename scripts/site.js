@@ -43,7 +43,7 @@ $(document).ready(function(){
 	$(window).bind("load",function(){ //refresh on load/resize
 
 	    var setMaxHeight = 0,
-	    	//currItem = $(".summary-item");
+	    	currItem = $(".summary-items");
 		
 		currItem.each(function(){
 	   		if($(this).height() > setMaxHeight){ 
