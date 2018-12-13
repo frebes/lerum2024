@@ -1027,6 +1027,7 @@ blockquote{
 		}
 		h2{
 			.h2();
+			font-family:'bree-serif';
 			@media @mobile{
 				padding-left:20px;
 				padding-right:20px;
@@ -1042,26 +1043,16 @@ blockquote{
 				text-align:left!important;
 			}
 		}
+		.summary-title a{
+			font-size:26px;
+		}
+		.summary-metadata-item a{
+			font-family:'open sans';
+			text-transform:uppercase;
+		}
 	}
 	.produkt-related{
 		background:white;
-	}
-	h2, .summary-title, .summary-metadata-item, a{
-		color:white;
-	}
-	h2{
-		font-family:'bree-serif';
-		@media @notdesktop{
-			white-space:initial!important;
-			text-align:left!important;
-		}
-	}
-	.summary-title a{
-		font-size:26px;
-	}
-	.summary-metadata-item a{
-		font-family:'open sans';
-		text-transform:uppercase;
 	}
 	.make-product-defaults{
 		pointer-events:none;
