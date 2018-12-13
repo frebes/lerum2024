@@ -1046,27 +1046,23 @@ blockquote{
 	.produkt-related{
 		background:white;
 	}
-		background:@lerum-color-grey;
-		h2, .summary-title, .summary-metadata-item, a{
-			color:white;
+	h2, .summary-title, .summary-metadata-item, a{
+		color:white;
+	}
+	h2{
+		font-family:'bree-serif';
+		@media @notdesktop{
+			white-space:initial!important;
+			text-align:left!important;
 		}
-		h2{
-			@media @notdesktop{
-				white-space:initial!important;
-				text-align:left!important;
-			}
-		}
-		.summary-title a{
-			font-size:26px;
-		}
-		.summary-metadata-item a{
-			font-family:'open sans';
-			text-transform:uppercase;
-		}
-		@media @mobile{
-			padding-left:20px;
-			padding-right:20px;
-		}
+	}
+	.summary-title a{
+		font-size:26px;
+	}
+	.summary-metadata-item a{
+		font-family:'open sans';
+		text-transform:uppercase;
+	}
 	.make-product-defaults{
 		pointer-events:none;
 		position:absolute;
