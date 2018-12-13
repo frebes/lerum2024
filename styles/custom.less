@@ -625,19 +625,19 @@ blockquote{
 				}
 			}	
 		}
-			@media @mobile{
-				.summary-carousel-pager .previous{
-					left:-2px!important;
-				}
-				.summary-carousel-pager .next{
-					right:0px!important;
-				}
-				.sqs-gallery-controls{
-					margin:0 auto!important;
-					left:0!important;
-					right:0!important;
-				}
+		@media @mobile{
+			.summary-carousel-pager .previous{
+				left:-2px!important;
 			}
+			.summary-carousel-pager .next{
+				right:0px!important;
+			}
+			.sqs-gallery-controls{
+				margin:0 auto!important;
+				left:0!important;
+				right:0!important;
+			}
+		}
 		.oppskrift-link a{
 			.h6();
 			font-size:16px;	
@@ -646,6 +646,9 @@ blockquote{
 			margin-top:30px;
 			padding:15px 60px;				
 			border:1px solid white;	
+			@media @mobile{
+				font-size:13px;	
+			}
 		}
 		.archive-block-wrapper{
 			position:absolute;
