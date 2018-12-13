@@ -554,7 +554,6 @@ blockquote{
 			overflow:hidden;
 			@media @notdesktop{
 				height:auto!important;
-				overflow:visible!important;
 			}
 		}
 		.Index-page-content{
@@ -616,6 +615,9 @@ blockquote{
 		.summary-thumbnail{
 			@media @notdesktop{
 				overflow:visible!important;
+			}
+			@media @mobile{
+				overflow:hidden!important;
 			}
 		}
 		.summary-carousel-pager{
