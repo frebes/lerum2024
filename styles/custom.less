@@ -611,6 +611,12 @@ blockquote{
 				top:auto!important;
 				bottom:0!important;
 			}
+			.summary-carousel-pager-next, .summary-carousel-pager-prev{
+				@media @notdesktop{
+					background:rgba(255,255,255,.4);
+				}
+			}	
+		}
 			@media @mobile{
 				.summary-carousel-pager .previous{
 					left:-2px!important;
@@ -622,12 +628,6 @@ blockquote{
 					left:33%!important;
 				}
 			}
-			.summary-carousel-pager-next, .summary-carousel-pager-prev{
-				@media @notdesktop{
-					background:rgba(255,255,255,.4);
-				}
-			}	
-		}
 		.oppskrift-link a{
 			.h6();
 			font-size:16px;	
