@@ -559,7 +559,11 @@ blockquote{
 		.Index-page-content{
 			padding-left:0;
 			padding-right:0;	
-			overflow:hidden;		
+			overflow:hidden;
+			@media @notdesktop{
+				padding-top:0;
+				padding-bottom:0;
+			}		
 		}
 		.summary-content{
 			/*background:@lerum-color-grey;*/
