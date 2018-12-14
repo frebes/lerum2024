@@ -163,6 +163,7 @@ $(window).on("resize load", function () {
     </div>
   <div id="produktoppskrift-content">
       <div class="produktoppskrift">
+        <h3>Produkt brukt i oppskrifta</h3>
           <squarespace:block-field id="ProductRecipes" columns="6" label="Add Product to Recipe" />
       </div>
   </div>
