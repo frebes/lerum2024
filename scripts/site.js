@@ -267,7 +267,8 @@ $(document).ready(function(){
  			addBc = $.parseHTML(htmls);
  			produrl = $(location).attr('pathname');
 		
-		produrl.indexOf(1); produrl.toLowerCase();
+		produrl.indexOf(1); 
+		produrl.toLowerCase();
 		produrl = produrl.split("/")[1];
 
 		console.log(produrl);
