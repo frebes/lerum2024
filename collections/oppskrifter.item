@@ -161,11 +161,11 @@ $(window).on("resize load", function () {
         </div>
       {.end}
     </div>
-<div id="produktoppskrift-content">
-    <div class="produktoppskrift">
-        <squarespace:block-field id="ProductRecipes" columns="12" label="Add Product to Recipe" />
-    </div>
-</div>
+  <div id="produktoppskrift-content">
+      <div class="produktoppskrift">
+          <squarespace:block-field id="ProductRecipes" columns="12" label="Add Product to Recipe" />
+      </div>
+  </div>
   </section>
 
   <section id="oppskrift-content" class="Index-page">
