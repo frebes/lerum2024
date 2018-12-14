@@ -1420,56 +1420,6 @@ blockquote{
 	padding-top:30px;
 }
 
-
-/* Markdown OSS */
-
-.ofte-stilte-sprsml{
-	.markdown-block{
-		h2{
-			background:none!important;
-			border-top:none!important;
-			border-left:none!important;	
-			border-right:none!important;	
-			border-bottom:1px solid #ccc;
-			text-transform:none;
-			letter-spacing:0;
-			text-align:left;
-			padding:20px 0;	
-	        &.ui-open{
-	        	background:none;
-	        	color:@lerum-color-darkgrey!important;
-	        	font-weight:600!important;
-	        	border-bottom:none!important;
-	        }
-	        &:hover{
-	        	color:@lerum-color-darkgrey!important;
-	        	border-bottom:1px solid @lerum-color-grey;
-	        }
-		}
-	    p, ul, ol{
-	      	margin-top:0!important;
-	        margin-bottom:0!important;
-	        padding:25px 0;
-	        font-size:16px;
-	        background:transparent;
-	        color:@lerum-color-darkgrey;
-	        text-align:left;
-	    }
-	    h2+p:last-child{
-	        border-bottom:1px solid @lerum-color-grey;
-	    }
-	    a{
-	        color:@lerum-color-darkgrey;
-	        text-decoration: underline;        
-	        &:hover {
-	          	color:@lerum-color-darkgrey!important;
-	          	text-decoration: none;
-	        }
-	    }
-	}
-}
-
-
 .markdown-block{
   .sqs-block-content{
     h2{
@@ -1523,7 +1473,53 @@ blockquote{
   }
 }
 
+/* Markdown OSS */
 
+.ofte-stilte-sprsml{
+	.markdown-block{
+		h2{
+			background:none!important;
+			border-top:none!important;
+			border-left:none!important;	
+			border-right:none!important;	
+			border-bottom:1px solid #ccc;
+			text-transform:none;
+			letter-spacing:0;
+			text-align:left;
+			padding:20px 0;	
+	        &.ui-open{
+	        	background:none;
+	        	color:@lerum-color-darkgrey!important;
+	        	font-weight:600!important;
+	        	border-bottom:none!important;
+	        }
+	        &:hover{
+	        	color:@lerum-color-darkgrey!important;
+	        	border-bottom:1px solid @lerum-color-grey;
+	        }
+		}
+	    p, ul, ol{
+	      	margin-top:0!important;
+	        margin-bottom:0!important;
+	        padding:25px 0;
+	        font-size:16px;
+	        background:transparent;
+	        color:@lerum-color-darkgrey;
+	        text-align:left;
+	    }
+	    h2+p:last-child{
+	        border-bottom:1px solid @lerum-color-grey;
+	    }
+	    a{
+	        color:@lerum-color-darkgrey;
+	        text-decoration: underline;        
+	        &:hover {
+	          	color:@lerum-color-darkgrey!important;
+	          	text-decoration: none;
+	        }
+	    }
+	}
+}
 
 
 /* Footer */
