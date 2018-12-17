@@ -187,7 +187,7 @@ $(window).on("resize load", function () {
 
 
 <div class="oppskrift-related">
-    <squarespace:block-field id="RelatedRecipes-{item.id}" columns="12" label="Add Related Recipes" />
+    <squarespace:block-field id="RelatedRecipes" columns="12" label="Add Related Recipes" />
 </div> 
 
 </div>
