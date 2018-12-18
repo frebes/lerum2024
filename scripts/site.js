@@ -259,7 +259,7 @@ $(document).ready(function(){
   			bc_fabrikk = $('.Site[class*="fabrikk"]'),
   			bc_styre = $('.Site[class*="styre"]'),
 
-  			bc_kontakt = $('.Site.kontakt-oss-innhold');
+  			bc_kontakt = $('.Site.kontakt-oss-');
  
  		var parts = location.href.split('/').slice(3),
  			breadcrumb = parts.join('/'),
