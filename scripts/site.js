@@ -251,7 +251,7 @@ $(document).ready(function(){
   			bc_fruktbere = $('.Site[class*="frukt-og-ber"]'),
   			bc_sunnheit = $('.Site[class*="sunnheit-og-helse"]'),
   			bc_menneske = $('.Site[class*="menneske"]'),
-    		bc_miljo = $('.Site[class*="milj"]'),
+    		bc_miljo = $('.Site[class*="miljoe"]'),
 
   			bc_omoss = $('.Site.om-lerum'),
   			bc_hist = $('.Site[class*="hist"]'),
