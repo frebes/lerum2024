@@ -13,7 +13,6 @@ $(document).ready(function(){
 			url = url.split("/"),
 			fName = url[url.length - (isLastSlash? 2: 1)];
 
-	  	//alert(fName);
 	  	console.log(pName);
 	  	console.log(fName);
 
