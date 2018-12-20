@@ -307,7 +307,7 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>');
 
       	if (bc_kontakt[0] || bc_omvis[0] || bc_oss[0] || bc_reklam[0] || bc_spons[0])
-  			bc.append(htmls + '<a href="/kontakt-oss-innhold/">Kontakt oss</a>');
+  			bc.append(htmls + '<a href="/kontakt-oss-/">Kontakt oss</a>');
 
   	});
 
