@@ -711,7 +711,48 @@ blockquote{
 
 	// Oppskriftgallerier hovedside
 
+	#oppskrift-galleri1, #oppskrift-galleri2{
+		.transparent();
 
+		/* Add least spesific css */
+		.summary-title{
+			color:@lerum-color-grey;
+		}		
+	}
+	#oppskrift-galleri1, #oppskrift-galleri2{
+		.summary-content{
+			padding-bottom:20px;
+			margin-bottom:20px;
+		}
+		.summary-title{
+			position:relative;
+			margin-top:-50px;
+		}
+		.summary-metadata-item--cats{
+			.h6();
+			color:@lerum-color-darkgrey;
+			padding:5px 25px;
+			background:rgba(255,255,255,1.0);			
+		}
+		.summary-metadata{
+			position:relative;
+    		bottom:56px;
+    		z-index:2;
+		}
+	}
+	#oppskrift-galleri2 .span-3{
+		background:white;
+		margin-top:15px;
+		.archive-group-name-link{
+			.hide();
+		}
+	}
+	.sqs-block-archive .archive-block-setting-layout-list.archive-block-setting-multicolumns .archive-group-list{
+		-webkit-column-gap: 30px;
+	}
+	.sqs-block-archive .archive-block-setting-layout-index .archive-item {
+	    margin: 0 0 1em 0;
+	}
 }
 
 
