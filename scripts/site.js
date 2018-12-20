@@ -306,7 +306,7 @@ $(document).ready(function(){
     	if (bc_omoss[0] || bc_hist[0] || bc_eigar[0] || bc_fabrikk[0] || bc_styre[0])
   			bc.append(htmls + '<a href="/om-lerum/">Om oss</a>');
 
-      	if (bc_kontakt[0])
+      	if (bc_kontakt[0] || bc_omvis[0] || bc_oss[0] || bc_reklam[0] || bc_spons[0])
   			bc.append(htmls + '<a href="/kontakt-oss-innhold/">Kontakt oss</a>');
 
   	});
