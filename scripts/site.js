@@ -259,7 +259,11 @@ $(document).ready(function(){
   			bc_fabrikk = $('.Site[class*="fabrikk"]'),
   			bc_styre = $('.Site[class*="styre"]'),
 
-  			bc_kontakt = $('.Site.kontakt-oss-');
+  			bc_kontakt = $('.Site.kontakt-oss-'),
+  			bc_omvis = $('.Site.omvisning'),
+  			bc_oss = $('.Site.ofte-stilte-sprsml'),
+  			bc_reklam = $('.Site.reklamasjon'),
+  			bc_spons = $('.Site.sponsing');
  
  		var parts = location.href.split('/').slice(3),
  			breadcrumb = parts.join('/'),
