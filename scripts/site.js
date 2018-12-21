@@ -293,7 +293,7 @@ $(document).ready(function(){
   			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
   		
     	if (bc_prod_jule[0])
-  			bc.append(htmls + '<a href="/juleprodukt/">Juleprodukter</a>');
+  			bc.append(htmls + '<a href="/juleprodukt/">Juleprodukt</a>');
 
  		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-')
  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
