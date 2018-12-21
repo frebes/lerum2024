@@ -295,9 +295,8 @@ $(document).ready(function(){
     	if (bc_prod_jule[0])
   			bc.append(htmls + '<a href="/juleprodukt/">Juleprodukter</a>');
 
- 		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-'){
+ 		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-')
  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
- 		}
 
   		if (bc_fruktber[0] || bc_fruktbere[0] || bc_sunnheit[0] || bc_menneske[0] || bc_miljo[0])
   			bc.append(htmls + '<a href="/frukt-og-berkraft/">Frukt & bærkraft</a>');
