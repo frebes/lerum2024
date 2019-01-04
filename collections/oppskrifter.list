@@ -21,7 +21,7 @@ $(window).on("resize load", function () {
 
 
 {.section items}
-<h2>Oppskrifter</h2>
+<h1>Oppskrifter</h1>
 {.end}
 
 
