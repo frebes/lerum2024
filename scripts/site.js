@@ -290,10 +290,10 @@ $(document).ready(function(){
 	  		bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-saft/">Saft</a>');
 
     	if (bc_prod_jus[0])
-  			bc.append(htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
+  			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
   		
     	if (bc_prod_jule[0])
-  			bc.append(htmls + '<a href="/juleprodukt/">Juleprodukt</a>');
+  			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/juleprodukt/">Juleprodukt</a>');
 
  		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-')
  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
