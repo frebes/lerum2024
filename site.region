@@ -10,9 +10,9 @@
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-132772589-1', 'auto');
-      // ga('send', 'pageview');
+      ga('send', 'pageview');
       ga('create', 'UA-1427868-83', 'auto', 'gastaTracker');
-      // ga('gastaTracker.send', 'pageview');
+      ga('gastaTracker.send', 'pageview');
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
