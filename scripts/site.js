@@ -242,6 +242,7 @@ $(document).ready(function(){
   			bc_prod_saft = $('div[class*="saft"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
+    		bc_prod_smudi = $('div[class*="smudi"]'),
 
   			bc_oppskrift = $('.Site[class*="oppskrift"]'),
   			bc_oppskrift_det = $('div[class*="oppskrifter"]'),
@@ -281,11 +282,13 @@ $(document).ready(function(){
 
   		if (bc_prod_sylt[0] && produrl == 'syltetoy')
   			bc.append(htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
+  		
   		if (produrl == 'syltetoy')
   			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-syltetoy/">Syltetøy</a>');
 
     	if (bc_prod_saft[0] && produrl == 'saft')
   			bc.append(htmls + '<a href="/produkt-saft/">Saft</a>');	
+
 	  	if (produrl == 'saft')
 	  		bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-saft/">Saft</a>');
 
@@ -294,6 +297,9 @@ $(document).ready(function(){
   		
     	if (bc_prod_jule[0])
   			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/juleprodukt/">Juleprodukt</a>');
+
+     	if (bc_prod_smudi[0])
+  			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/smudi/">Smudi</a>');
 
  		if (produrl == 'oppskrifter' || produrl == 'oppskrifter-')
  			bc.append(htmls + '<a href="/oppskrifter/">Oppskrifter</a>');
