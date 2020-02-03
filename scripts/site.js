@@ -315,6 +315,14 @@ $(document).ready(function(){
 
   	});
 
+  	// Produktny
+
+
+  	$(function(){
+
+  		$('.produktinnhold-ny .slide:first-child() .image-slide-title').html("a href='/smudi'>Smudi</a>");
+
+  	});
 
 	// Oppskrift calc values
 
