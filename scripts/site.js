@@ -320,7 +320,7 @@ $(document).ready(function(){
 
   	$(function(){
 
-  		$('.produktinnhold-ny .slide:first-child() .image-slide-title').html("a href='/smudi'>Smudi</a>");
+  		$('.produktinnhold-ny .slide:first-child .image-slide-title').html("a href='/smudi'>Smudi</a>");
 
   	});
 
