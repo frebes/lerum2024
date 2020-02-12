@@ -241,6 +241,7 @@ $(document).ready(function(){
   			bc_prod_sylt = $('div[class*="syltetoy"]'),
   			bc_prod_saft = $('div[class*="saft"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
+  			bc_prod_brus = $('div[class*="brus"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
     		bc_prod_smudi = $('div[class*="smudi"]'),
 
@@ -294,7 +295,10 @@ $(document).ready(function(){
 
     	if (bc_prod_jus[0])
   			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-jus-og-nektar/">Juice</a>');
-  		
+  
+    	if (bc_prod_brus[0])
+  			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/produkt-brus/">Brus</a>');
+
     	if (bc_prod_jule[0])
   			bc.html('<a href="/">Forside</a>' + htmls + '<a href="/produkt/">Produkt</a>' + htmls + '<a href="/juleprodukt/">Juleprodukt</a>');
 
