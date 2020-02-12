@@ -241,7 +241,7 @@ $(document).ready(function(){
   			bc_prod_sylt = $('div[class*="syltetoy"]'),
   			bc_prod_saft = $('div[class*="saft"]'),
   			bc_prod_jus = $('div[class*="jus"]'),
-  			bc_prod_brus = $('div[class*="brus"]'),
+  			bc_prod_brus = $('div[class*="sprudlande"]'),
     		bc_prod_jule = $('div[class*="jule"]'),
     		bc_prod_smudi = $('div[class*="smudi"]'),
 
