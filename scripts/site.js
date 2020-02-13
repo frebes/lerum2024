@@ -323,11 +323,11 @@ $(document).ready(function(){
 
   	$(function(){
 
-  		$('.produktinnhold-ny .slide:first-child .image-slide-title').html('<a href="/smudi">Smudi</a>');
-  		$('.produktinnhold-ny .slide:nth-child(2) .image-slide-title').html('<a href="/produkt-brus">Brus</a>');
-  		$('.produktinnhold-ny .slide:nth-child(3) .image-slide-title').html('<a href="/juleprodukt">Juleprodukt</a>');
-  		$('.produktinnhold-ny .slide:nth-child(4) .image-slide-title').html('<a href="/produkt-storhusholdning">Storhusholdning</a>');
-  		$('.produktinnhold-ny .slide:nth-child(5) .image-slide-title').html('<a href="/produkt-jus-og-nektar">Jus</a>');
+  		$('.produkt .slide:first-child .image-slide-title').html('<a href="/smudi">Smudi</a>');
+  		$('.produkt .slide:nth-child(2) .image-slide-title').html('<a href="/produkt-brus">Brus</a>');
+  		$('.produkt .slide:nth-child(3) .image-slide-title').html('<a href="/juleprodukt">Juleprodukt</a>');
+  		$('.produkt .slide:nth-child(4) .image-slide-title').html('<a href="/produkt-storhusholdning">Storhusholdning</a>');
+  		$('.produkt .slide:nth-child(5) .image-slide-title').html('<a href="/produkt-jus-og-nektar">Jus</a>');
 
   	});
 
