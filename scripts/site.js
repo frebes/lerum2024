@@ -323,7 +323,7 @@ $(document).ready(function(){
 
   	$(function(){
 
-  		$('.produkt .slide:first-child .image-slide-title').html('<a href="/smudi">Smudi</a>');
+  		$('.produkt .slide:first-child .image-slide-title').html('<a href="/smudi">Smudi-pålegg</a>');
   		$('.produkt .slide:nth-child(2) .image-slide-title').html('<a href="/produkt-brus">Brus</a>');
   		$('.produkt .slide:nth-child(3) .image-slide-title').html('<a href="/juleprodukt">Juleprodukt</a>');
   		$('.produkt .slide:nth-child(4) .image-slide-title').html('<a href="/produkt-storhusholdning">Storhusholdning</a>');
