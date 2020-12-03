@@ -297,7 +297,7 @@ blockquote{
 
 /* Forside */
 
-.forside, .forside-20{
+.forside{
 	.Index-gallery-wrapper{
 		@media @desktop-mainframe{
 			height:60vh!important;  //reduce gallery height tablet (portrait/landscape)
@@ -373,6 +373,106 @@ blockquote{
 		}
 	}
 }
+
+
+
+
+
+.forside-20
+.forside{
+	.Index-gallery-wrapper{
+		@media @desktop-mainframe{
+			height:60vh!important;  //reduce gallery height tablet (portrait/landscape)
+		}
+		@media @mobile{
+			height:75vh!important;  //reduce gallery height mobile
+		}
+	}
+	.Index-gallery-item-image{
+		background-color:white!important;
+		overflow:hidden;
+		img{
+			animation: move 120s infinite ease-in-out;
+		}
+	}
+    .Index-gallery-item-content{
+		background:white!important;
+		max-width:100%;
+		@media @desktop-mainframe{
+			margin:0 auto;
+			width:100%;
+		}
+		@media @mobile{
+			margin-left:0;
+			margin-right:0;
+		}
+	}
+	h2.Index-gallery-item-content-heading{
+    	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    	animation: 2s ease 0s normal forwards 1 fadein;
+		background:@lerum-color-grey;
+		width:30%;
+		padding:10%;
+		margin-top:-250px;	
+		text-align:center;
+		@media @mobile{
+			margin:-200px auto 50px auto;
+			max-width:40%;
+			width:40%;
+			font-size:30px;
+			line-height:1.4em;
+		}
+		@media @desktop-mainframe{
+			position:relative;
+			width:20%;
+			font-size:40px;
+		}
+	}
+	.Index-gallery-item-content-body{
+		width:50%;
+		position:absolute;
+		left:57%;
+		margin-top:-210px;
+		color:@lerum-color-grey;
+		font-size:32px;
+		line-height:48px;
+		font-weight:400;
+		@media @mobile{
+			position:relative;
+			text-align:center;
+			margin-top:-20px;
+			left:0;
+			width:100%;
+			font-size:22px;
+			line-height:1.5em;
+			margin-bottom:70px;
+		}
+		@media @desktop-mainframe{
+			position:relative;
+			width:40%;
+			left:45%;
+			font-size:25px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #dette-driv-vi-med{
 	background:transparent;
