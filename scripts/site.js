@@ -191,7 +191,7 @@ $(document).ready(function(){
 				galRep = $($('#fokusomrade .image-slide-title')[index]);
 
 			//console.log(sumLink);
-		    galRep.replaceWith(galLink);
+		    galRep.replaceWith(<a href="'+ galLink +'">bak</a>);
 		});
 
 	});
