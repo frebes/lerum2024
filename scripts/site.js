@@ -181,7 +181,7 @@ $(document).ready(function(){
 	});
 
 
-
+	/*
 	$(function(){
 
 		var galInfo = $('#fokusomrade .sqs-gallery .slide a');
@@ -194,7 +194,7 @@ $(document).ready(function(){
 		    galRep.replaceWith('<a href="'+ galLink +'">bak</a>');
 		});
 
-	});
+	});*/
 
 	
 	// Scroll header function
