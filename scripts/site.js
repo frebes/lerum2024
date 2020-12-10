@@ -180,6 +180,22 @@ $(document).ready(function(){
 
 	});
 
+
+
+	$(function(){
+
+		var galInfo = $('#fokusomrade .sqs-gallery .slide a');
+
+		galInfo.each(function(index, el){
+			var galLink = $(this).attr('href'),
+				galRep = $($('#fokusomrade .image-slide-title')[index]);
+
+			//console.log(sumLink);
+		    galRep.replaceWith('<a href="'+ galLink +'">attr</a>')
+		});
+
+	});
+
 	
 	// Scroll header function
 
