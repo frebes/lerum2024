@@ -197,7 +197,7 @@ $(document).ready(function(){
 	});*/
 
 	
-	$('#ta-vare-paa .summary-title').appendTo("#ta-vare-paa .summary-item");
+	$('#ta-vare-paa .summary-title').appendTo("#ta-vare-paa .summary-thumbnail-outer-container");
 
 	// Scroll header function
 
