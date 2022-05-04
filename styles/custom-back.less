@@ -1,0 +1,1818 @@
+
+/******** Lerum custom CSS *******
+
+
+
+/* Lerum color vars */
+
+@lerum-color-greybrown: #746055;
+@lerum-color-darkgrey: #14151B;
+@lerum-color-grey: #606772;
+@lerum-color-lightgrey: #535C69;
+@lerum-color-darkgreen: #5E6656;
+@lerum-color-green: #C6D39B;
+@lerum-color-lightbrown: #9D6E55;
+@lerum-color-background: #F8F7F2;
+@lerum-color-red: #d6004a;
+@lerum-color-white: #FFF;
+
+@lerum-color-transparent-grey:rgba(96,103,114,.93);
+
+
+/* Helpfunctions */
+
+.hide{
+	display:none;
+}
+.enable-load-effects .Index-page-image{
+	opacity:1!important;
+}
+.transparent{
+	background-color:transparent;
+	background:transparent;
+}
+.border-top{
+	border-top:1px solid @lerum-color-lightgrey;
+}
+.border-bottom{
+	border-bottom:1px solid @lerum-color-lightgrey;
+}
+.transfade{
+	-webkit-transition: 250ms ease-in-out .3s;
+    -moz-transition: 250ms ease-in-out .3s;
+    transition: 250ms ease-in-out .3s;
+}
+.transfade_op{
+	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    animation: 2s ease 0s normal forwards 1 fadein;
+}
+.transmove{
+	-webkit-transition: transform .6s;
+	-moz-transition: transform .6s;
+	transition: transform .6s;
+}
+.transopacity{
+    -webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -ms-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+}
+
+
+
+/* Std device queries */
+
+@desktopmax:~"only screen and (min-width: 1280px) and (max-width: 3000px)";
+@desktop:~"only screen and (min-width: 960px) and (max-width: 1600px)";
+@desktop-mainframe:~"only screen and (min-width: 640px) and (max-width: 1280px)"; // Spesific Lerum.no
+@notdesktop:~"only screen and (max-width: 1280px)"; // Spesific Lerum.no
+@tablet:~"only screen and (min-width: 640px) and (max-width: 960px)"; // portrait/landscape
+@mobile:~"only screen and (max-width: 640px)";
+@notmobile:~"only screen and (min-width: 640px) and (max-width: 1600px)";
+//Spesific resolutions
+@spes-m:~"only screen and (min-width: 1000px) and (max-width: 1280px)";
+@spes-s:~"only screen and (min-width: 640px) and (max-width: 1000px)";
+
+
+/* Amimations */
+
+@keyframes move{
+	0% {
+ 		transform: scale(1) rotate(0deg);
+	}
+	50%	{
+   		transform: scale(1.2) rotate(0.1deg);
+  	}
+  	100%	{
+   		transform: scale(1) rotate(0deg);
+  	}
+}
+
+@keyframes fadein{
+    0% { opacity:0; transform: translate3d(0,-20%,0);}
+    20% { opacity:0; transform: translate3d(0,-10%,0);}
+    100% { opacity:1; transform: translate3d(0, 0, 0);}
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; transform: translate3d(0,-20%,0);}
+    20% { opacity:0; transform: translate3d(0,-10%,0);}
+    100% { opacity:1; transform: translate3d(0, 0, 0);}
+}
+
+
+
+/* Typography */
+
+/* Define h4-h6 as functions in h1-h3 strong classes */
+
+.h4{
+	font-family:"Bree-serif";
+	font-size:26px;
+	line-height:32px;
+	font-weight:normal;			
+}
+
+.h5{
+	color:@lerum-color-darkgrey;
+	font-family:"Open sans";
+	font-size:18px;
+	line-height:24px;
+	font-weight:500;
+	letter-spacing:3px;
+	text-transform:uppercase;			
+}
+
+.h6{
+	color:@lerum-color-darkgrey;
+	font-family:"Open sans";
+	font-size:14px;
+	line-height:20px;
+	font-weight:600;
+	letter-spacing:2px;	
+	text-transform:uppercase;			
+}
+
+.h1{
+	font-family:"bree-serif";
+	font-size:54px;
+	line-height:60px;
+	font-weight:normal;
+
+	/* show h4 */
+	strong{
+		.h4();	
+	}
+}
+
+.h2{
+	font-family:"bree-serif";
+	font-size:44px;
+	line-height:50px;	
+	font-weight:normal;
+
+	/* show h5 */
+	strong{
+		.h5();
+	}
+}
+
+.h3{
+	font-family:"bree-serif";
+	font-size:32px;
+	line-height:36px;	
+	font-weight:normal;
+
+	/* show h6 */
+	strong{
+		.h6();		
+	}
+}
+
+blockquote{
+	color:@lerum-color-grey;
+	font-family:"bree-serif";
+	font-size:32px;
+	line-height:50px;	
+	font-weight:500;
+	padding-left:0!important;
+	border-left:none!important;
+}
+
+
+
+/* Custom buttons */
+
+.squarebutton{
+	.next, .previous{
+		border:2px solid @lerum-color-grey;
+	}
+	.previous:before,
+	.next:before{
+		font-size:30px!important;
+		line-height:50px!important;
+		width:52px!important;
+		height:52px!important;
+	}
+	.previous:hover,.next:hover{
+		background-color:@lerum-color-grey;
+		color:white!important;
+	}
+}
+
+.arrowbutton{
+	.next, .previous{
+		border:none!important;
+		transform:scale(.5);
+	}
+	.previous:before,
+	.next:before{
+		position:absolute;
+		top:10px;
+	}
+}
+
+
+
+/* Header */
+
+.Header{
+	&.Header--top{
+		position:fixed;
+			z-index:10001;
+			overflow:hidden;
+			top:0;
+			width:1440px;
+			margin:0 auto;
+	}
+	.Header-nav-item--active{
+		border-bottom:2px solid @lerum-color-red;
+	}
+	.Header-nav-inner a{
+		@media @spes-m{
+			margin-left:20px!important;
+			margin-right:20px!important;
+		}
+		@media @spes-s{
+			font-size:17px!important;
+			letter-spacing:0!important;
+			margin-left:7px!important;
+			margin-right:7px!important;
+		}
+	}
+}
+@media screen and (min-width:640px) and (max-width:1440px){
+	.Header.Header--top{
+		width:100%;
+	}
+}
+
+
+/* Breadcrumbs spesific */
+
+.forside .bc{
+	.hide();
+}
+.bc{
+	.transparent();
+	color:white;
+	font-family:"bree-serif";
+	position:absolute;
+	z-index:10000;
+	display:block;
+	top:135px;
+	left:140px;
+	font-size:15px;	
+	@media @mobile{
+		.hide();
+	}
+}
+// define dark bc 
+.produkt .bc,
+.oppskrifter- .bc,
+.frukt-og-berkraft .bc,
+.frukt-og-ber .bc,
+.sunnheit-og-helse .bc,
+.menneske .bc,
+.miljoe .bc,
+.om-lerum .bc,
+.styre-og-leiing .bc,
+.eigarskap .bc,
+.fabrikkanlegg .bc,
+.kontakt-oss- .bc,
+.omvisning .bc,
+.ofte-stilte-sprsml .bc,
+.reklamasjon .bc,
+.sponsing .bc,
+.historie .bc{
+	color:@lerum-color-grey;
+}
+.bcpad{
+	content:"/";
+	padding-left:10px;
+}
+
+
+
+/* Forside */
+
+.forside{
+	.Index-gallery-wrapper{
+		@media @desktop-mainframe{
+			height:60vh!important;  //reduce gallery height tablet (portrait/landscape)
+		}
+		@media @mobile{
+			height:75vh!important;  //reduce gallery height mobile
+		}
+	}
+	.Index-gallery-item-image{
+		background-color:white!important;
+		overflow:hidden;
+		img{
+			animation: move 120s infinite ease-in-out;
+		}
+	}
+    .Index-gallery-item-content{
+		background:white!important;
+		max-width:100%;
+		@media @desktop-mainframe{
+			margin:0 auto;
+			width:100%;
+		}
+		@media @mobile{
+			margin-left:0;
+			margin-right:0;
+		}
+	}
+	h2.Index-gallery-item-content-heading{
+    	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    	animation: 2s ease 0s normal forwards 1 fadein;
+		background:@lerum-color-grey;
+		width:30%;
+		padding:10%;
+		margin-top:-250px;	
+		text-align:center;
+		@media @mobile{
+			margin:-200px auto 50px auto;
+			max-width:40%;
+			width:40%;
+			font-size:30px;
+			line-height:1.4em;
+		}
+		@media @desktop-mainframe{
+			position:relative;
+			width:20%;
+			font-size:40px;
+		}
+	}
+	.Index-gallery-item-content-body{
+		width:50%;
+		position:absolute;
+		left:57%;
+		margin-top:-210px;
+		color:@lerum-color-grey;
+		font-size:32px;
+		line-height:48px;
+		font-weight:400;
+		@media @mobile{
+			position:relative;
+			text-align:center;
+			margin-top:-20px;
+			left:0;
+			width:100%;
+			font-size:22px;
+			line-height:1.5em;
+			margin-bottom:70px;
+		}
+		@media @desktop-mainframe{
+			position:relative;
+			width:40%;
+			left:45%;
+			font-size:25px;
+		}
+	}
+}
+
+
+
+
+
+
+
+#dette-driv-vi-med-1{
+	background:transparent;
+}
+
+#dette-driv-vi-med{
+	background:transparent;
+	h2{
+		color:@lerum-color-greybrown;
+		letter-spacing:3px;
+	}
+	.image-block-outer-wrapper{
+		.intrinsic .image-block-wrapper img{
+			transform:scale(.7);
+			@media @mobile{
+				transform:scale(.6);	
+			}
+		}
+		.image-caption-wrapper{
+			padding-top:0;
+			margin-top:-20px;
+		    p{
+				color:@lerum-color-greybrown;
+				font-family:"bree-serif";
+				font-weight:500;
+				font-size:26px;
+				text-align:center;
+			}
+		}
+	}
+	.image-inset.content-fit{
+		@media @mobile{
+			width:30%;
+    		margin:0 auto;	
+		}		
+	}
+	.image-card-wrapper{
+		@media @mobile{
+    		margin-top:5px;
+    		margin-bottom:20px;
+		}			
+	}
+	.image-title p, .image-caption p{
+		white-space:nowrap;
+	}
+}
+
+#freistande-oppskrifter{
+    .sqs-gallery-design-autogrid-slide {
+       width: 33.3% !important;
+       clear:right !important;
+    }
+    .sqs-gallery-block-grid {
+        overflow: visible;
+    }
+	.summary-title{
+		.h4();
+		.transopacity();
+		opacity:0;
+		padding:10px 20px;
+		position:relative;
+		z-index:10;
+    	/* top:50%; /* Handle in js */
+    	text-align:center;
+    	background:@lerum-color-grey;
+    	color:white;
+    	@media @mobile{
+    		opacity:1;
+    		bottom:15px;
+    		font-size:14px;
+    		line-height:1.3em;
+    		width:100%;
+    	}
+    	@media @spes-s{
+    		opacity:1;
+    		bottom:15px;
+    		font-size:16px;
+    		line-height:1.3em;    		
+    	}
+    	@media @spes-m{
+    		opacity:1;
+    		bottom:15px;
+    		font-size:18px;
+    		line-height:1.3em;    		
+    	}
+	}
+	.summary-item:hover .summary-title{
+		opacity:1;
+	}
+	.summary-heading{
+		.hide();
+	}
+	.summary-block-wrapper{
+		padding:0 90px;
+		@media @mobile{
+			padding:0;
+			margin:0;
+		}
+	}
+	.summary-carousel-pager{		
+		.squarebutton();
+		.summary-carousel-pager-prev{
+			position:absolute;
+			z-index:999;
+			left:25px;
+			top:30%;
+			@media @spes-m{
+				top:25%; // Handle JS
+			}
+			@media @spes-s{
+				top:17%; // Handle JS
+			}
+		}	
+		.summary-carousel-pager-next{
+			position:absolute;
+			z-index:9999;
+			right:25px;
+	    	top:30%;
+	    	@media @spes-m{
+	    		top:25%;
+	    	}
+			@media @spes-s{
+				top:17%;
+			}
+		}
+	}
+} 
+
+// Override inline media query forside / buttons mobile
+
+.mobilebutton{
+	display:block;
+	content:" "!important;			
+	background-image:url(/assets/pil_venstre.png)!important;
+	background-repeat:no-repeat;
+	width:108px!important;
+	height:24px!important;	
+}
+
+@media @mobile{
+	.summary-carousel-pager{	
+		.summary-carousel-pager-prev,.summary-carousel-pager-next{
+			border:0!important;
+			bottom:0!important;
+			top:95%!important;
+		}
+		.summary-carousel-pager-prev{
+			left:50px!important;
+			&:before{
+				.mobilebutton();
+			}
+			&:hover, &:active{
+				background:transparent!important;
+			}
+		}
+		.summary-carousel-pager-next{
+			right:50px!important;
+			&:before{
+				.mobilebutton();
+				transform:scaleX(-1);
+			}
+			&:hover, &:active{
+				background:transparent!important;
+			}
+		}
+	}
+}
+
+#heimefra-samletekst{
+	background:@lerum-color-darkgreen;
+	h3{
+		color:white;
+		line-height:65px;
+		letter-spacing:1px;
+	}
+}
+
+/* End forside */
+
+
+
+/* Page oppskrifter */
+
+.oppskrifter{
+	#oppskrift-toppgalleri{
+		.summary-item{
+			height:695px!important;
+			overflow:hidden;
+			@media @notdesktop{
+				height:auto!important;
+			}
+		}
+		.summary-v2-block{
+			@media @mobile{
+				padding-top:0!important;
+			}			
+		}
+		.summary-thumbnail-image{
+			@media @mobile{
+				width:100%!important;
+			}				
+		}
+		.Index-page-content{
+			padding-left:0;
+			padding-right:0;	
+			overflow:hidden;
+			@media @notdesktop{
+				padding-top:0;
+				padding-bottom:0;
+			}		
+		}
+		.summary-content{
+			/*background:@lerum-color-grey;*/
+			background:@lerum-color-transparent-grey;
+			color:white;
+			position:absolute;
+			z-index:9999;
+			bottom:10px;
+			margin-left:80px;
+			width:640px;
+			height:400px;
+			padding:30px 30px 40px 30px;
+			.summary-title{
+				.h1();
+				font-size:48px;	
+				line-height:1.3em;
+				@media @notdesktop{
+					font-size:38px;
+					line-height:1.4em;
+				}
+				@media @mobile{
+					font-size:24px;
+					line-height:1.5em;
+				}
+			}
+			.summary-metadata-item a{
+				.h6();
+				color:white;
+				@media @mobile{
+					font-size:13px;
+					line-height:1.4em;
+				}
+			}
+			@media @notdesktop{
+				margin-left:0;
+				position:relative;
+				width:auto;
+				height:auto;
+				bottom:0;
+				padding:20px 20px 30px 20px;
+				background:@lerum-color-grey;
+			}
+			@media @mobile{
+				bottom:0;
+				background:@lerum-color-grey;
+				padding:10px 10px 20px 10px!important;
+			}
+		}
+		.summary-block-wrapper{			
+			@media @notdesktop{
+				margin-bottom:60px;
+			}
+		}
+		.summary-thumbnail{
+			@media @notdesktop{
+				overflow:visible!important;
+			}
+		}
+		.summary-carousel-pager{
+			@media @notdesktop{		
+				margin:0 auto!important;
+				right:0!important;
+				left:-30px!important;
+				top:auto!important;
+				bottom:0!important;
+			}
+			.summary-carousel-pager-next, .summary-carousel-pager-prev{
+				@media @notdesktop{
+					
+				}
+			}	
+		}
+		@media @mobile{
+			.summary-carousel-pager .previous{
+				left:-2px!important;
+			}
+			.summary-carousel-pager .next{
+				right:0px!important;
+			}
+			.sqs-gallery-controls{
+				margin:0 auto!important;
+				left:-40px!important;
+				right:0!important;
+			}
+		}
+		.oppskrift-link a{
+			.h6();
+			font-size:16px;	
+			color:white;
+			display:inline-block;	
+			margin-top:30px;
+			padding:15px 60px;				
+			border:1px solid white;	
+			@media @mobile{
+				font-size:13px;	
+				padding:5px 20px;
+				margin-top:10px;
+			}
+		}
+		.archive-block-wrapper{
+			position:absolute;
+			top:-76px;
+    		right:350px;	
+		}
+		.archive-group-list{
+			li{
+				&:hover{
+					background:@lerum-color-grey;
+					color:white;
+				}
+			}
+		}
+	}
+	.sqs-gallery-controls{
+		position:absolute;
+		z-index:1;
+		top:630px;
+		right:100px;
+	}
+	.summary-block-header .summary-heading{
+		.hide();
+	}
+	.summary-carousel-pager{ 
+		width:160px!important;
+		.squarebutton();
+	}
+	.summary-content{
+		.summary-title{
+			.h3();
+		}
+		.summary-metadata-container{
+			.h3();
+		}
+	}
+
+	// Oppskriftgallerier hovedside
+
+	#oppskrift-galleri1, #oppskrift-galleri2{
+		.transparent();
+		.summary-content{
+			margin-bottom:25px;
+		}
+		.summary-title{
+			.h3();
+			font-size:30px;
+			color:@lerum-color-grey;
+			position:relative;
+			margin-top:-55px;
+		}
+		.summary-metadata-item--cats{
+			.h6();
+			color:@lerum-color-darkgrey;
+			padding:5px 25px;
+			background:rgba(255,255,255,1.0);			
+		}
+		.summary-metadata{
+			position:relative;
+    		bottom:56px;
+    		z-index:2;
+		}
+	}
+	#oppskrift-galleri2 .span-3{
+		background:white;
+		margin-top:15px;
+		.archive-group-name-link{
+			.hide();
+		}
+	}
+	#oppskrift-galleri1 h1{
+		display:none;
+	}
+	.sqs-block-archive .archive-block-setting-layout-list.archive-block-setting-multicolumns .archive-group-list{
+		-webkit-column-gap: 30px;
+	}
+	.sqs-block-archive .archive-block-setting-layout-index .archive-item {
+	    margin: 0 0 1em 0;
+	}
+}
+
+
+
+/* Oppskrift detaljside */
+
+.Main--oppskrifter-item{
+	.transparent();
+	.Main-content{
+		padding-left:0;
+		padding-right:0;
+	}
+	#oppskrift-content, #oppskrift-data{
+		.transparent();
+	}
+	#oppskrift-data{
+		float:left;
+		width:30%;
+		@media @mobile{
+			float:none;
+			width:auto;
+			text-align:center;
+		}
+		.data{
+			width:60%;
+			border-bottom:1px solid #bbb;
+			padding:15px 0;
+			@media @mobile{
+				width:100%;
+				text-align:center;
+			}
+		}
+		#tips-content{
+			margin-top:50px;
+			background:url(/assets/eplebakgrunn_oppskrifter.png) no-repeat;
+			background-size:100% auto;
+			width:86%;			
+			.tips{
+				min-height:240px;
+				padding:25% 20% 30% 20%;
+				font-size:16px;
+				line-height:1.2em;
+				h3{
+					text-align:center;
+					margin-bottom:15px;
+				}
+			}
+		}
+	}
+	#oppskrift-content{
+		float:right;
+		width:70%;
+		@media @mobile{
+			float:none;
+			width:auto;
+		}
+		.sqs-col-12 > .row{
+			background:white;
+			margin-bottom:25px;
+			// fix padding bug first row child col-12 content
+			&:first-child{ 
+				& > .col:first-child,
+				& > .col:nth-child(2){
+					padding-top:20px;
+				}
+			}
+		}
+		.sqs-block.image-block{
+			padding:0;
+		}
+		.row .col.span-1 .sqs-block-content,
+		.row .col.span-7 .sqs-block-content{
+			padding:15px;
+		}
+		.row .col.span-1 .sqs-block-content{
+			.h2();
+			color:@lerum-color-red;
+			@media @mobile{
+				padding:0px;
+				text-align:center;
+			}
+		}
+		h3{
+			@media @mobile{
+				text-align:center;
+			}
+		}
+	}
+	#oppskrift-content-excerpt{
+    	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    	animation: 2s ease 0s normal forwards 1 fadein;
+		background-color:@lerum-color-background;
+		width:45%;
+		margin:0 auto;
+		margin-top:-230px;
+		padding:0px 80px;
+		text-align:center;
+		text-transform:uppercase;
+		h1{
+			line-height:1.4em;
+		}
+		h1+p{
+			.h4();
+			font-size:20px;
+			color:@lerum-color-grey;
+			text-transform:initial;
+		}
+		@media @notdesktop{
+			width:auto;
+			margin-top:0;
+		}
+		@media @mobile{
+			padding:0px;
+		}
+	}
+	.oppskrift-customtop{
+		margin:0 auto;
+		margin-top:50px;
+		padding:20px 0;
+  		display:flex;
+		width:100%;
+		.border-top();
+		.border-bottom();
+		.data-time{
+			flex:1;
+			width:50%;
+  			margin-right:auto;
+			text-align:right;
+			@media @mobile{
+				margin:0;
+				text-align:left;
+			}
+		}
+		.data-time::before{
+			content:url(/assets/tid-2021.png);
+			display:inline-block;
+			vertical-align:middle;
+			padding-right:10px;
+			padding-top:2px;
+		}
+		.data-grad{
+			flex:.8;
+			width:50%;
+			text-align:left;
+			padding:8px 0 0 50px;
+			margin-left:50px;
+			&.enk{
+				background:url(/assets/niva_enkel-2021.png) no-repeat 0% 50%;
+			}
+			&.mid{
+				background:url(/assets/niva_middels-2021.png) no-repeat 0% 50%;
+			}
+			&.van{
+				background:url(/assets/niva_vanskelig-2021.png) no-repeat 0% 50%;
+			}
+			@media @mobile{
+				margin:0;
+				background-size:20%;
+			}
+		}
+	}
+	.oppskrift-related{
+		background:@lerum-color-grey;
+		h2, .summary-title, .summary-metadata-item, a{
+			color:white;
+		}
+		h2{
+			@media @notdesktop{
+				white-space:initial!important;
+				text-align:left!important;
+			}
+			@media @mobile{
+				padding-left:20px;
+			}
+		}
+		.summary-title a{
+			font-size:26px;
+		}
+		.summary-metadata-item a{
+			font-family:'open sans';
+			text-transform:uppercase;
+		}
+	}
+	.produktoppskrift{
+		text-align:center;
+		margin-right:10%;
+		.image-block-outer-wrapper{
+			width:55%;
+			margin:0 auto;
+		}
+		h3{
+			margin-bottom:10px;
+		}
+		@media @mobile{
+			margin:0 auto;
+		}
+	}
+}
+
+/* Oppskrifterliste blogg */
+
+.oppskrifter-{
+
+}
+
+
+/* Page produkt */
+
+.Main--produkt-item{
+	.Main-content{
+		padding-left:0;
+		padding-right:0;
+	}
+	.customMainimage{
+		position:relative;
+	}
+	#produkt-content-excerpt{
+    	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    	animation: 2s ease 0s normal forwards 1 fadein;
+		position:absolute;
+		z-index:999;
+		/*background:@lerum-color-grey;*/
+		background:@lerum-color-transparent-grey;
+		width:40%;
+		margin-left:6%;
+		margin-top:-380px;
+		padding:10px 45px 20px 45px;
+		@media @mobile{
+			padding:10px;
+			text-align:center;
+		}
+		.Index-page-content{
+			padding:20px;
+		}
+		h1{
+			color:white;
+			margin:15px 0 25px 0;
+			@media @mobile{
+				line-height:1.3em;
+			}
+		}
+		.produktkat{
+			text-align:center;
+			text-transform:uppercase;
+			color:white;
+		}
+		h1+p{
+			.h4();
+			font-size:20px;
+			font-weight:300;
+			color:white;
+		}
+		@media @notdesktop{
+			position:relative;
+			width:auto;
+			margin-left:0;
+			margin-top:0;
+		}
+	}
+	#produkt-content{	
+		.transparent();	
+		padding-top:150px;
+  	  	background:@lerum-color-background url(/assets/historiebanner3-2.png) no-repeat; 
+  	  	background-position:center 30px;
+  	  	background-size:cover;
+  	  	background-size:100%;
+  	  	@media @mobile{
+  	  		background-position:center 50px;
+  	  	}	
+		.Index-page-content{
+			margin:0 auto;
+			width:55%;
+			display:flex;
+    		align-items:center;
+    		@media @notdesktop{				
+				width:100%;
+			}
+			@media @mobile{
+				display:block;
+				width:100%;
+				text-align:center;
+			}
+    	}
+		.image-excerpt{
+			flex:1;
+			width:50%;
+			@media @mobile{
+				flex:0;
+				width:100%;
+			}
+			img{
+				max-width:300px;
+				@media @mobile{
+					max-width:200px;
+				}
+			}
+		}
+		.product-contentright{
+			flex:1;
+			width:50%;
+			@media @mobile{
+				flex:0;
+				width:100%;
+			}
+		}
+	}
+	.produktoppskrift-related{
+		background:@lerum-color-grey;
+		h2, p, a{
+			color:white;
+		}
+		h2{
+			.h2();
+			@media @mobile{
+				padding-left:20px;
+				padding-right:20px;
+    			text-align:center;
+    			white-space:none;
+    			font-size:28px;
+    			line-height:1.4em;
+			}
+		}
+		h2{
+			@media @notdesktop{
+				white-space:initial!important;
+				text-align:left!important;
+			}
+		}
+		.summary-title a{
+			font-family:'bree-serif';
+			font-size:26px;
+			line-height:1.4em;
+			@media @mobile{
+				padding-left:20px;
+				padding-right:20px;
+			}
+		}
+		.summary-metadata-item a{
+			font-family:'open sans';
+			text-transform:uppercase;
+		}
+	}
+	.produkt-related{
+		background:white;
+	}
+	.make-product-defaults{
+		pointer-events:none;
+		position:absolute;
+		width:100%;
+		height:100%;
+		z-index:9999;
+		background-repeat:no-repeat, no-repeat;	
+		background-size:20%;
+		@media @mobile{
+			background-size:30%;
+			.hide();
+		}
+		@media @spes-s{
+			.hide();
+		}	
+	}
+	#productFind{
+		&.bringebær .background-product{	// add tag name (product)
+			.make-product-defaults();	
+			background-image:url(/assets/bringeber.png), url(/assets/bringeber_hoyre.png);
+			background-position:left 1320px, right 620px; 
+			background-size:15%;
+		}
+		&.appelsin .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/appelsin_v.png), url(/assets/appelsin_h.png);
+			background-position:-30px 1360px, right -20px top 620px; 
+			background-size:15%;
+		}	
+		&.apprikos-fersken .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/apprikos_fersken_v.png), url(/assets/apprikos_fersken_h.png);
+			background-position:left 1200px, right 620px; 
+		}	
+		&.blåbær .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/blaber-1.png), url(/assets/blaber-2.png);
+			background-position:left 1280px, right 600px; 
+			background-size:14%;
+		}	
+		&.jordbær .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/jordber_v.png), url(/assets/jordber_h.png);
+			background-position:-30px 1270px, right -50px top 580px; 
+		}	
+		&.kirsebær .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/kirseber_v.png), url(/assets/kirseber_h.png);
+			background-position:-50px 1300px, right -50px top 600px; 
+			background-size:23%;
+		}	
+		&.molte .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/molte_v.png), url(/assets/molte_h.png);
+			background-position:-50px 1320px, right -50px top 620px; 
+			background-size:23%;
+		}	
+		&.nyper .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/nyper_v.png), url(/assets/nyper_h.png);
+			background-position:-30px 1320px, right -60px top 620px; 
+		}	
+		&.plommer .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/plommer_v.png), url(/assets/plommer_h.png);
+			background-position:-30px 1320px, right -60px top 600px; 
+		}	
+		&.solbær .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/solber_v.png), url(/assets/solber_h.png);
+			background-position:-50px 1300px, right -50px top 620px; 
+		}	
+		&.tyttebær .background-product{	
+			.make-product-defaults();	
+			background-image:url(/assets/tytteber_v.png), url(/assets/tytteber_h.png);
+			background-position:-50px 1300px, right -60px top 620px; 
+			background-size:23%;
+		}	
+	}
+}
+
+/* Product spesific */
+
+.produktinnhold, .produktinnhold-ny, .produkt{
+	.image-slide-title{
+		font-family:'bree-serif';			
+		position:absolute!important;
+		z-index:2!important;
+		display:block!important;
+		width:auto!important;
+		background:rgba(95,102,114,.75);
+		color:white;
+		padding:10px;
+		font-size:100%!important;
+		font-weight:500!important;		
+		margin-top:-60px!important;
+	}
+	.slide:first-child .image-slide-title{
+		margin-left:26%;
+		@media @tablet{
+			margin-left:17%;
+			font-size:70%!important;
+		}
+		@media @mobile{
+			margin-left:9%;
+		}
+	}
+	.slide:nth-child(2) .image-slide-title{
+		margin-left:37%;
+		@media @tablet{
+			margin-left:33%;
+			font-size:70%!important;
+		}
+		@media @mobile{
+			margin-left:31%;
+		}
+	}
+	.slide:nth-child(3) .image-slide-title{
+		margin-left:25%;
+		@media @tablet{
+			margin-left:15%;
+			font-size:70%!important;
+		}
+		@media @mobile{
+			margin-left:11%;
+		}
+	}
+	.slide:nth-child(4) .image-slide-title{
+		margin-left:20%;
+		@media @tablet{
+			margin-left:5%;
+			font-size:70%!important;
+		}
+		@media @mobile{
+			margin-left:1%;
+		}
+	}
+	.slide:nth-child(5) .image-slide-title{
+		margin-left:40%;
+		@media @tablet{
+			margin-left:34%;
+			font-size:70%!important;
+		}
+		@media @mobile{
+			margin-left:34%;
+		}
+	}
+}
+
+.produkt-syltetoy{
+	.Index-page-content{
+		padding-top:0;
+		padding-bottom:0;
+	}
+}
+
+.produkt-syltetoy, .produkt-saft, .produkt-jus-og-nektar, .juleprodukt{
+	.Index-page{
+		background-color:transparent;
+	}
+	.Index{
+		background:#fff url(https://static1.squarespace.com/static/5b6d8802e7494079f83e29e3/t/5fce068733187724c417579f/1607337607754/safta-sylta-sogn-web-lysgra.png);
+		background-position:bottom 220px right -40px; 
+		background-repeat:no-repeat;
+		background-size:30%;
+	}
+}
+
+
+
+/*********** Custom page Smudi 2020 **********/
+
+#informasjonsmudi{
+  padding:0 50px;
+  height:1036px;
+  background:#850110 url(https://static1.squarespace.com/static/5b6d8802e7494079f83e29e3/t/5e33f16795862d328a719e8c/1580462441352/Smudi_Bakgrunn-arbeid-web.jpg);
+  background-repeat:no-repeat;
+  background-position:bottom -105px left;
+  background-size:cover;
+  @media @tablet{
+  	background-position:left -550px bottom -100px; 
+    h3{font-size:25px;}
+    p{font-size:17px;line-height:1.3em}
+  }
+  @media @mobile{
+  	background-position:left -550px bottom 0px; 
+    h3{font-size:25px;}
+    p{font-size:17px;line-height:1.3em}    
+  }
+  p, h3{
+  	color:white;  
+  }
+}
+#smudi-galleri{
+  .Index-gallery-item-content{
+    margin:50px 0;
+    padding:60px;
+  }
+}
+#smudi-bakgrunn{
+  background:#e8e8e8 url(https://static1.squarespace.com/static/5b6d8802e7494079f83e29e3/t/5e3158ff5e09e066cfe707e7/1580292352114/smudibak.png);
+  background-size:55%;
+  background-position:left -150px bottom -100px;
+  background-repeat:no-repeat;
+  .Index-page-content{
+    padding:30px 0!important;
+  }
+}
+@media @mobile{
+  .smudi #smudi-bakgrunn{
+    p,h2{
+      padding:0 20px;
+    }
+    .span-3 .image-block{
+      width:70%;
+      margin:0 auto;
+    }
+  }
+  #smudi-galleri{
+    display:none;
+  }
+}
+
+
+
+
+/* General product */
+
+.Index-gallery{ 
+	.Index-gallery-item-image{
+		animation: move 120s infinite ease-in-out;
+	}
+	.Index-gallery-item-content{
+		background-color:@lerum-color-transparent-grey;
+		@media @mobile{
+			margin-left:0;
+			margin-bottom:0;
+			padding:20px;
+			max-width:100%;
+		}
+	}
+}
+
+.produkt{
+	.Index-page-content{
+		.spacer-block{
+			@media @mobile{
+				.hide();
+			}
+		}
+	}
+}
+
+.produkt, 
+.frukt-og-berekraft, 
+.om-lerum,
+.kontakt-oss-innhold{
+	.image-block-v2 .intrinsic{
+		img{
+			.transfade();			
+		}
+    	&:hover {
+    		img {
+    			opacity:0.7;
+    		}
+		}
+	}
+}
+
+
+
+/* Historie */
+
+.historie{
+	.summary-block-wrapper{
+		.summary-item{
+			pointer-events:none; /* prevent clickthru */
+			height:auto!important;
+			overflow:hidden;
+			@media @notdesktop{
+				height:auto!important;
+			}
+		}
+		.summary-item-list{
+			margin-top:60px;
+		}
+		.Index-page-content{
+			padding-left:0;
+			padding-right:0;	
+			overflow:visible;		
+		}
+		.summary-title{
+			position:relative;
+			display:inline-block;
+			z-index:2;
+			top:-40px;
+			background:white;
+			padding:0px 12px;
+			color:@lerum-color-darkgreen;
+			font-size:18px!important;
+		}
+		.summary-content{
+			background:@lerum-color-darkgreen;
+			color:white;
+			z-index:9999;
+			height:auto;
+			padding:40px 40px 50px 40px;
+			.summary-title{
+				.h2();	
+			}
+			.summary-metadata-item a{
+				.h5();
+				color:white;
+			}
+			.summary-excerpt p{
+				.h4();
+				font-weight:300;
+				font-size:18px;
+				@media @mobile{
+					font-size:15px;
+					line-height:1.6em;
+				}
+			}
+			@media @notdesktop{
+				margin-left:0;
+				position:relative;
+				width:auto;
+				height:auto;
+				padding:20px 20px 30px 20px;
+			}
+		}
+		.summary-thumbnail-container{
+			margin:0;
+		}
+		.summary-thumbnail{
+			&.img-wrapper{
+				margin-bottom:0;
+			}
+		}
+	}
+	.sqs-gallery-controls{
+		position:absolute;
+		z-index:1000;
+		top:0px;
+		left:45%;
+	}
+	.summary-block-header .summary-heading{
+		.hide();
+	}
+	.summary-carousel-pager{ 
+		width:auto!important;
+		float:none!important;
+		margin:0 auto!important;
+		.squarebutton();
+	}
+	.summary-content{
+		.summary-title{
+			.h3();
+		}
+		.summary-metadata-container{
+			.h3();
+		}
+	}
+	@media @mobile{
+		.summary-carousel-pager{
+
+		}
+		.summary-carousel-pager .previous{
+			left:-2px!important;
+		}
+		.summary-carousel-pager .next{
+			right:0px!important;
+		}
+		.sqs-gallery-controls{
+			left:35%!important;
+		}
+	}
+}
+
+
+
+
+
+// History blog detail
+
+.BlogItem-pagination{
+	/*background:@lerum-color-background;*/		
+	padding:20px 0px;
+	.BlogItem-pagination-link-title{
+		color:@lerum-color-darkgreen;
+	}
+	.BlogItem-pagination-link{
+
+	}
+}
+
+
+.frukt-og-ber{
+	.summary-content{
+		.summary-title a{
+			.h3();
+			color:@lerum-color-grey;
+		}
+	}	
+}
+
+
+
+/* Sesongkalender */
+
+.frukt-ber{
+	#galleri-sesongkalendar{
+		.Index-gallery-item-content{
+			background:@lerum-color-darkgreen;
+		}
+	}
+}
+
+#sesongkalender{ 
+	.sqs-block-button-element{
+	 	padding:6px 45px!important;
+	 	white-space:nowrap;
+	}
+	.summary-title{
+		.h3();
+		color:@lerum-color-grey!important;
+	}
+	.summary-metadata-item a{
+		.h5();
+		color:white;
+	}
+}
+
+.sesongkalender-vestlandet, 
+.sesongkalender-austlandet, 
+.sesongkalender-sorlandet,
+.sesongkalender-nordnoreg{
+	.Main-content{
+		padding-left:80px;
+		padding-right:80px;
+	}
+}
+
+
+
+/********************** General ***********************/
+
+// Konkurranseside
+
+.konkurranse{
+	.Index-gallery-item-image{
+		max-width:102%!important;
+		animation:none!important;
+		background-color:transparent!important;
+	}
+	.Index-gallery-item{
+		@media @desktopmax{
+			max-width:100%!important;
+			height:85vh!important;			
+		}
+		@media @desktop-mainframe{
+			max-width:100%!important;
+			height:80vh!important;
+		}
+		@media @mobile{
+			max-width:100%!important;
+			height:35vh!important;
+		}
+	}
+	.Index-gallery-wrapper{
+		@media @desktopmax{
+			background-color:transparent!important;
+			height:85vh!important;			
+		}
+		@media @desktop-mainframe{
+			background-color:transparent!important;
+			height:80vh!important;
+		}	
+		@media @mobile{
+			background-color:transparent!important;
+			height:35vh!important;
+		}		
+	}
+	.bc{
+		.hide();
+	}	
+	#skjema{
+		h1{
+			color:@lerum-color-red;
+			@media @mobile{
+				line-height:1.3em;
+			}
+		}
+		/*.sqs-block-image{
+			position:relative;
+			z-index:100000;
+			left:30%;
+			bottom:150px;
+		}*/
+	}
+	#banner-bunn{
+		.Index-page-content{
+			padding-left:0px;
+			padding-right:0px;
+		}
+	}
+}
+
+// end konkurranseside
+
+
+.Main.Main--blog-item{
+	padding-top:60px;
+	.BlogItem-title{
+		.h2();
+		color:@lerum-color-grey!important;
+	}
+	.Main-content{
+		@media @desktop{
+			padding:80px 40px!important;
+		}	
+	}
+} 
+
+.BlogList-item-title{
+	.h3();
+	color:@lerum-color-grey!important;
+}
+
+.sqs-block-image{
+	.design-layout-poster .image-card-wrapper{
+		top:60%;
+	}	
+}
+
+.image-block-outer-wrapper{
+	a{
+		border-bottom-color:1px solid white!important;
+	}
+}
+
+.sqs-block-html p a, .sqs-block-markdown p a, .sqs-block-image p a, .sqs-block-html blockquote a, .sqs-block-markdown blockquote a, .sqs-block-image blockquote a, .sqs-block-html ol a, .sqs-block-markdown ol a, .sqs-block-image ol a, .sqs-block-html ul a, .sqs-block-markdown ul a, .sqs-block-image ul a{
+	border-bottom-color:1px solid white!important;
+}
+
+.BlogItem-share{
+	padding-top:30px;
+}
+
+.summary-metadata-item a{
+	pointer-events:none!important;
+}
+
+.sqs-search-page.sqs-search-page-content{
+	margin-top:80px;
+}
+
+.markdown-block{
+  .sqs-block-content{
+    h2{
+    	.h5();
+    	.transfade();
+    	background:@lerum-color-background;
+    	border-bottom:2px solid @lerum-color-grey;
+    	border-left:2px solid @lerum-color-grey;
+    	border-right:2px solid @lerum-color-grey;
+      	margin: 0;
+        padding:15px 17px;
+        text-align:center;
+        a{
+          	border: 0;
+        }
+        &:hover,
+        &.ui-open{
+        	background:@lerum-color-grey;
+        	color:white;
+        }
+        &:first-child{
+          	border-top:2px solid @lerum-color-grey;
+        }
+    }
+    ul, ol{
+      	padding-left:22px;
+    }
+    p, ul, ol{
+      	margin-top:0!important;
+        margin-bottom:0!important;
+        padding:25px;
+        font-size:16px;
+        background:@lerum-color-grey;
+        color:white;
+        text-align:center;
+        &:first-child{
+          	padding-top:15px;
+        } 
+    p:last-child{
+    	border-bottom:1px solid @lerum-color-background;
+    }   
+    a{
+        color: #ffffff;
+        text-decoration: underline;        
+        &:hover {
+          	color: #ffffff!important;
+          	text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/* Markdown OSS */
+
+.ofte-stilte-sprsml{
+	.markdown-block{
+		h2{
+			background:none!important;
+			border-top:none!important;
+			border-left:none!important;	
+			border-right:none!important;	
+			border-bottom:1px solid #ccc;
+			text-transform:none;
+			letter-spacing:0;
+			text-align:left;
+			padding:20px 0;	
+	        &.ui-open{
+	        	background:none;
+	        	color:@lerum-color-darkgrey!important;
+	        	font-weight:600!important;
+	        	border-bottom:none!important;
+	        }
+	        &:hover{
+	        	color:@lerum-color-darkgrey!important;
+	        	border-bottom:1px solid @lerum-color-red;
+	        }
+		}
+	    p, ul, ol{
+	      	margin-top:0!important;
+	        margin-bottom:0!important;
+	        padding:25px 0;
+	        font-size:16px;
+	        background:transparent;
+	        color:@lerum-color-darkgrey;
+	        text-align:left;
+	    }
+	    h2+p:last-child{
+	        border-bottom:1px solid @lerum-color-grey;
+	    }
+	    a{
+	        color:@lerum-color-darkgrey;
+	        text-decoration: underline;        
+	        &:hover {
+	          	color:@lerum-color-darkgrey!important;
+	          	text-decoration: none;
+	        }
+	    }
+	}
+}
+
+
+/* Footer */
+
+.Footer{
+	p>a{
+		.h4();
+		color:@lerum-color-grey!important;
+		font-size:20px;
+		text-decoration:none;
+		border-bottom:none!important;
+	}
+	p>a:after{
+		content:url(/assets/lerumpilhogre-2021.png);
+		padding-left:10px;
+	}
+}
+
+
+
+/* Global mobile */
+
+
+@media @mobile{
+	.Main-content{
+		padding-top:0!important;
+	}
+  	.produkt-syltetoy .Index-page,
+  	.produkt-saft .Index-page,
+  	.produkt-jus-og-nektar .Index-page,
+  	.juleprodukt .Index-page{
+    	background:#fff!important;
+  	}
+}
+
+.Mobile-overlay-menu{
+	background:@lerum-color-background!important;
+}
+
+.Mobile-overlay-nav-item, .Mobile-overlay-folder-item{
+	font-family:"bree-serif"!important;
+	color:@lerum-color-grey!important;
+	font-size:24px!important;
+	letter-spacing:0!important;
+}
+.Mobile-overlay-folder-item--toggle-label{
+	color:@lerum-color-lightgrey!important;
+}
