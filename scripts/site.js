@@ -282,6 +282,8 @@ $(document).ready(function(){
   			bc_oss = $('.Site.ofte-stilte-sprsml'),
   			bc_reklam = $('.Site.reklamasjon'),
   			bc_spons = $('.Site.sponsing');
+
+				bc_datablad = $('.Site[class*="datablad"]');
  
  		var parts = location.href.split('/').slice(3),
  			breadcrumb = parts.join('/'),
@@ -293,7 +295,7 @@ $(document).ready(function(){
 		produrl.toLowerCase();
 		produrl = produrl.split("/")[1];
 
-		console.log(produrl);
+		// console.log(produrl);
 
   		if (bc_produkt[0])
   			bc.append(htmls + '<a href="/produkt/">Produkt</a>');
@@ -333,6 +335,10 @@ $(document).ready(function(){
 
       	if (bc_kontakt[0] || bc_omvis[0] || bc_oss[0] || bc_reklam[0] || bc_spons[0])
   			bc.append(htmls + '<a href="/kontakt-oss-/">Kontakt oss</a>');
+
+			if (bc_datablad[0]) {
+				bc.append(htmls + '<a href="/datablad/">Datablad</a>');
+			}
 
   	});
 
